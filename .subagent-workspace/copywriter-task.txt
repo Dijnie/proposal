@@ -1,0 +1,10 @@
+Read the copywriter brief at /home/tid/project/fun15/catalyst/cip68-proposal/.subagent-workspace/copywriter-brief.md and deliver:
+
+1. Three (3) title variations (≤60 characters each) with character counts and rationale
+2. Three (3) problem statement variations (≤200 characters each) with character counts and rationale
+3. Three (3) solution overview variations (≤200 characters each) with character counts and rationale
+4. Recommended combination (best title + problem + solution) with cohesive narrative explanation
+
+Save output to: /home/tid/project/fun15/catalyst/cip68-proposal/.subagent-workspace/copywriter-output.md
+
+Format as markdown with clear sections, character counts verified, and detailed rationale for each variation explaining hooks, CRO principles, and differentiation strategy.
