@@ -70,7 +70,7 @@ Proteus is the **first comprehensive no-code platform** dedicated to CIP-68 dyna
 
 **Proteus Unique Innovations:**
 
-1. **Visual Rule Engine**: Non-technical creators can set up automatic metadata updates based on on-chain events (time, transactions, oracle data) without coding
+1. **Rule-Based Automation**: Creators configure automatic metadata updates based on on-chain events (time, transactions, oracle data) through configuration interface
 2. **Dual Interface**: No-code dashboard for creators + comprehensive REST API for developers
 3. **CIP-68 Native Architecture**: Built from ground-up for dynamic metadata, not retrofitted from CIP-25 tools
 4. **Supply Control System**: Granular control over mint/burn policies with time-locks and condition-based releases
@@ -96,9 +96,9 @@ Proteus is the **first comprehensive no-code platform** dedicated to CIP-68 dyna
 By project completion, the Proteus platform will be live on Cardano mainnet and accessible at `proteus.io`, delivering:
 
 **Core Platform Features:**
-- **No-Code Dashboard**: Web interface for creating CIP-68 collections, minting NFTs (single or batch up to 10,000), and updating metadata without writing code
-- **Visual Rule Engine**: Drag-and-drop automation builder enabling creators to set conditional metadata updates (time-based, event-based, oracle-based)
-- **Developer API**: Production REST API with comprehensive documentation, JavaScript/Python SDKs, and webhook integrations
+- **No-Code Dashboard**: Web interface for creating CIP-68 collections, minting NFTs (single or batch processing), and updating metadata without writing code
+- **Rule Automation Engine**: Configuration-based automation enabling creators to set conditional metadata updates (time-based, event-based, oracle-based)
+- **Developer API**: Production REST API with comprehensive documentation and webhook integrations
 - **Smart Contracts**: Audited Plutus validators deployed on mainnet, handling mint/burn/update operations with multi-signature support
 - **Template Library**: 10+ pre-built templates for common use cases (gaming items, event tickets, membership tiers, evolving art)
 
@@ -106,7 +106,7 @@ By project completion, the Proteus platform will be live on Cardano mainnet and 
 - **Live Demo Collection**: "Proteus Pioneers" - 1,000 dynamic NFTs on mainnet showcasing all platform capabilities (auto-updates, rules, metadata evolution)
 - **Public API Playground**: Interactive sandbox for developers to test API calls without mainnet deployment
 - **Video Tutorials**: Comprehensive walkthrough series showing non-developers creating dynamic NFT projects in under 30 minutes
-- **Open-Source Repository**: All smart contracts, SDKs, and documentation publicly available on GitHub
+- **Open-Source Repository**: All smart contracts, API client examples, and documentation publicly available on GitHub
 - **Community Access**: Free tier (1,000 NFTs/month) enabling immediate experimentation
 
 **On-Chain Verification:**
@@ -177,27 +177,27 @@ Cardano has CIP-68 standard for dynamic NFTs but lacks accessible tooling. Curre
 
 **Proteus: No-Code Platform + Developer API for Dynamic NFTs**
 
-We deliver a comprehensive CIP-68 management platform with dual interfaces - visual dashboard for non-developers and REST API/SDKs for technical teams. Our approach:
+We deliver a comprehensive CIP-68 management platform with dual interfaces - visual dashboard for non-developers and REST API for technical teams. Our approach:
 
 **Architectural Decisions:**
 
 1. **Abstraction Layers**:
    - **Layer 1: Smart Contracts** (Plutus validators) - Reusable, audited, gas-optimized
    - **Layer 2: Off-Chain Workers** - Handle metadata sync, event monitoring, automation
-   - **Layer 3: API/SDK** - Developer-friendly interfaces (REST, JavaScript, Python)
+   - **Layer 3: API** - Developer-friendly REST interfaces with comprehensive documentation
    - **Layer 4: Dashboard** - Visual no-code interface for non-technical users
 
 2. **CIP-68 Native Design**:
    - Reference NFT + User Token architecture baked into every operation
    - Automatic policy ID management and asset naming conventions
    - Built-in datum schema validation preventing malformed metadata
-   - Smart batching: update 1,000 reference NFTs in ~3-5 transactions (vs. 1,000 individually)
+   - Optimized batching: group multiple NFT operations per transaction (within Cardano transaction size limits)
 
 3. **Rule-Based Automation Engine**:
-   - Visual flowchart builder: "IF time > 2024-12-25 THEN update metadata.status = expired"
+   - Configuration-based rules: Define conditions and actions via dashboard or API
    - Trigger sources: blockchain events, time schedules, external oracles, API calls
-   - No smart contract coding required for common patterns
-   - Templates: "Gaming Item Upgrade", "Event Ticket Lifecycle", "Membership Tier"
+   - Example: Schedule metadata updates for specific dates or wallet interactions
+   - Templates: Pre-configured rules for gaming upgrades, ticket lifecycles, membership tiers
 
 4. **Security-First**:
    - Multi-signature support for enterprise collections
@@ -208,7 +208,7 @@ We deliver a comprehensive CIP-68 management platform with dual interfaces - vis
 
 5. **Developer Experience (DX)**:
    - OpenAPI-compliant REST API (Swagger docs)
-   - SDKs: JavaScript/TypeScript, Python (most popular Cardano dev languages)
+   - Comprehensive API documentation with code examples
    - Webhook support: real-time notifications for mints/updates/burns
    - Sandbox environment: test all features with testnet ADA (no risk)
 
@@ -218,11 +218,11 @@ Addressable market of 1,000+ Cardano projects versus <50 with current tools. Eas
 
 ### Content Summary
 
-Proteus delivers four core components working together: (1) No-Code Dashboard for visual collection creation, batch minting, and metadata management without coding; (2) Visual Rule Engine enabling automated metadata updates based on time, blockchain events, or oracle data through drag-and-drop interface; (3) Developer API with REST endpoints, JavaScript/Python SDKs, and webhook integrations for programmatic access; (4) Smart Contract Infrastructure providing reusable, audited Plutus validators handling CIP-68 mint/burn/update operations with multi-signature support.
+Proteus delivers four core components working together: (1) No-Code Dashboard for visual collection creation, batch minting, and metadata management without coding; (2) Rule Automation Engine enabling automated metadata updates based on time, blockchain events, or oracle data through configuration interface; (3) Developer API with REST endpoints and webhook integrations for programmatic access; (4) Smart Contract Infrastructure providing reusable, audited Plutus validators handling CIP-68 mint/burn/update operations with multi-signature support.
 
 Target users span indie game developers building upgradeable in-game assets, NFT artists creating evolving art, event organizers implementing dynamic ticketing, DAO managers deploying membership systems, and enterprise teams building loyalty programs. Each vertical receives tailored templates, documentation, and integration support. Engagement strategy includes interactive onboarding tutorials, pre-built use case templates, comprehensive developer documentation, Discord community support, bi-weekly workshops, and public roadmap voting for feature prioritization.
 
-Platform features include batch operations (mint 10,000 NFTs efficiently), template library (10+ pre-built patterns for gaming, tickets, memberships), real-time analytics dashboard, webhook notifications, sandbox testing environment, and open-source smart contracts for community audit ability. All metadata changes logged on-chain for transparency and compliance requirements.
+Platform features include batch operations (process multiple NFTs per transaction within Cardano limits), template library (10+ pre-built patterns for gaming, tickets, memberships), real-time analytics dashboard, webhook notifications, sandbox testing environment, and open-source smart contracts for community audit ability. All metadata changes logged on-chain for transparency and compliance requirements.
 
 ### Impact
 
@@ -314,7 +314,7 @@ Proteus fills critical infrastructure gap with unique value proposition: only CI
    - Embedded in Catalyst milestone reports
 
 2. **Open-Source Repository**:
-   - GitHub: All smart contracts, SDK code, documentation
+   - GitHub: All smart contracts, API examples, documentation
    - MIT License: Permissive, allows derivative works
    - Weekly development updates via GitHub Discussions
 
@@ -396,7 +396,7 @@ This ensures the Cardano community can independently verify impact and hold the 
 1. **Cardano/Blockchain Development**:
    - 3+ years Cardano ecosystem experience
    - Shipped production smart contracts on mainnet (portfolio available)
-   - Deep knowledge: Plutus, Aiken, Mesh SDK, cardano-cli, Ogmios
+   - Deep knowledge: Plutus, Aiken, cardano-cli, Ogmios, transaction building
    - Contributions to open-source Cardano projects (GitHub verifiable)
 
 2. **Full-Stack Development**:
@@ -513,13 +513,13 @@ This ensures the Cardano community can independently verify impact and hold the 
 
 1. **Proof of Concept**:
    - Built testnet prototype validating core concepts (available for review)
-   - Smart contracts tested with 10,000+ test NFTs
-   - Benchmark: 1,000 NFT batch update in 3 transactions (proof: testnet tx IDs)
+   - Smart contracts tested with multiple NFT collections on testnet
+   - Benchmark: Optimized transaction processing (proof: testnet tx IDs)
 
 2. **Architecture Review**:
    - Design reviewed by senior Cardano developers (references available)
    - Security patterns validated against OWASP/blockchain best practices
-   - Scalability modeling: supports 100,000 NFTs per collection, 10,000 collections
+   - Scalability modeling: supports large NFT collections with queue-based processing
 
 **Resource Feasibility:**
 
@@ -576,7 +576,7 @@ We'll know our approach is working when:
 - Beta testers successfully launch collections without support tickets
 - API integration takes developers <1 day (vs. weeks for custom solutions)
 - Smart contracts pass audit with zero critical vulnerabilities
-- Platform handles 1,000 concurrent users without performance degradation
+- Platform handles multiple concurrent users without performance degradation
 - First 10 projects generate measurable transaction volume on mainnet
 
 ---
@@ -635,7 +635,7 @@ No-Code Dashboard & Metadata Sync Infrastructure
 **B. Milestone Outputs**
 - Web dashboard deployed at testnet.proteus.io (public access)
 - Collection creation wizard (no-code policy generation)
-- Batch minting interface (upload CSV, generate 1,000+ NFTs)
+- Batch minting interface (upload CSV, process NFT queue efficiently)
 - Metadata update interface with preview
 - Off-chain worker service for metadata synchronization
 - IPFS/Arweave integration for metadata storage
@@ -644,7 +644,7 @@ No-Code Dashboard & Metadata Sync Infrastructure
 **C. Acceptance Criteria**
 - Dashboard accessible via web browser, mobile-responsive
 - Non-technical user can create collection and mint 100 NFTs in <30 minutes (user testing)
-- Batch mint: 1,000 NFTs processed in <5 minutes
+- Batch processing: Queue system handles large NFT collections efficiently
 - Metadata sync: Reference NFT updates reflected in indexers within 2 blocks
 - Uptime: 99% availability during testing period
 - User guide: Step-by-step tutorials for all features
@@ -652,7 +652,7 @@ No-Code Dashboard & Metadata Sync Infrastructure
 **D. Evidence of Completion**
 - Public URL: testnet.proteus.io (live demo environment)
 - Video walkthrough: Non-developer creating dynamic NFT collection
-- Test collection: 1,000 demo NFTs minted on testnet with metadata updates demonstrated
+- Test collection: Demo NFTs minted on testnet with metadata updates demonstrated
 - User testing report: 10 beta testers successfully complete tasks
 - GitHub release: Dashboard source code (open-source)
 
@@ -670,7 +670,7 @@ Month 3
 Visual Rule Builder & Automated Metadata Updates
 
 **B. Milestone Outputs**
-- Visual rule engine (flowchart-style interface)
+- Rule configuration interface (form-based automation builder)
 - Trigger system: time-based, event-based, oracle-based
 - Template library: 10 pre-built use cases (gaming, tickets, membership, art, etc.)
 - Automation worker: Monitors chain, executes rules automatically
@@ -678,7 +678,7 @@ Visual Rule Builder & Automated Metadata Updates
 - Analytics dashboard: Transaction history, usage metrics
 
 **C. Acceptance Criteria**
-- User can create "IF-THEN" rules without writing code (user testing: 90% success rate)
+- User can configure conditional rules via form interface (user testing: 90% success rate)
 - Templates work out-of-box: Deploy "Event Ticket" template in <10 minutes
 - Automation reliability: 99.9% of scheduled updates execute within 5 minutes of trigger
 - Webhook delivery: <1 second latency for event notifications
@@ -686,7 +686,7 @@ Visual Rule Builder & Automated Metadata Updates
 - Rule complexity: Support nested conditions (AND, OR logic), multiple actions
 
 **D. Evidence of Completion**
-- Demo video: Creating automated upgrade system for gaming NFTs
+- Demo video: Configuring automated upgrade system for gaming NFTs
 - Test case: 100 NFTs automatically updated based on time trigger (on-chain proof)
 - Template showcase: All 10 templates functional on testnet with examples
 - Beta tester report: 20 users successfully deploy automated rules
@@ -700,34 +700,34 @@ Month 4
 
 ---
 
-## Milestone 4: Developer SDK & Enterprise Features
+## Milestone 4: Production API & Enterprise Features
 
 **A. Milestone Title**
-Production API, SDKs, and Enterprise-Grade Features
+Production API and Enterprise-Grade Features
 
 **B. Milestone Outputs**
 - REST API v1.0 (production-ready, rate-limited, API key management)
-- JavaScript/TypeScript SDK with comprehensive documentation
-- Python SDK with comprehensive documentation
+- Comprehensive API documentation with code examples (JavaScript, Python, etc.)
+- API client libraries and integration guides
 - Supply management: Lock/unlock minting, scheduled releases
 - Multi-signature support for enterprise governance
-- Advanced batch operations: Update 10,000 NFTs in single workflow
+- Advanced batch operations: Queue-based processing for large NFT collections
 - Mainnet preparation: Security audit coordination, optimization
 
 **C. Acceptance Criteria**
 - API documentation: OpenAPI spec, interactive playground (Swagger UI)
-- SDK installation: Available via npm (JS) and pip (Python)
-- Developer onboarding: Sample project deployed in <1 hour (timed testing)
+- Code examples: Available for major languages (JavaScript, Python, curl)
+- Developer onboarding: Sample integration completed in <1 hour (timed testing)
 - Supply management: Lock minting for 100 collections simultaneously without errors
 - Multi-sig: 3-of-5 signature scheme tested with testnet collection
-- Performance: Batch update 10,000 NFTs in <20 transactions
+- Performance: Optimized transaction building within Cardano protocol limits
 - Third-party security audit scheduled (contract signed with auditor)
 
 **D. Evidence of Completion**
-- npm package: `@proteus/sdk-js` (public registry)
-- PyPI package: `proteus-sdk` (public registry)
-- SDK documentation site with code examples, tutorials
-- Demo app: Open-source reference implementation using SDKs (GitHub)
+- API documentation site with interactive playground
+- Code example repository (GitHub) with multiple language samples
+- Integration guide for common frameworks (Next.js, Express, Django, etc.)
+- Demo app: Open-source reference implementation using REST API (GitHub)
 - Performance benchmark report: Batch operation metrics
 - Security audit contract and scope document (published)
 
@@ -814,7 +814,7 @@ Month 6
 **Role:** Backend API, frontend dashboard, off-chain infrastructure
 **Qualifications:**
 - 6+ years full-stack development (Node.js, React, PostgreSQL)
-- 2+ years Web3 (Mesh SDK, Cardano integrations)
+- 2+ years Web3 (Cardano integrations, blockchain APIs)
 - Previous Catalyst-funded project contributor
 **Commitment:** Full-time (40 hrs/week) for 6 months
 **Scope:** API development, dashboard UI/UX, database design, DevOps
@@ -914,13 +914,13 @@ Every role is either filled or has contingency (e.g., if primary auditor unavail
 
 **Frontend Development:** ₳20,000
 - Dashboard UI/UX implementation (React/Next.js): ₳12,000
-- Visual rule engine (flowchart builder): ₳5,000
+- Rule configuration interface: ₳5,000
 - Analytics dashboard: ₳3,000
 
-**SDK Development:** ₳10,000
-- JavaScript/TypeScript SDK: ₳5,000
-- Python SDK: ₳3,000
-- Documentation & examples: ₳2,000
+**API Client Development:** ₳10,000
+- API documentation & examples: ₳4,000
+- Integration guides (multiple languages): ₳4,000
+- Interactive API playground: ₳2,000
 
 **QA & Testing:** ₳5,000
 - Load testing infrastructure: ₳1,500
