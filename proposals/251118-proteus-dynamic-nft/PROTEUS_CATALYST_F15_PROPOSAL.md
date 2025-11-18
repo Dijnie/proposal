@@ -419,42 +419,24 @@ All communication maintains transparency with links to on-chain evidence (transa
 - **Community Reputation**: [Forum posts, Discord presence] - Technical authority
 - **References**: [Testimonials from collaborators] - Trustworthiness
 
-### Fund Management & Accountability
+### Fund Management
 
-**Financial Responsibility:**
+To ensure proper management of Catalyst funds, we commit to:
 
-1. **Budget Breakdown** (detailed in Budget section below):
-   - Clear allocation: development (60%), infrastructure (15%), security (10%), operations (15%)
-   - Milestone-based disbursement aligned with deliverables
-   - Transparent expense tracking (monthly reports)
+**Monthly Budget Reports:**
+Detailed expenditure reports submitted to Catalyst each month, breaking down costs by category (developer salaries, cloud services, third-party tools, security audit). Each report will include line-item expenses with clear justification for budget allocation.
 
-2. **Multi-Signature Treasury**:
-   - Project funds held in multi-sig wallet (3-of-5 signers)
-   - Includes community representative, advisor, technical lead
-   - Prevents unilateral fund access, ensures consensus
+**Auditable Invoices:**
+All third-party service invoices (AWS, Cloudflare, Blockfrost, security auditors) will be documented and made available for Catalyst review. Invoices will be archived in project management system with expense categorization for transparency.
 
-3. **Audit Trail**:
-   - All expenses documented with receipts, invoices
-   - Monthly financial reports published (anonymized sensitive data)
-   - Final close-out report with full accounting
+**Milestone-Based Disbursements:**
+Fund releases tied to verifiable milestone deliverables. Each milestone completion report will include:
+- KPI achievement reports (API uptime, transaction success rates, user metrics)
+- On-chain evidence (TXID lists for testnet/mainnet transactions)
+- GitHub release tags with version-controlled deliverables
+- Video demonstrations of completed features
 
-**Governance:**
-
-4. **Milestone Gates**:
-   - Funds released per completed milestone, not upfront
-   - Community review before each disbursement
-   - Escrow mechanism for disputed milestones
-
-5. **Reporting Cadence**:
-   - **Weekly**: Development updates (GitHub, Discord)
-   - **Monthly**: Progress reports with metrics (Cardano Forum)
-   - **Milestone**: Formal reports with evidence of completion
-   - **Ad-hoc**: Major decisions, pivots, blockers communicated immediately
-
-6. **Community Oversight**:
-   - Public roadmap with transparent priority tracking
-   - Monthly AMAs for Q&A
-   - Open channels for feedback, concerns
+Funds will only be released upon milestone acceptance by Catalyst reviewers, ensuring accountability and delivery verification before payment.
 
 ### Feasibility Validation
 
@@ -509,24 +491,18 @@ All communication maintains transparency with links to on-chain evidence (transa
    - **Market adoption**: Pivot to enterprise B2B if retail adoption slower
    - **Funding shortfall**: Minimal viable product scoped to ₳75K (half budget)
 
-**Validation Steps:**
+### Verification of Approach
 
-We intend to validate our approach through:
+To ensure feasibility, we will:
 
-- **Iterative Development**: Monthly testnet releases, gather feedback, adjust
-- **Beta Testing**: 50-100 early adopters stress-test platform before mainnet
-- **Security Audit**: Third-party audit before mainnet launch (budgeted)
-- **Performance Monitoring**: Real-time metrics, identify bottlenecks early
-- **Community Feedback**: Public roadmap voting ensures building what users need
+**Testnet Validation:**
+Test the platform prototype and CIP-68 smart contracts on Cardano's preprod testnet to confirm performance (transaction speed, metadata update latency) and correctness (CIP-68 standard compliance, datum validation). All testnet smart contract addresses will be publicly verifiable on blockchain explorers.
 
-**Success Indicators:**
+**Open Beta Testing:**
+Conduct open playtests with 50-100 early adopters to validate platform usability, using creator feedback to refine the no-code dashboard and API documentation. Beta testers will deploy real NFT collections on testnet and report issues via GitHub.
 
-We'll know our approach is working when:
-- Beta testers successfully launch collections without support tickets
-- API integration takes developers <1 day (vs. weeks for custom solutions)
-- Smart contracts pass audit with zero critical vulnerabilities
-- Platform handles multiple concurrent users without performance degradation
-- First 10 projects generate measurable transaction volume on mainnet
+**Progress Tracking:**
+Track progress with clear KPIs (API response time, transaction success rate, user completion rates), shared transparently with the community through monthly reports on Cardano Forum and public GitHub project boards. All metrics backed by testnet transaction IDs and observable on-chain data.
 
 ---
 
