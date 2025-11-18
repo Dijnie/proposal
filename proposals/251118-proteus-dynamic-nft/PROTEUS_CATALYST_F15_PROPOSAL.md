@@ -80,10 +80,10 @@ Proteus is the **first comprehensive no-code platform** dedicated to CIP-68 dyna
 
 **Technical Differentiation:**
 
-- Custom Plutus validators optimized for gas efficiency (30-40% lower tx costs vs. generic solutions)
-- Off-chain worker architecture ensures reliable metadata updates even during chain congestion
-- Multi-signature support for enterprise governance
-- Built-in audit trail for all metadata changes with cryptographic proofs
+- Reusable smart contract architecture reducing development overhead for creators
+- Off-chain indexing service for fast metadata queries and real-time updates
+- Multi-signature wallet support for team-managed collections
+- On-chain activity logging for transparency and auditability
 
 **Innovation Impact:** Proteus democratizes dynamic NFTs on Cardano, reducing development time from months (custom smart contracts) to hours (no-code configuration).
 
@@ -91,44 +91,32 @@ Proteus is the **first comprehensive no-code platform** dedicated to CIP-68 dyna
 
 ## Prototype/MVP Demonstration
 
-**Proteus MVP Deliverables (accessible on Cardano testnet):**
+**Proteus MVP: Fully Functional Dynamic NFT Platform on Cardano Mainnet**
 
-### Phase 1 MVP (Months 1-3)
-**Core Minting & Update Engine:**
-- Web dashboard deployed at `testnet.proteus.io` (public access)
-- Functional collection creation with CIP-68 policy generation
-- Single and batch minting capabilities (up to 1,000 NFTs per batch)
-- Manual metadata update interface for reference NFTs
-- API endpoints for mint/update operations (REST API documentation)
-- Testnet smart contracts verified on CardanoScan
+By project completion, the Proteus platform will be live on Cardano mainnet and accessible at `proteus.io`, delivering:
 
-**Demo Use Case: Gaming Item Upgrade**
-- Sample game integration showing weapon NFT evolution (Level 1 → Level 5)
-- Public demo wallet with upgradeable items
-- Video walkthrough demonstrating full workflow
+**Core Platform Features:**
+- **No-Code Dashboard**: Web interface for creating CIP-68 collections, minting NFTs (single or batch up to 10,000), and updating metadata without writing code
+- **Visual Rule Engine**: Drag-and-drop automation builder enabling creators to set conditional metadata updates (time-based, event-based, oracle-based)
+- **Developer API**: Production REST API with comprehensive documentation, JavaScript/Python SDKs, and webhook integrations
+- **Smart Contracts**: Audited Plutus validators deployed on mainnet, handling mint/burn/update operations with multi-signature support
+- **Template Library**: 10+ pre-built templates for common use cases (gaming items, event tickets, membership tiers, evolving art)
 
-### Phase 2 MVP (Months 4-6)
-**Advanced Features:**
-- Rule-based automation engine (visual flowchart builder)
-- Supply management with lock/unlock scheduling
-- Burn engine with ownership validation
-- SDK integration examples (JavaScript, Python)
-- Analytics dashboard showing on-chain metrics
-
-**Community Testing:**
-- Open beta program for 50-100 early adopters
-- Public testnet collection (Proteus Pioneers NFTs) demonstrating all platform capabilities
-- GitHub repository with integration guides
-- Live API playground for developers
+**Demonstration & Accessibility:**
+- **Live Demo Collection**: "Proteus Pioneers" - 1,000 dynamic NFTs on mainnet showcasing all platform capabilities (auto-updates, rules, metadata evolution)
+- **Public API Playground**: Interactive sandbox for developers to test API calls without mainnet deployment
+- **Video Tutorials**: Comprehensive walkthrough series showing non-developers creating dynamic NFT projects in under 30 minutes
+- **Open-Source Repository**: All smart contracts, SDKs, and documentation publicly available on GitHub
+- **Community Access**: Free tier (1,000 NFTs/month) enabling immediate experimentation
 
 **On-Chain Verification:**
-All minted NFTs, metadata updates, and smart contract interactions will be verifiable on Cardano testnet explorer. We'll maintain a public roadmap showing real-time development progress.
+Every feature will be verifiable on Cardano blockchain explorers - users can inspect smart contract code, track minted NFTs, view metadata update transactions, and audit platform activity independently.
 
-**Accessibility:**
-- No wallet connection required to explore platform features (read-only mode)
-- Test ADA provided via faucet for hands-on experimentation
-- Interactive tutorials embedded in dashboard
-- Weekly community demos via Zoom/Discord
+**Testing & Validation:**
+Before mainnet launch, the platform will undergo:
+- 50+ beta testers creating real projects on testnet
+- Third-party security audit (professional firm)
+- 30-day public testnet period with community feedback integration
 
 ---
 
