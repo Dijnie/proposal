@@ -336,106 +336,53 @@ All communication maintains transparency with links to on-chain evidence (transa
 
 ## CAPABILITY & FEASIBILITY
 
-Building on HTlabs' proven track record in Cardano development, Proteus aims to democratize dynamic NFT creation by delivering a production-ready CIP-68 platform that matches Web2 developer experience standards.
+Building on HTlabs' proven Cardano development track record, Proteus delivers production-ready CIP-68 infrastructure matching Web2 developer experience standards.
 
 ### Expertise and Experience
 
-The project leverages HTlabs' deep expertise in Cardano blockchain development and educational initiatives, demonstrated through multiple successful Catalyst-funded projects and production deployments.
+HTlabs demonstrates deep Cardano expertise through multiple successful Catalyst projects and live production deployments:
 
-**HTlabs Proven Track Record:**
+**Key Projects:**
 
-1. **Learning Management System**
-   - Production LMS platform serving Cardano education community
-   - Live at: https://lms.cardano2vn.io
-   - Demonstrates full-stack development capability and production deployment experience
+- **Learning Management System**: Production LMS at https://lms.cardano2vn.io
+- **Free Native Minting Tool (CIP25)**: Live at https://cardano-tool.vercel.app
+- **Complete Aiken Course**: Fund 11 project - https://projectcatalyst.io/funds/11/cardano-open-ecosystem/the-complete-aiken-course-cardano-from-zero-to-expert
+- **Study Guide for Marlowe**: Fund 10 project - https://projectcatalyst.io/funds/10/f10-startups-and-onboarding-for-students/study-guide-for-marlow
+- **Open Source CIP68 Generator**: Fund 12 project - https://projectcatalyst.io/funds/12/cardano-use-cases-concept/open-source-dynamic-assets-tokennft-generator-cip68 (**Direct predecessor validating technical feasibility**)
 
-2. **Free Native Minting Tool (CIP25)**
-   - Public tool enabling free NFT minting on Cardano
-   - Live at: https://cardano-tool.vercel.app
-   - Proves ability to build accessible, user-friendly blockchain tools for non-technical users
-
-3. **Complete Aiken Course - Cardano From Zero to Expert**
-   - Comprehensive smart contract development curriculum
-   - Catalyst Fund 11 approved project
-   - Project page: https://projectcatalyst.io/funds/11/cardano-open-ecosystem/the-complete-aiken-course-cardano-from-zero-to-expert
-   - Demonstrates deep technical knowledge in Cardano smart contract development
-
-4. **Study Guide for Marlowe**
-   - Educational resource for Marlowe smart contracts
-   - Catalyst Fund 10 approved project
-   - Project page: https://projectcatalyst.io/funds/10/f10-startups-and-onboarding-for-students/study-guide-for-marlow
-   - Shows expertise in multiple Cardano smart contract languages
-
-5. **Open Source Dynamic Assets Token/NFT Generator (CIP68)**
-   - Direct predecessor to Proteus project
-   - Catalyst Fund 12 approved project
-   - Project page: https://projectcatalyst.io/funds/12/cardano-use-cases-concept/open-source-dynamic-assets-tokennft-generator-cip68
-   - **Critical evidence**: Team has already built CIP-68 tooling, validating technical feasibility
-
-**Additional HTlabs Projects:**
-- **Cardano App Development Course**: Comprehensive training from basic web development to advanced smart contract interactions
-- **IoT Blockchain Templates**: Five project templates combining blockchain and IoT for rapid Cardano application development
-- **Dualtarget**: DeFi platform with automated trading bots on decentralized exchanges
-- **Cardano Hackathons**: Series of community hackathons driving ecosystem innovation
-- **Vietnam NFT Exchange**: NFT marketplace MVP demonstrating Web3 experience on Cardano
-
-Full portfolio: https://www.htlabs.xyz/projects
+Additional projects include Cardano App Development Course, IoT Blockchain Templates, Dualtarget DeFi platform, Cardano Hackathons, and Vietnam NFT Exchange. Full portfolio: https://www.htlabs.xyz/projects
 
 ### Verification of Approach
 
-To ensure feasibility and production readiness, we will:
-
 **Testnet Validation:**
-Deploy Proteus platform and CIP-68 smart contracts on Cardano's preprod testnet to confirm performance metrics (transaction latency, throughput, gas optimization) and CIP-68 standard compliance. All smart contract addresses will be publicly verifiable on blockchain explorers (CardanoScan, Cexplorer).
+Deploy platform and smart contracts on preprod testnet confirming performance (latency, throughput, gas optimization) and CIP-68 compliance. All contracts publicly verifiable on blockchain explorers.
 
 **Open Beta Testing:**
-Conduct structured beta program with 50-100 early adopters creating real NFT collections on testnet. Collect quantitative metrics (task completion rates, time-to-mint, error rates) and qualitative feedback to refine dashboard UX and API documentation. Beta participants report issues via public GitHub repository.
+50-100 early adopters creating testnet collections, providing quantitative metrics (completion rates, error rates) and feedback to refine UX/documentation. Issues tracked via public GitHub.
 
-**Progress Tracking with Clear KPIs:**
-Track and publish progress transparently with measurable KPIs:
-- **Performance**: API response time <200ms, transaction success rate >99%, platform uptime >99.5%
-- **Usability**: Non-technical users mint first NFT in <30 minutes, beta task completion rate >90%
-- **Adoption**: API registrations, active projects, on-chain transactions (TXID lists)
-
-Monthly progress reports published on Cardano Forum and GitHub with on-chain evidence, ensuring full community visibility and accountability.
+**Progress Tracking:**
+Transparent KPI reporting: API response <200ms, transaction success >99%, uptime >99.5%, user mint time <30min, beta completion >90%. Monthly reports on Cardano Forum/GitHub with on-chain evidence (TXIDs).
 
 ### Fund Management
 
-To ensure proper stewardship of Catalyst funds, we commit to:
-
 **Monthly Budget Reports:**
-Detailed expenditure reports submitted to Catalyst each month, breaking down costs by category (developer salaries, cloud services, infrastructure, security audit). Each report includes line-item expenses with clear justification for budget allocation and variance analysis.
+Detailed expenditure breakdowns by category (salaries, cloud services, audit) with line-item justification submitted to Catalyst monthly.
 
 **Auditable Invoices:**
-All third-party service invoices (AWS, Cloudflare, Blockfrost, security auditors) documented and archived for Catalyst review. Invoices categorized by expense type with supporting documentation ensuring full transparency and auditability.
+All third-party invoices (AWS, Cloudflare, Blockfrost, auditors) documented and archived for Catalyst review with full categorization.
 
 **Milestone-Based Disbursements:**
-Fund releases tied strictly to verifiable deliverables. Each milestone completion report includes:
-- **KPI Achievement Reports**: API uptime metrics, transaction success rates, user adoption statistics
-- **On-Chain Evidence**: TXID lists for testnet/mainnet smart contract deployments
-- **GitHub Release Tags**: Version-controlled code with comprehensive changelogs
-- **Video Demonstrations**: Functional demos of completed features
-
-Funds released only upon milestone acceptance by Catalyst reviewers, ensuring accountability and delivery verification before payment.
+Funds released only upon verified deliverables: KPI reports, on-chain evidence (TXID lists), GitHub releases, video demonstrations. Payment after Catalyst reviewer acceptance.
 
 ### Why We're Best Suited
 
-HTlabs' unique combination of proven Catalyst delivery, CIP-68 expertise, and educational leadership positions us to execute Proteus successfully.
+**Proven Catalyst Delivery:** Successful completion of Fund 10, 11, 12 projects demonstrates milestone management and accountability.
 
-**Proven Catalyst Delivery:**
-Multiple successful Catalyst-funded projects completed and delivered (Fund 10, Fund 11, Fund 12), demonstrating our ability to manage milestone-based funding, deliver on commitments, and maintain community accountability.
+**CIP-68 Expertise:** Fund 12 CIP68 Generator project means core challenges already solved—we're productizing proven technology, not experimenting.
 
-**CIP-68 Expertise:**
-Our Fund 12 "Open Source Dynamic Assets Token/NFT Generator (CIP68)" project means we've already solved core technical challenges for Proteus. We're not starting from zero—we're productizing and scaling proven technology.
+**Full-Stack Capability:** Portfolio spans smart contracts (Aiken, Marlowe, Plutus), web development (LMS, tools), and production infrastructure—delivering complete integrated systems.
 
-**Educational Impact:**
-Our educational projects (Aiken Course, Marlowe Guide, App Development Course) show commitment to ecosystem growth beyond individual products. Proteus documentation and tutorials will leverage this pedagogical expertise, ensuring accessibility for non-developers.
-
-**Full-Stack Capability:**
-Portfolio spanning smart contracts (Aiken, Marlowe, Plutus), full-stack web development (LMS, NFT tools), and production infrastructure demonstrates we can deliver complete platform—not just contracts or just UI, but integrated production system.
-
-**Community Trust:**
-Transparent updates, open-source contributions, and consistent delivery across multiple projects establishes credibility. Community can verify our track record through live products and Catalyst reporting history.
+**Community Trust:** Transparent reporting, open-source contributions, and consistent delivery across multiple projects. Track record verifiable through live products and Catalyst history.
 
 ---
 
