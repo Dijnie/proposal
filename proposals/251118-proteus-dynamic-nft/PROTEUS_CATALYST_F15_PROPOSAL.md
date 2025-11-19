@@ -391,13 +391,50 @@ Funds released only upon verified deliverables: KPI reports, on-chain evidence (
 ## Milestone Overview
 
 **Total Project Duration:** 6 months
-**Total Milestones:** 5 (including final milestone with close-out report)
+**Total Milestones:** 6 (including final milestone with close-out report)
 
-Grant amount: ₳150,000 requires **at least 4 milestones + final milestone = 5 total**
+Grant amount: ₳150,000 requires **at least 5 milestones + final milestone = 6 total**
 
 ---
 
-## Milestone 1: Smart Contract Development
+## Milestone 1: Project Planning & Architecture Design
+
+**Milestone Title**
+User Research, Architecture & UI/UX Design
+
+**Milestone Outputs**
+- Conduct user surveys and requirements gathering (minimum 20 surveys)
+- Define system architecture and component design
+- UI/UX design for dashboard and user interfaces
+- Define team structure and working schedule
+- Technical specification documentation
+- Project management (organizing and controlling resources, tasks)
+
+**Acceptance Criteria**
+- Survey report includes data from minimum 20 participants providing insights into user needs
+- Architecture design document details system components and their interactions
+- UI/UX design covers all major user flows (collection creation, minting, metadata updates)
+- Team structure document defines roles, responsibilities, and working schedule
+- Technical specification includes database schema, API structure, smart contract architecture
+- All design documents reviewed and approved
+
+**Evidence of Milestone Completion**
+We will upload these below documents to GitHub for public access:
+
+- Survey output and findings report (minimum 20 surveys)
+- System architecture design document
+- UI/UX design mockups and user flow diagrams
+- Team structure and working schedule document
+- Technical specification document
+- Database schema and API structure documentation
+
+**Delivery Month:** Month 1
+
+**Cost:** ₳15,000 (10%)
+
+---
+
+## Milestone 2: Smart Contract Development
 
 **Milestone Title**
 CIP-68 Smart Contract Development & Deployment
@@ -428,13 +465,13 @@ We will upload these below documents/code to GitHub for public access:
 - Internal security audit report
 - Smart contract integration documentation
 
-**Delivery Month:** Month 1
+**Delivery Month:** Month 2
 
 **Cost:** ₳30,000 (20%)
 
 ---
 
-## Milestone 2: Backend API Development
+## Milestone 3: Backend API Development
 
 **Milestone Title**
 REST API & Backend Infrastructure
@@ -467,13 +504,13 @@ We will upload these below documents/code to GitHub for public access:
 - Load test report showing performance metrics
 - Video demonstration of API usage for NFT operations
 
-**Delivery Month:** Month 2
+**Delivery Month:** Month 3
 
-**Cost:** ₳37,500 (25%)
+**Cost:** ₳30,000 (20%)
 
 ---
 
-## Milestone 3: Dashboard & User Interface
+## Milestone 4: Dashboard & User Interface
 
 **Milestone Title**
 No-Code Dashboard & User Interface Development
@@ -509,11 +546,11 @@ We will upload these below documents/code/video to GitHub for public access:
 
 **Delivery Month:** Month 4
 
-**Cost:** ₳45,000 (30%)
+**Cost:** ₳37,500 (25%)
 
 ---
 
-## Milestone 4: Testing & Security Audit
+## Milestone 5: Testing & Security Audit
 
 **Milestone Title**
 Comprehensive Testing, Bug Bounty & Security Audit
@@ -554,7 +591,7 @@ We will upload these below documents/code/video to GitHub for public access:
 
 ---
 
-## Milestone 5: Mainnet Launch & Project Close-Out
+## Milestone 6: Mainnet Launch & Project Close-Out
 
 **Milestone Title**
 Mainnet Deployment & Project Close-Out
