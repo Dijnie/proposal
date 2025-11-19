@@ -397,150 +397,156 @@ Grant amount: ₳150,000 requires **at least 4 milestones + final milestone = 5 
 
 ---
 
-## Milestone 1: Foundation & Smart Contracts
+## Milestone 1: Smart Contract Development
 
 **Milestone Title**
-Core Infrastructure & CIP-68 Smart Contracts
+CIP-68 Smart Contract Development & Deployment
 
 **Milestone Outputs**
-- Develop CIP-68 smart contracts for minting, burning, metadata updates
-- Backend API foundation (authentication, database schema, transaction builder)
-- Deploy smart contracts on Cardano testnet
-- Developer documentation for smart contract interactions
-- CI/CD pipeline for automated testing and deployment
+- Design CIP-68 smart contract specifications for minting, burning, metadata updates
+- Develop Plutus/Aiken smart contracts with reference NFT and user token architecture
+- Implement property-based testing and formal verification
+- Deploy smart contracts on Cardano preprod testnet
+- Smart contract security audit (internal)
+- Smart contract documentation and integration guides
 - Project management (organizing and controlling resources, tasks)
 
 **Acceptance Criteria**
-- Smart contracts deployed on Cardano testnet with verified source code on CardanoScan
+- Smart contracts deployed on preprod testnet with verified source code on CardanoScan
 - 100% test coverage on critical contract paths using property-based testing
-- API endpoints functional for mint, burn, update operations (Postman collection provided)
-- Load testing passes: Handle 100 concurrent mint requests without errors
+- Smart contracts handle mint, burn, and metadata update operations correctly
 - Internal security audit completed with zero critical vulnerabilities
-- Documentation includes smart contract specifications, API reference (Swagger), integration guide
+- Documentation includes contract specifications, datum/redeemer schemas, integration examples
+- All test cases pass successfully on testnet
 
 **Evidence of Milestone Completion**
 We will upload these below documents/code to GitHub for public access:
 
+- Smart contract specification design document
 - Testnet smart contract addresses (publicly verifiable on CardanoScan)
-- GitHub repository with smart contract source code, tests, documentation
-- Video demonstration of end-to-end minting flow using API
-- Load test report showing performance metrics
+- GitHub repository with smart contract source code and comprehensive tests
 - Internal security audit report
+- Smart contract integration documentation
 
-**Delivery Month:** Month 2 (from project start)
-
-**Cost:** ₳45,000 (30%)
-
----
-
-## Milestone 2: Creator Dashboard & Metadata Management
-
-**Milestone Title**
-No-Code Dashboard & Metadata Sync Infrastructure
-
-**Milestone Outputs**
-- Web dashboard development and deployment at testnet.proteus.io
-- Collection creation wizard (no-code policy generation)
-- Batch minting interface (CSV upload, NFT queue processing)
-- Metadata update interface with preview functionality
-- Off-chain worker service for metadata synchronization
-- IPFS/Arweave integration for metadata storage
-- User authentication and project management system
-- Project management (organizing and controlling resources, tasks)
-
-**Acceptance Criteria**
-- Dashboard accessible via web browser with mobile-responsive design
-- Non-technical user can create collection and mint 100 NFTs in <30 minutes (user testing validation)
-- Batch processing queue system handles large NFT collections efficiently
-- Metadata sync: Reference NFT updates reflected in indexers within 2 blocks
-- Platform uptime: 99% availability during testing period
-- User guide covers all features with step-by-step tutorials
-
-**Evidence of Milestone Completion**
-We will upload these below documents/code/video to GitHub for public access:
-
-- Public URL: testnet.proteus.io (live demo environment)
-- Video walkthrough showing non-developer creating dynamic NFT collection
-- Test collection: Demo NFTs minted on testnet with metadata update demonstrations
-- User testing report from 10 beta testers successfully completing tasks
-- GitHub release with dashboard source code (open-source)
-
-**Delivery Month:** Month 3
-
-**Cost:** ₳37,500 (25%)
-
----
-
-## Milestone 3: Rule Engine & Automation
-
-**Milestone Title**
-Visual Rule Builder & Automated Metadata Updates
-
-**Milestone Outputs**
-- Rule configuration interface (form-based automation builder)
-- Trigger system implementation: time-based, event-based, oracle-based
-- Template library: 10 pre-built use cases (gaming, tickets, membership, art)
-- Automation worker: Chain monitoring and automatic rule execution
-- Webhook system: Real-time notifications for mint/burn/update events
-- Analytics dashboard: Transaction history, usage metrics
-- Project management (organizing and controlling resources, tasks)
-
-**Acceptance Criteria**
-- User can configure conditional rules via form interface (user testing: 90% success rate)
-- Templates work out-of-box: Deploy "Event Ticket" template in <10 minutes
-- Automation reliability: 99.9% of scheduled updates execute within 5 minutes of trigger
-- Webhook delivery latency: <1 second for event notifications
-- Analytics dashboard updates real-time metrics every minute
-- Rule engine supports nested conditions (AND, OR logic) and multiple actions
-
-**Evidence of Milestone Completion**
-We will upload these below documents/code/video to GitHub for public access:
-
-- Demo video showing automated upgrade system configuration for gaming NFTs
-- Test case: 100 NFTs automatically updated based on time trigger (on-chain transaction proof)
-- Template showcase: All 10 templates functional on testnet with working examples
-- Beta tester report from 20 users successfully deploying automated rules
-- GitHub repository: Rule engine source code and template repository
-
-**Delivery Month:** Month 4
+**Delivery Month:** Month 1
 
 **Cost:** ₳30,000 (20%)
 
 ---
 
-## Milestone 4: Production API & Enterprise Features
+## Milestone 2: Backend API Development
 
 **Milestone Title**
-Production API and Enterprise-Grade Features
+REST API & Backend Infrastructure
 
 **Milestone Outputs**
-- REST API v1.0 (production-ready with rate limiting and API key management)
-- Comprehensive API documentation with code examples (JavaScript, Python, curl)
-- API client libraries and integration guides
-- Supply management features: Lock/unlock minting, scheduled releases
-- Multi-signature support for enterprise governance
-- Advanced batch operations: Queue-based processing for large collections
-- Security audit coordination and performance optimization
+- Backend architecture design and database schema
+- REST API development (authentication, rate limiting, API key management)
+- Transaction builder service integrating with smart contracts
+- Metadata indexing service with IPFS/Arweave integration
+- API documentation with OpenAPI specification
+- API testing suite and performance optimization
 - Project management (organizing and controlling resources, tasks)
 
 **Acceptance Criteria**
+- REST API endpoints functional for mint, burn, update operations
 - API documentation includes OpenAPI spec and interactive playground (Swagger UI)
+- Authentication system supports API key management and rate limiting
+- Transaction builder successfully creates and submits valid Cardano transactions
+- Metadata indexing service syncs reference NFT updates within 2 blocks
+- Load testing passes: Handle 100 concurrent requests without errors
 - Code examples available for major languages (JavaScript, Python, curl)
-- Developer onboarding: Sample integration completed in <1 hour (timed testing)
-- Supply management: Lock minting for 100 collections simultaneously without errors
-- Multi-sig implementation: 3-of-5 signature scheme tested with testnet collection
-- Performance: Transaction building optimized within Cardano protocol limits
-- Third-party security audit scheduled (contract signed with auditor)
+
+**Evidence of Milestone Completion**
+We will upload these below documents/code to GitHub for public access:
+
+- Backend architecture and database schema documentation
+- GitHub repository with backend API source code
+- API documentation site with interactive playground (live URL)
+- Code example repository with multiple language samples
+- Load test report showing performance metrics
+- Video demonstration of API usage for NFT operations
+
+**Delivery Month:** Month 2
+
+**Cost:** ₳37,500 (25%)
+
+---
+
+## Milestone 3: Dashboard & User Interface
+
+**Milestone Title**
+No-Code Dashboard & User Interface Development
+
+**Milestone Outputs**
+- Dashboard UI/UX design and prototyping
+- Web dashboard development with collection creation wizard
+- Batch minting interface (CSV upload, queue processing)
+- Metadata update interface with preview functionality
+- Rule configuration interface (automation builder)
+- Template library: 10 pre-built use cases (gaming, tickets, membership, art)
+- User authentication and project management interface
+- Project management (organizing and controlling resources, tasks)
+
+**Acceptance Criteria**
+- Dashboard accessible via web browser with mobile-responsive design
+- Non-technical user can create collection and mint 100 NFTs in <30 minutes (user testing)
+- Batch processing queue system handles large NFT collections efficiently
+- Rule configuration interface supports conditional logic (AND, OR) and multiple triggers
+- Templates work out-of-box: Deploy any template in <10 minutes
+- User guide covers all dashboard features with step-by-step tutorials
+- Platform uptime: 99% availability during testing period
 
 **Evidence of Milestone Completion**
 We will upload these below documents/code/video to GitHub for public access:
 
-- API documentation site with interactive playground (live URL)
-- Code example repository with multiple language samples
-- Integration guides for common frameworks (Next.js, Express, Django)
-- Demo application: Open-source reference implementation using REST API
-- Performance benchmark report with batch operation metrics
-- Security audit contract and scope document
+- Public URL: testnet.proteus.io (live demo environment)
+- GitHub release with dashboard source code (open-source)
+- Video walkthrough showing non-developer creating dynamic NFT collection
+- Template showcase: All 10 templates functional on testnet
+- User guide documentation covering all features
+- UI/UX design documentation
+
+**Delivery Month:** Month 4
+
+**Cost:** ₳45,000 (30%)
+
+---
+
+## Milestone 4: Testing & Security Audit
+
+**Milestone Title**
+Comprehensive Testing, Bug Bounty & Security Audit
+
+**Milestone Outputs**
+- Deploy pilot version on preprod testnet
+- Conduct open beta testing program (50-100 participants)
+- Run bug bounty program
+- Third-party security audit (professional audit firm)
+- Performance testing and optimization
+- User acceptance testing (UAT)
+- Address feedback and vulnerabilities
+- Project management (organizing and controlling resources, tasks)
+
+**Acceptance Criteria**
+- Pilot version deployed on preprod testnet with all features functional
+- Beta testing program has minimum 50 participants creating real NFT collections
+- Bug bounty program has minimum 10 participants with documented findings
+- Third-party security audit completed with published report (no critical vulnerabilities)
+- All UAT test cases pass successfully
+- User feedback collected and critical issues addressed
+- Performance benchmarks met: API <200ms response, >99% transaction success rate
+
+**Evidence of Milestone Completion**
+We will upload these below documents/code/video to GitHub for public access:
+
+- Testnet pilot URL (publicly accessible)
+- Beta testing report with participant feedback and metrics
+- Bug bounty program report with findings and resolutions
+- Third-party security audit report (PDF)
+- UAT test case documentation and results
+- Performance benchmark report
+- GitHub pull requests addressing identified issues
 
 **Delivery Month:** Month 5
 
@@ -551,40 +557,41 @@ We will upload these below documents/code/video to GitHub for public access:
 ## Milestone 5: Mainnet Launch & Project Close-Out
 
 **Milestone Title**
-Mainnet Deployment, Security Audit, Community Documentation & Project Close-Out
+Mainnet Deployment & Project Close-Out
 
 **Milestone Outputs**
-- Mainnet smart contract deployment (audited and verified)
-- Platform launch at proteus.io (production environment)
-- Security audit report (third-party professional audit)
-- Comprehensive documentation: User guides, developer docs, video tutorials
-- Community resources: Discord server, support portal, FAQ
+- Deploy smart contracts on Cardano mainnet
+- Launch production platform at proteus.io
+- Comprehensive documentation (user guides, developer docs, video tutorials)
+- Community resources setup (Discord, support portal, FAQ)
+- Marketing campaign and launch announcements
 - Project management (organizing and controlling resources, tasks)
 - Final close-out report
 - Final closeout video
 
 **Acceptance Criteria**
-- Mainnet contracts deployed with zero critical vulnerabilities (audit passed)
+- Mainnet smart contracts deployed with zero critical vulnerabilities
 - Production platform uptime: 99.5% over 30-day period
-- Security audit: Published report from reputable firm with no critical issues
 - Documentation completeness: 100% of features documented with examples
 - Community launch: 100+ registered users within first month
+- Launch announcements published on Cardano Forum, Essential Cardano, social media
 - Final closeout report is publicly available
-- Final closeout video is publicly available
-- Impact metrics: All success KPIs tracked and reported
+- Final closeout video is publicly available (3-5 minutes)
+- Impact metrics tracked: transactions, users, projects, on-chain activity
 
 **Evidence of Milestone Completion**
 We will upload these below documents/code/video to GitHub for public access:
 
 - Mainnet smart contract addresses (CardanoScan verified)
 - Production URL: proteus.io (publicly accessible)
-- Security audit report (PDF published on website and GitHub)
 - Documentation hub: docs.proteus.io (live site)
-- Launch announcement links: Cardano Forum, Essential Cardano, social media
-- Link to final closeout report
-- Link to final closeout video
+- Video tutorials covering all platform features
+- Community resource links (Discord, support portal)
+- Launch announcement links (Cardano Forum, Essential Cardano, social media)
 - Metrics dashboard URL: proteus.io/impact (public real-time data)
 - GitHub release: v1.0.0 tagged with full source code
+- Link to final closeout report
+- Link to final closeout video
 
 **Delivery Month:** Month 6
 
