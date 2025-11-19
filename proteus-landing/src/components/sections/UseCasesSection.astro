@@ -1,0 +1,43 @@
+---
+import UseCaseCard from '../cards/UseCaseCard.astro';
+---
+
+<section id="use-cases" class="relative py-20 animate-on-scroll">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="text-center mb-16">
+      <h2 class="text-4xl sm:text-5xl font-bold text-white mb-4">
+        Real-World Use Cases
+      </h2>
+      <p class="text-xl text-slate-300 max-w-3xl mx-auto">
+        From gaming to ticketing, Proteus unlocks new markets for Cardano.
+      </p>
+    </div>
+
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+      <UseCaseCard
+        title="Gaming"
+        description="Upgradeable in-game items, character evolution, achievement tracking. Items level up as players progress."
+        example="Dragon sword: Level 1 → Level 10 (auto-updates on quest completion)"
+        gradient="from-orange-500/20 to-red-600/10"
+      />
+      <UseCaseCard
+        title="Event Ticketing"
+        description="Dynamic status updates (Valid → Used → Expired), access control, proof of attendance NFTs."
+        example="Concert ticket: Valid (before event) → Used (scanned) → Collectible"
+        gradient="from-purple-500/20 to-pink-600/10"
+      />
+      <UseCaseCard
+        title="Memberships"
+        description="Tier upgrades, expiration tracking, benefits management. Automatically update member levels."
+        example="DAO membership: Bronze → Silver → Gold (based on contribution)"
+        gradient="from-cyan-500/20 to-blue-600/10"
+      />
+      <UseCaseCard
+        title="Evolving Art"
+        description="Time-based reveals, market-driven transformations, collaborative narratives. Art that changes with the world."
+        example="Portrait ages over time: Young → Mature → Elder (metadata updates monthly)"
+        gradient="from-green-500/20 to-teal-600/10"
+      />
+    </div>
+  </div>
+</section>

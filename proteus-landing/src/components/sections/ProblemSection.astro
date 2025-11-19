@@ -1,0 +1,40 @@
+---
+import ProblemCard from '../cards/ProblemCard.astro';
+---
+
+<section id="problem" class="relative py-20 animate-on-scroll">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="text-center mb-16">
+      <h2 class="text-4xl sm:text-5xl font-bold text-white mb-4">
+        The Problem
+      </h2>
+      <p class="text-xl text-slate-300 max-w-3xl mx-auto">
+        Cardano has superior technology for dynamic NFTs, but 95% of creators can't access it.
+      </p>
+    </div>
+
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+      <ProblemCard
+        icon="code"
+        title="Technical Complexity"
+        description="Implementing CIP-68 requires months of Plutus expertise, UTXO model knowledge, and smart contract development skills."
+        stat="6 months"
+        statLabel="Average learning time"
+      />
+      <ProblemCard
+        icon="puzzle"
+        title="Fragmented Tooling"
+        description="Existing solutions only address pieces—NMKR for static NFTs, Mesh for transactions. No unified platform."
+        stat="$100K+"
+        statLabel="Custom development cost"
+      />
+      <ProblemCard
+        icon="lock"
+        title="CIP-25 Lock-in"
+        description="Most platforms only support static metadata. Gaming, ticketing, memberships impossible."
+        stat="<1%"
+        statLabel="CIP-68 adoption rate"
+      />
+    </div>
+  </div>
+</section>

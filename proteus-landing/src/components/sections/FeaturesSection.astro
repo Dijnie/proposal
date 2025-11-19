@@ -1,0 +1,49 @@
+---
+import FeatureCard from '../cards/FeatureCard.astro';
+---
+
+<section id="features" class="relative py-20 animate-on-scroll">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="text-center mb-16">
+      <h2 class="text-4xl sm:text-5xl font-bold text-white mb-4">
+        Core Features
+      </h2>
+      <p class="text-xl text-slate-300 max-w-3xl mx-auto">
+        Everything you need to create, manage, and automate dynamic NFTs on Cardano.
+      </p>
+    </div>
+
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+      <FeatureCard
+        icon="layers"
+        title="Batch Operations"
+        description="Process multiple NFTs per transaction. Mint, update, or burn thousands efficiently within Cardano limits."
+      />
+      <FeatureCard
+        icon="zap"
+        title="Rule Automation"
+        description="Configure automated metadata updates based on time, blockchain events, or external oracles. No coding required."
+      />
+      <FeatureCard
+        icon="book-open"
+        title="Template Library"
+        description="10+ pre-built templates for gaming items, event tickets, memberships, evolving art. Deploy in minutes."
+      />
+      <FeatureCard
+        icon="shield-check"
+        title="Supply Control"
+        description="Granular mint/burn policies with time-locks, condition-based releases, and multi-signature governance."
+      />
+      <FeatureCard
+        icon="bar-chart-3"
+        title="Analytics Dashboard"
+        description="Real-time on-chain metrics, transaction history, usage analytics. All data blockchain-verifiable."
+      />
+      <FeatureCard
+        icon="users"
+        title="Multi-Signature"
+        description="Team-managed collections with role-based permissions. Perfect for DAOs and enterprise projects."
+      />
+    </div>
+  </div>
+</section>

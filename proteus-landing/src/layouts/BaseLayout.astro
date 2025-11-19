@@ -1,0 +1,45 @@
+---
+import '../styles/global.css';
+const { title = 'Proteus - Dynamic NFT Platform' } = Astro.props;
+---
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>{title}</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet" />
+
+  <meta name="description" content="Dynamic NFTs on Cardano. No Smart Contracts Required." />
+</head>
+<body class="bg-black text-slate-100 antialiased">
+  <div class="unicorn-stack fixed unicorn-mask top-0 right-0 bottom-0 left-0">
+    <div class="absolute inset-0" data-us-project="VaqT3bxlc2sugR8faApF"></div>
+  </div>
+
+  <script is:inline>
+    (function () {
+      if (!window.UnicornStudio) {
+        var s = document.createElement("script");
+        s.src = "https://cdn.jsdelivr.net/gh/hiunicornstudio/unicornstudio.js@v1.4.29/dist/unicornStudio.umd.js";
+        s.async = true;
+        s.onload = function () {
+          if (window.UnicornStudio && !window.UnicornStudio.isInitialized) {
+            UnicornStudio.init();
+            window.UnicornStudio.isInitialized = true;
+          }
+        };
+        (document.head || document.body).appendChild(s);
+      }
+    })();
+  </script>
+
+  <slot />
+
+  <script src="../scripts/scroll-animations.js"></script>
+</body>
+</html>

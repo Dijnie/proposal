@@ -1,0 +1,38 @@
+---
+import Button from '../Button.astro';
+---
+
+<section class="relative py-32 overflow-hidden">
+  <div class="absolute inset-0 bg-gradient-to-b from-transparent via-cyan-500/10 to-transparent"></div>
+  <div class="absolute inset-0 flex justify-center items-center">
+    <div class="h-96 w-96 bg-cyan-500/20 rounded-full blur-3xl"></div>
+  </div>
+
+  <div class="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+    <h2 class="text-5xl sm:text-6xl font-bold text-white mb-6">
+      Ready to Build?
+    </h2>
+    <p class="text-xl text-slate-300 max-w-2xl mx-auto mb-12">
+      Start creating dynamic NFTs on Cardano today. No smart contracts, no barriers—just build.
+    </p>
+
+    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 max-w-5xl mx-auto">
+      <Button variant="primary" href="#testnet">
+        Try Testnet
+      </Button>
+      <Button variant="secondary" href="#solution">
+        View Docs
+      </Button>
+      <Button variant="secondary" href="https://discord.gg/proteus">
+        Join Discord
+      </Button>
+      <Button variant="secondary" href="#impact">
+        Support Proposal
+      </Button>
+    </div>
+
+    <p class="text-sm text-slate-400 mt-8">
+      🚀 Mainnet launch Q2 2025 • Catalyst voting ends Dec 2025
+    </p>
+  </div>
+</section>

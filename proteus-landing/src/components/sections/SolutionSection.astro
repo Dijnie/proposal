@@ -1,0 +1,49 @@
+---
+import CodeSnippet from '../CodeSnippet.jsx';
+---
+
+<section id="solution" class="relative py-20 animate-on-scroll">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="text-center mb-16">
+      <h2 class="text-4xl sm:text-5xl font-bold text-white mb-4">
+        The Solution
+      </h2>
+      <p class="text-xl text-slate-300 max-w-3xl mx-auto">
+        Proteus makes dynamic NFTs accessible with dual interfaces: no-code dashboard for creators, powerful API for developers.
+      </p>
+    </div>
+
+    <div class="grid grid-cols-1 lg:grid-cols-2 gap-8">
+      <div class="bg-white/5 backdrop-blur border border-white/10 rounded-2xl p-8">
+        <h3 class="text-2xl font-semibold text-white mb-4">No-Code Dashboard</h3>
+        <p class="text-slate-300 mb-6">
+          Visual collection creator, drag-drop rule builder, batch mint 10,000 NFTs in minutes. No smart contract coding required.
+        </p>
+
+        <div class="space-y-3">
+          <div class="flex items-center gap-3 text-sm text-slate-300">
+            <div class="w-8 h-8 bg-cyan-500/20 rounded-full flex items-center justify-center text-cyan-400 font-semibold">1</div>
+            <span>Create collection (set policy, metadata schema)</span>
+          </div>
+          <div class="flex items-center gap-3 text-sm text-slate-300">
+            <div class="w-8 h-8 bg-cyan-500/20 rounded-full flex items-center justify-center text-cyan-400 font-semibold">2</div>
+            <span>Configure rules (time-based, event-based updates)</span>
+          </div>
+          <div class="flex items-center gap-3 text-sm text-slate-300">
+            <div class="w-8 h-8 bg-cyan-500/20 rounded-full flex items-center justify-center text-cyan-400 font-semibold">3</div>
+            <span>Batch mint (10K NFTs in single transaction)</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="bg-white/5 backdrop-blur border border-white/10 rounded-2xl p-8">
+        <h3 class="text-2xl font-semibold text-white mb-4">Developer API</h3>
+        <p class="text-slate-300 mb-6">
+          REST API with comprehensive docs, webhook integrations, pre-audited smart contracts. 80% faster than custom implementation.
+        </p>
+
+        <CodeSnippet client:visible />
+      </div>
+    </div>
+  </div>
+</section>

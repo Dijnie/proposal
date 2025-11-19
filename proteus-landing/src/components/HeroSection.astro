@@ -1,0 +1,56 @@
+---
+import FloatingLabel from './FloatingLabel.astro';
+import Button from './Button.astro';
+---
+
+<section class="relative pt-16 pb-20 sm:pt-24 sm:pb-28 lg:pt-40 animate-fade-slide-in">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="relative">
+      <div class="relative pointer-events-none select-none">
+        <FloatingLabel
+          text="CIP-68 Native"
+          position="left-[55%] -translate-x-1/2 -translate-y-8 -top-12 sm:-top-16"
+          animationClass="float-chip-1"
+        />
+        <FloatingLabel
+          text="No Code Required"
+          position="hidden md:block top-12 right-[2%] translate-x-8 translate-y-12"
+          animationClass="float-chip-2"
+        />
+        <FloatingLabel
+          text="10K NFTs/min"
+          position="hidden sm:block left-[10%] bottom-6"
+          animationClass="float-chip-3"
+        />
+      </div>
+
+      <div class="text-center">
+        <h1 class="text-4xl sm:text-6xl md:text-7xl font-semibold text-white tracking-tight max-w-5xl mx-auto">
+          <span class="text-white/95">Dynamic NFTs Require </span>
+          <span class="inline-block relative">
+            <span class="absolute -inset-1 rounded-md blur-2xl bg-cyan-500/30"></span>
+            <span class="relative px-2">Smart Contracts.</span>
+          </span>
+          <span class="text-white/95"> Proteus Doesn't.</span>
+        </h1>
+
+        <p class="text-lg text-slate-300 max-w-2xl mx-auto mt-6 leading-relaxed">
+          Build gaming items, event tickets, and membership systems on Cardano—no Plutus expertise required. From concept to 10,000 NFTs in minutes.
+        </p>
+
+        <div class="flex flex-col sm:flex-row gap-4 mt-10 items-center justify-center">
+          <Button variant="primary" href="#testnet">
+            Try Free on Testnet
+          </Button>
+          <Button variant="secondary" href="#demo">
+            Watch Demo
+          </Button>
+        </div>
+      </div>
+
+      <div class="pointer-events-none absolute inset-x-0 -z-10 top-24 flex justify-center">
+        <div class="h-72 w-[80%] max-w-4xl rounded-full bg-gradient-to-b from-indigo-500/20 to-transparent blur-3xl"></div>
+      </div>
+    </div>
+  </div>
+</section>

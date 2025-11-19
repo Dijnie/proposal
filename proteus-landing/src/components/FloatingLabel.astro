@@ -1,0 +1,10 @@
+---
+const { text, position, animationClass = 'float-chip-1' } = Astro.props;
+---
+
+<span class={`float-cursor ${position} ${animationClass} absolute select-none pointer-events-none`}>
+  <span class="block whitespace-nowrap text-xs font-medium text-black bg-white ring-black/5 ring-1 rounded-lg px-3 py-1.5 shadow-[0_4px_20px_rgba(255,255,255,0.4)]">
+    {text}
+  </span>
+  <span class="block mx-auto w-2 h-2 bg-white rotate-45 -mt-1 rounded-sm"></span>
+</span>

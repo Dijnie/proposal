@@ -1,0 +1,75 @@
+@import "tailwindcss";
+
+@keyframes float-cursor {
+  0%, 100% { transform: translate(0, 0); }
+  50% { transform: translate(4px, -6px); }
+}
+
+@keyframes float-chip-1 {
+  0%, 100% { transform: translate(0, 0); }
+  50% { transform: translate(-8px, -12px); }
+}
+
+@keyframes float-chip-2 {
+  0%, 100% { transform: translate(0, 0); }
+  50% { transform: translate(10px, 8px); }
+}
+
+@keyframes float-chip-3 {
+  0%, 100% { transform: translate(0, 0); }
+  50% { transform: translate(-6px, 10px); }
+}
+
+@keyframes fadeSlideIn {
+  0% {
+    opacity: 0;
+    transform: translateY(30px);
+    filter: blur(8px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+    filter: blur(0px);
+  }
+}
+
+.float-cursor {
+  animation: float-cursor 3s ease-in-out infinite;
+}
+
+.float-chip-1 {
+  animation: float-chip-1 4s ease-in-out infinite;
+}
+
+.float-chip-2 {
+  animation: float-chip-2 4.5s ease-in-out infinite;
+}
+
+.float-chip-3 {
+  animation: float-chip-3 4.2s ease-in-out infinite;
+}
+
+.animate-fade-slide-in {
+  animation: fadeSlideIn 0.8s ease-out forwards;
+}
+
+.animate-on-scroll {
+  animation-play-state: paused !important;
+}
+
+.animate-on-scroll.animate {
+  animation-play-state: running !important;
+}
+
+.bg-stack {
+  z-index: -20;
+}
+
+.unicorn-stack {
+  z-index: -10;
+}
+
+.unicorn-mask {
+  mask-image: linear-gradient(to bottom, rgba(0,0,0,0) 0%, black 12%, black 88%, rgba(0,0,0,0) 100%);
+  -webkit-mask-image: linear-gradient(to bottom, rgba(0,0,0,0) 0%, black 12%, black 88%, rgba(0,0,0,0) 100%);
+}
