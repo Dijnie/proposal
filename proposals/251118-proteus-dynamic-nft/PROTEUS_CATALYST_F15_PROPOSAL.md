@@ -16,7 +16,7 @@
 **Requested Funding:** ₳120,000 (approx. $60,000 USD at 1 ADA = 0.5 USD)
 
 ## Project Duration
-**6 months** (from funding approval)
+**8 months** (from funding approval)
 
 ## Problem Statement (200 chars)
 Cardano lacks accessible tools for creating dynamic NFTs using CIP-68. Current platforms support only static CIP-25, forcing developers to write complex smart contracts for evolving metadata.
@@ -390,7 +390,7 @@ Funds released only upon verified deliverables: KPI reports, on-chain evidence (
 
 ## Milestone Overview
 
-**Total Project Duration:** 6 months
+**Total Project Duration:** 8 months
 **Total Milestones:** 6 (including final milestone with close-out report)
 
 Grant amount: ₳120,000 requires **at least 5 milestones + final milestone = 6 total**
@@ -910,7 +910,7 @@ The value of the Proteus Dynamic NFT Platform project, budgeted at ₳120,000 ($
 
 **Cost Justification:**
 
-The 6-month project with a 7-person team (HTlabs) averages ₳1,714/month per person ($700/month). Covers salaries, AWS/Cloudflare/Blockfrost infrastructure (₳18,000), security audit (₳12,000), and documentation/marketing for efficiency.
+The 8-month project with a 5-person team (HTlabs) averages ₳1,800/month per person ($900/month). Covers salaries, AWS/Cloudflare/Blockfrost infrastructure (₳18,000), security audit (₳12,000), and documentation/marketing for efficiency.
 
 **Value Proposition:**
 
@@ -971,7 +971,7 @@ This is not just an app—it's **ecosystem-level infrastructure** with 300x retu
 
 *Proposal prepared for Project Catalyst Fund15*
 *Category: Cardano Use Cases - Prototype & Launch*
-*Requested: ₳120,000 | Duration: 6 months*
+*Requested: ₳120,000 | Duration: 8 months*
 
 ---
 
