@@ -13,7 +13,7 @@
 # PROPOSAL SUMMARY
 
 ## Budget Information
-**Requested Funding:** ₳150,000 (approx. $75,000 USD at 1 ADA = 0.5 USD)
+**Requested Funding:** ₳120,000 (approx. $60,000 USD at 1 ADA = 0.5 USD)
 
 ## Project Duration
 **6 months** (from funding approval)
@@ -393,7 +393,7 @@ Funds released only upon verified deliverables: KPI reports, on-chain evidence (
 **Total Project Duration:** 6 months
 **Total Milestones:** 6 (including final milestone with close-out report)
 
-Grant amount: ₳150,000 requires **at least 5 milestones + final milestone = 6 total**
+Grant amount: ₳120,000 requires **at least 5 milestones + final milestone = 6 total**
 
 ---
 
@@ -430,7 +430,7 @@ We will upload these below documents to GitHub for public access:
 
 **Delivery Month:** Month 1
 
-**Cost:** ₳15,000 (10%)
+**Cost:** ₳12,000 (10%)
 
 ---
 
@@ -467,7 +467,7 @@ We will upload these below documents/code to GitHub for public access:
 
 **Delivery Month:** Month 2
 
-**Cost:** ₳30,000 (20%)
+**Cost:** ₳24,000 (20%)
 
 ---
 
@@ -506,7 +506,7 @@ We will upload these below documents/code to GitHub for public access:
 
 **Delivery Month:** Month 3
 
-**Cost:** ₳30,000 (20%)
+**Cost:** ₳24,000 (20%)
 
 ---
 
@@ -546,7 +546,7 @@ We will upload these below documents/code/video to GitHub for public access:
 
 **Delivery Month:** Month 4
 
-**Cost:** ₳37,500 (25%)
+**Cost:** ₳30,000 (25%)
 
 ---
 
@@ -587,7 +587,7 @@ We will upload these below documents/code/video to GitHub for public access:
 
 **Delivery Month:** Month 5
 
-**Cost:** ₳22,500 (15%)
+**Cost:** ₳18,000 (15%)
 
 ---
 
@@ -632,12 +632,12 @@ We will upload these below documents/code/video to GitHub for public access:
 
 **Delivery Month:** Month 6
 
-**Cost:** ₳15,000 (10%)
+**Cost:** ₳12,000 (10%)
 
 **Notes:**
-- Includes security audit cost (~₳8,000)
-- Marketing/launch activities (~₳3,000)
-- Final documentation and community setup (~₳2,000)
+- Includes security audit cost (~₳6,000)
+- Marketing/launch activities (~₳2,500)
+- Final documentation and community setup (~₳1,500)
 - Project close-out deliverables (~₳2,000)
 
 ---
@@ -750,99 +750,100 @@ Every role is either filled or has contingency (e.g., if primary auditor unavail
 
 ## BUDGET & COSTS (Detailed Breakdown)
 
-**Total Requested:** ₳150,000 (approx. $75,000 USD at 1 ADA = $0.50)
+**Total Requested:** ₳120,000 (approx. $60,000 USD at 1 ADA = $0.50)
 
-### Development Costs (60% - ₳90,000)
+### Development Costs (60% - ₳72,000)
 
-**Smart Contract Development:** ₳25,000
-- Plutus validator development (mint, burn, update logic): ₳12,000
-- Property-based testing & formal verification: ₳5,000
-- Gas optimization & benchmarking: ₳3,000
-- Internal security review: ₳5,000
+**Smart Contract Development:** ₳20,000
+- Plutus validator development (mint, burn, update logic): ₳10,000
+- Property-based testing & formal verification: ₳4,000
+- Gas optimization & benchmarking: ₳2,500
+- Internal security review: ₳3,500
 
-**Backend Development:** ₳30,000
-- API development (REST endpoints, authentication): ₳10,000
-- Database design & optimization (PostgreSQL): ₳4,000
-- Off-chain worker service (metadata sync, automation): ₳8,000
-- Transaction builder & blockchain integration (Mesh SDK): ₳8,000
+**Backend Development:** ₳24,000
+- API development (REST endpoints, authentication): ₳8,000
+- Database design & optimization (PostgreSQL): ₳3,500
+- Off-chain worker service (metadata sync, automation): ₳6,500
+- Transaction builder & blockchain integration (Mesh SDK): ₳6,000
 
-**Frontend Development:** ₳20,000
-- Dashboard UI/UX implementation (React/Next.js): ₳12,000
-- Rule configuration interface: ₳5,000
-- Analytics dashboard: ₳3,000
+**Frontend Development:** ₳16,000
+- Dashboard UI/UX implementation (React/Next.js): ₳10,000
+- Rule configuration interface: ₳4,000
+- Analytics dashboard: ₳2,000
 
-**API Client Development:** ₳10,000
-- API documentation & examples: ₳4,000
-- Integration guides (multiple languages): ₳4,000
-- Interactive API playground: ₳2,000
+**API Client Development:** ₳8,000
+- API documentation & examples: ₳3,500
+- Integration guides (multiple languages): ₳3,000
+- Interactive API playground: ₳1,500
 
-**QA & Testing:** ₳5,000
-- Load testing infrastructure: ₳1,500
-- User acceptance testing (beta program): ₳2,000
-- Bug fixes & performance tuning: ₳1,500
+**QA & Testing:** ₳4,000
+- Load testing infrastructure: ₳1,200
+- User acceptance testing (beta program): ₳1,600
+- Bug fixes & performance tuning: ₳1,200
 
-### Infrastructure Costs (15% - ₳22,500)
+### Infrastructure Costs (15% - ₳18,000)
 
-**Hosting & Cloud Services:** ₳12,000 (6 months)
-- Cloud servers (AWS/GCP): ₳6,000
-- Database hosting (managed PostgreSQL): ₳3,000
-- CDN & storage (IPFS pinning, Arweave): ₳2,000
-- Monitoring & logging (Datadog, Sentry): ₳1,000
+**Hosting & Cloud Services:** ₳9,600 (6 months)
+- Cloud servers (AWS/GCP): ₳4,800
+- Database hosting (managed PostgreSQL): ₳2,400
+- CDN & storage (IPFS pinning, Arweave): ₳1,600
+- Monitoring & logging (Datadog, Sentry): ₳800
 
-**Blockchain Infrastructure:** ₳6,000
-- Cardano node operation (testnet/mainnet): ₳2,500
-- API services (Blockfrost, Koios subscriptions): ₳2,500
-- Transaction fees (testnet testing, mainnet deployment): ₳1,000
+**Blockchain Infrastructure:** ₳4,800
+- Cardano node operation (testnet/mainnet): ₳2,000
+- API services (Blockfrost, Koios subscriptions): ₳2,000
+- Transaction fees (testnet testing, mainnet deployment): ₳800
 
-**Development Tools:** ₳4,500
-- Software licenses (IDEs, design tools): ₳1,500
-- Third-party APIs (oracles, services): ₳2,000
-- Domain, SSL certificates, SaaS tools: ₳1,000
+**Development Tools:** ₳3,600
+- Software licenses (IDEs, design tools): ₳1,200
+- Third-party APIs (oracles, services): ₳1,600
+- Domain, SSL certificates, SaaS tools: ₳800
 
-### Security & Audit (10% - ₳15,000)
+### Security & Audit (10% - ₳12,000)
 
-**Third-Party Security Audit:** ₳10,000
+**Third-Party Security Audit:** ₳8,000
 - Professional audit firm (Runtime Verification, Certik, or similar)
 - Scope: Smart contracts, API security, infrastructure review
 - Deliverable: Public audit report
 
-**Security Tools & Testing:** ₳5,000
-- Penetration testing tools: ₳1,500
-- Bug bounty program (community): ₳2,500
-- Security monitoring (WAF, DDoS protection): ₳1,000
+**Security Tools & Testing:** ₳4,000
+- Penetration testing tools: ₳1,200
+- Bug bounty program (community): ₳2,000
+- Security monitoring (WAF, DDoS protection): ₳800
 
-### Operations & Community (15% - ₳22,500)
+### Operations & Community (15% - ₳18,000)
 
-**Project Management:** ₳6,000
-- Project coordination tools (Jira, Notion): ₳500
-- Legal & compliance consultation: ₳2,500
-- Accounting & financial reporting: ₳1,500
-- Contingency buffer (unforeseen expenses): ₳1,500
+**Project Management:** ₳4,800
+- Project coordination tools (Jira, Notion): ₳400
+- Legal & compliance consultation: ₳2,000
+- Accounting & financial reporting: ₳1,200
+- Contingency buffer (unforeseen expenses): ₳1,200
 
-**Marketing & Community:** ₳8,500
-- Website development (landing page, docs site): ₳3,000
-- Educational content (video production, tutorials): ₳2,500
-- Community engagement (Discord, events, AMAs): ₳1,500
-- Launch marketing (announcements, PR): ₳1,500
+**Marketing & Community:** ₳6,800
+- Website development (landing page, docs site): ₳2,400
+- Educational content (video production, tutorials): ₳2,000
+- Community engagement (Discord, events, AMAs): ₳1,200
+- Launch marketing (announcements, PR): ₳1,200
 
-**Documentation & Support:** ₳5,000
-- Technical writing (user guides, API docs): ₳3,000
-- Video tutorials production: ₳1,500
-- Support infrastructure (ticketing system): ₳500
+**Documentation & Support:** ₳4,000
+- Technical writing (user guides, API docs): ₳2,400
+- Video tutorials production: ₳1,200
+- Support infrastructure (ticketing system): ₳400
 
-**Close-Out Deliverables:** ₳3,000
-- Project Close-Out Report preparation: ₳1,500
-- Project Close-Out Video production: ₳1,500
+**Close-Out Deliverables:** ₳2,400
+- Project Close-Out Report preparation: ₳1,200
+- Project Close-Out Video production: ₳1,200
 
 ### Budget Allocation by Milestone
 
 | Milestone | Allocation | Cumulative | % of Total |
 |-----------|------------|------------|------------|
-| M1: Smart Contracts & Foundation | ₳45,000 | ₳45,000 | 30% |
-| M2: Dashboard & Metadata Mgmt | ₳37,500 | ₳82,500 | 25% |
-| M3: Rule Engine & Automation | ₳30,000 | ₳112,500 | 20% |
-| M4: SDK & Enterprise Features | ₳22,500 | ₳135,000 | 15% |
-| M5: Mainnet Launch & Close-Out | ₳15,000 | ₳150,000 | 10% |
+| M1: Project Planning & Architecture | ₳12,000 | ₳12,000 | 10% |
+| M2: Smart Contract Development | ₳24,000 | ₳36,000 | 20% |
+| M3: Backend API Development | ₳24,000 | ₳60,000 | 20% |
+| M4: Dashboard & User Interface | ₳30,000 | ₳90,000 | 25% |
+| M5: Testing & Security Audit | ₳18,000 | ₳108,000 | 15% |
+| M6: Mainnet Launch & Close-Out | ₳12,000 | ₳120,000 | 10% |
 
 ### Cost Justification
 
@@ -851,7 +852,7 @@ Every role is either filled or has contingency (e.g., if primary auditor unavail
 - Full-time senior developer (6 months): ~$50,000-60,000
 - We have 2 full-time + 2 part-time roles = ~2.5 FTE
 - Total labor value: ~$125,000-150,000
-- Budget request: $75,000 (50% coverage, team co-funding rest)
+- Budget request: $60,000 (40-48% coverage, team co-funding rest)
 
 **Infrastructure:**
 - AWS/GCP costs benchmarked against similar projects
@@ -861,16 +862,16 @@ Every role is either filled or has contingency (e.g., if primary auditor unavail
 **Audit:**
 - Market rate for smart contract audits: $30,000-50,000 (Ethereum)
 - Cardano audits typically lower complexity: $15,000-25,000
-- Our request (₳10,000 ≈ $5,000): Budget-conscious choice (smaller firm or focused scope)
+- Our request (₳8,000 ≈ $4,000): Budget-conscious choice (smaller firm or focused scope)
 - Alternative: Community audit + bounty program (fallback if needed)
 
 **Comparison to Similar Projects:**
 
 | Project Type | Typical Budget | Proteus Budget | Value Efficiency |
 |--------------|----------------|----------------|------------------|
-| NFT Platform (Ethereum) | $200K-500K | $75K | 63-85% savings |
-| Cardano dApp (similar scope) | $100K-150K | $75K | 25-50% savings |
-| Catalyst average (Use Cases) | $50K-100K | $75K | Mid-range |
+| NFT Platform (Ethereum) | $200K-500K | $60K | 70-88% savings |
+| Cardano dApp (similar scope) | $100K-150K | $60K | 40-60% savings |
+| Catalyst average (Use Cases) | $50K-100K | $60K | Mid-range |
 
 **Why We're Cost-Efficient:**
 
@@ -882,11 +883,11 @@ Every role is either filled or has contingency (e.g., if primary auditor unavail
 
 **Alternative Funding:**
 
-If proposal receives partial funding (e.g., ₳100,000):
-- Prioritize Milestones 1-3 (core platform functionality)
-- Delay SDK development (Milestone 4) until post-launch revenue
-- Community audit instead of third-party (save ₳7,000)
-- Self-host infrastructure (save ₳5,000)
+If proposal receives partial funding (e.g., ₳80,000):
+- Prioritize Milestones 1-4 (core platform functionality)
+- Delay testing phase (Milestone 5) to post-launch
+- Community audit instead of third-party (save ₳6,000)
+- Self-host infrastructure (save ₳4,000)
 
 **No Budget Bloat:**
 Every line item mapped to deliverables. No marketing gimmicks, executive salaries, or unnecessary expenses. This is a builder budget focused on shipping production-ready infrastructure.
@@ -936,10 +937,10 @@ Every line item mapped to deliverables. No marketing gimmicks, executive salarie
 
 **Multiplier Effect:**
 
-- ₳150,000 investment → **150 projects** enabled
-- Cost per project enabled: **₳1,000** ($500)
+- ₳120,000 investment → **150 projects** enabled
+- Cost per project enabled: **₳800** ($400)
 - Value created per project: **₳240,000** ($120,000)
-- **Multiplier: 240x return** (conservative)
+- **Multiplier: 300x return** (conservative)
 
 ### Justification of Costs
 
@@ -952,8 +953,8 @@ Every line item mapped to deliverables. No marketing gimmicks, executive salarie
 
 **Our Rates:**
 - Senior developer (full-time, 6 months): ~$50K market value
-- We're requesting: ~₳45K ($22.5K) = **55% discount** (team co-funding)
-- Effective rate: ~$37/hour (well below market)
+- We're requesting: ~₳36K ($18K) = **64% discount** (team co-funding)
+- Effective rate: ~$30/hour (well below market)
 
 **Why So Efficient:**
 - Team based in [cost-effective location]
@@ -1020,15 +1021,15 @@ Every line item mapped to deliverables. No marketing gimmicks, executive salarie
 
 | Metric | Target | Cost per Unit |
 |--------|--------|---------------|
-| Cost per active project | 150 | ₳1,000 ($500) |
-| Cost per NFT minted | 250,000 | ₳0.60 ($0.30) |
-| Cost per developer onboarded | 200 | ₳750 ($375) |
-| Cost per transaction enabled | 75,000 | ₳2 ($1) |
+| Cost per active project | 150 | ₳800 ($400) |
+| Cost per NFT minted | 250,000 | ₳0.48 ($0.24) |
+| Cost per developer onboarded | 200 | ₳600 ($300) |
+| Cost per transaction enabled | 75,000 | ₳1.60 ($0.80) |
 
 **Comparison to Alternatives:**
 
 **Option A: Grant to 150 Projects Individually**
-- 150 projects × ₳1,000 each = ₳150,000
+- 150 projects × ₳800 each = ₳120,000
 - Result: Fragmented, inconsistent implementations, no interoperability
 - **Proteus is better:** Shared infrastructure, standards, network effects
 
@@ -1079,7 +1080,7 @@ Once established, Proteus will sustain via:
 
 # CONCLUSION
 
-Proteus represents a **strategic investment in Cardano's competitive positioning**. For ₳150,000, the ecosystem gains:
+Proteus represents a **strategic investment in Cardano's competitive positioning**. For ₳120,000, the ecosystem gains:
 
 ✅ **Infrastructure unlocking $1B+ markets** (gaming, ticketing, identity)
 ✅ **150+ new projects choosing Cardano** over alternatives
@@ -1087,7 +1088,7 @@ Proteus represents a **strategic investment in Cardano's competitive positioning
 ✅ **$18M+ in developer productivity savings** (120K per project × 150 projects)
 ✅ **Open-source foundation** for future innovation
 
-This is not just an app—it's **ecosystem-level infrastructure** with 240x return potential.
+This is not just an app—it's **ecosystem-level infrastructure** with 300x return potential.
 
 **We're ready to build. Cardano needs this now.**
 
@@ -1095,7 +1096,7 @@ This is not just an app—it's **ecosystem-level infrastructure** with 240x retu
 
 *Proposal prepared for Project Catalyst Fund15*
 *Category: Cardano Use Cases - Prototype & Launch*
-*Requested: ₳150,000 | Duration: 6 months*
+*Requested: ₳120,000 | Duration: 6 months*
 
 ---
 
