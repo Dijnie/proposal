@@ -896,51 +896,36 @@ Every line item mapped to deliverables. No marketing gimmicks, executive salarie
 
 ## VALUE FOR MONEY (Justification)
 
-### Investment Return for Cardano Ecosystem
+### Value for Cardano Ecosystem
 
-**Cost-Benefit Analysis:**
+The value of Proteus for the Cardano ecosystem can be demonstrated by highlighting the following key benefits:
 
-**Catalyst Investment:** ₳150,000 ($75,000)
+**Increase the number of transactions on the platform:**
+Creating NFT/tokens according to CIP-68 becomes extremely simple using this portal. Non-technical users can mint, update, and manage dynamic NFTs through an intuitive dashboard, removing technical barriers that currently limit CIP-68 adoption. This accessibility drives significantly higher transaction volume as more creators actively use dynamic NFT features.
 
-**Expected Ecosystem Returns (Conservative, 12 Months):**
+**Increase the number of wallets:**
+There will be more creators joining Cardano because the tool is specifically designed for non-technical users. Artists, event organizers, game developers, and community managers who previously avoided Cardano due to complexity can now easily create dynamic NFT projects, expanding the wallet base and ecosystem participation.
 
-1. **Transaction Fee Revenue:**
-   - 50 active projects × 500 tx/month × 12 months = 300,000 transactions
-   - Average fee: 0.2 ADA/tx
-   - Total fees generated: **60,000 ADA** (40% ROI on tx fees alone)
+**Boosted liquidity and trading:**
+More CIP-68 compliant assets are created, leading to increased demand for buying, selling, and trading. Dynamic NFTs enable use cases (gaming items, event tickets, membership tiers) that generate recurring transactions, unlike static NFTs that are minted once and rarely updated. This creates sustainable on-chain activity and trading volume.
 
-2. **Developer Time Savings:**
-   - 150 projects × 4 months saved × $10K/month = **$6M developer productivity unlocked**
-   - Without Proteus: 6 months custom development
-   - With Proteus: 2 weeks integration
-   - Savings: 5.5 months × $10K = $55K per project
+**Enhanced NFT/token functionality:**
+NFTs/tokens can now easily update metadata without needing third-party services or custom smart contract development. Creators maintain full control over their assets through Proteus platform, updating attributes, images, and properties directly on-chain following CIP-68 standard.
 
-3. **Project Retention:**
-   - 10-20 projects choose Cardano vs. Ethereum/Solana due to Proteus
-   - Average project lifetime value: $100K-500K in ecosystem transactions
-   - Estimated value: **$1M-10M prevented from leaving ecosystem**
+### Budget Efficiency
 
-4. **Ecosystem Expansion:**
-   - Unlocking $3.3B gaming NFT market
-   - Unlocking $85B ticketing market
-   - Even 0.1% Cardano market share = **$83M+ new economic activity**
+The project duration is 6 months with a team of 7 people ensuring quality and security of the application.
 
-**Direct Cost Savings for Users:**
+**Cost per team member:**
+- Total budget: ₳120,000
+- Development costs (team compensation): ₳72,000
+- Team size: 7 people
+- Project duration: 6 months
 
-| Scenario | Without Proteus | With Proteus | Savings per Project |
-|----------|-----------------|--------------|---------------------|
-| Smart contract development | $30K-50K | $0 (use Proteus contracts) | $40K |
-| Backend infrastructure | $20K-40K | $0 (API/SDK) | $30K |
-| Security audit | $15K-25K | $0 (shared audit) | $20K |
-| Development time | 6 months | 2 weeks | $50K (labor) |
-| **Total Savings** | **$95K-145K** | **Proteus fee: $0 (MVP free tier)** | **~$120K/project** |
+**Calculation:**
+₳72,000 / (7 people × 6 months) = **₳1,714 per person/month** (~$700 USD/month at 0.41 exchange rate)
 
-**Multiplier Effect:**
-
-- ₳120,000 investment → **150 projects** enabled
-- Cost per project enabled: **₳800** ($400)
-- Value created per project: **₳240,000** ($120,000)
-- **Multiplier: 300x return** (conservative)
+**Note:** This calculation excludes infrastructure costs (₳18,000 for cloud hosting, API services, development tools), security audit (₳12,000 for third-party professional audit), and operations (₳18,000 for marketing, documentation, project management). The extremely lean team compensation demonstrates focus on ecosystem contribution rather than profit maximization.
 
 ### Justification of Costs
 
