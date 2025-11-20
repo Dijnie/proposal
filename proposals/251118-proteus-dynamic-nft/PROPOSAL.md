@@ -20,16 +20,24 @@ Proteus simplifies dynamic NFT management. It provides a secure on-chain validat
 
 ### Open Source Commitment
 
-**Full Open Source Commitment (MIT License):** All project components will be released as open source via public GitHub repository:
+**Open-Core Model (MIT License for Core Components):** Core infrastructure will be released as open source via public GitHub repository, following the open-core model used by Supabase, Cal.com, and GitLab:
 
+**Open Source Components (MIT License):**
 1. Smart contracts (Plutus/Aiken validators for CIP-68 minting, burning, metadata updates)
-2. Complete backend API source code
-3. Frontend dashboard source code
+2. Core backend API source code (basic NFT operations)
+3. Basic frontend dashboard source code
 4. Templates library
 5. API documentation and code examples
 6. DevOps/deployment scripts
 
-**Monetization Strategy:** SaaS hosting service (managed cloud deployment), enterprise support contracts, premium features (advanced analytics, custom integrations), and professional services (consulting, custom development). This approach follows successful open-source SaaS models like Supabase, Cal.com, and GitLab - enabling ecosystem contribution while maintaining sustainable revenue streams.
+**Proprietary/Premium Components:**
+- Managed cloud hosting service (SaaS deployment)
+- Advanced analytics and monitoring features
+- Enterprise-grade support contracts
+- Custom integration development
+- Professional consulting services
+
+This hybrid approach ensures essential CIP-68 infrastructure remains freely available to the Cardano ecosystem while enabling sustainable platform operation through optional premium services.
 
 ### Dependencies
 
@@ -51,9 +59,9 @@ Proteus is the first comprehensive no-code platform dedicated to managing CIP-68
 
 **Current Ecosystem Gaps:**
 
-- **NMKR:** Great for CIP-25 static NFTs
-- **JPG Store:** Marketplace focused, no minting tools for dynamic NFTs
-- **Saturn/Custom Solutions:** Requires smart contract programming knowledge, no unified management interface
+- **NMKR:** Supports CIP-68 but lacks specialized dynamic NFT management features like rule-based automation, batch metadata updates, and template library
+- **JPG Store:** Marketplace focused, no comprehensive minting and management tools for dynamic NFTs
+- **Saturn/Custom Solutions:** Requires smart contract programming knowledge, no unified management interface or developer-friendly API
 
 **Proteus Unique Innovations:**
 
@@ -140,22 +148,22 @@ The Cardano NFT ecosystem faces a critical infrastructure gap limiting real-worl
 - Gaming/ticketing/membership use cases impossible
 
 **Use Case Stagnation**: Without accessible dynamic NFTs, Cardano misses massive market opportunities:
-- **GameFi:** USD 16.34 billion market (2024), projected to reach USD 200.72 billion by 2034 at 28.50% CAGR (Market Research Future, 2025) - requires evolving in-game assets
-- **Event Ticketing:** USD 39.8-85.35 billion market (2024, Straits Research/Mordor Intelligence) - needs status updates (valid→used→expired)
-- **Membership/Loyalty:** Tier upgrades, expiration, benefits tracking
-- **Digital Identity:** Soulbound tokens, credential updates, reputation scores
-- **Evolving Art:** Art that changes based on time, weather, market data
+- **GameFi:** Multi-billion dollar market requiring evolving in-game assets with dynamic metadata updates
+- **Event Ticketing:** USD 39.8-85.35 billion market (2024) needing status updates (valid→used→expired) and real-time verification
+- **Membership/Loyalty:** Tier upgrades, expiration dates, benefits tracking requiring programmable metadata
+- **Digital Identity:** Soulbound tokens, credential updates, reputation scores with verifiable changes
+- **Evolving Art:** Art that changes based on time, weather, market data, or other oracle inputs
 
 **Consequence**: Developers choose Ethereum/Solana/Polygon where dynamic NFT infrastructure is mature (OpenSea, Thirdweb, Candy Machine v3), despite Cardano's superior architecture.
 
 ### Problem Summary
 
-Cardano has CIP-68 standard for dynamic NFTs but lacks accessible tooling. Current solutions require months of Plutus development expertise, forcing 95% of creators to either:
+Cardano has CIP-68 standard for dynamic NFTs but lacks accessible tooling. Current solutions require months of Plutus development expertise, forcing majority of creators to either:
 - Abandon dynamic NFT concepts
 - Choose competing blockchains with mature tools
 - Spend $100K+ on custom development
 
-This infrastructure gap prevents Cardano from capturing multi-billion dollar gaming (USD 16.34B in 2024) and ticketing (USD 39.8-85.35B in 2024) markets, despite having superior technology.
+This infrastructure gap prevents Cardano from capturing multi-billion dollar gaming and ticketing (USD 39.8-85.35B in 2024) markets, despite having superior technology.
 
 ### Solution: Proteus Platform
 
@@ -220,10 +228,10 @@ Proteus directly enables Cardano ecosystem growth through measurable on-chain ac
 
 **Ecosystem impact manifests as:**
 
-- **Competitive positioning** - matching Ethereum/Solana tooling maturity while leveraging Cardano's cost advantages, enabling capture of multi-billion dollar gaming (USD 16.34B) and ticketing (USD 39.8-85.35B) markets
-- **Developer attraction** - removing "lack of tooling" barrier identified in blockchain developer surveys (Cardano Foundation 2024, Solidity Foundation 2024), retaining projects that would otherwise choose competing chains
-- **Transaction growth** - dynamic NFT projects generate 10-100x more transactions than static collections, creating sustainable on-chain activity
-- **Perception shift** - moving Cardano from "research blockchain" to "production platform" status
+- **Competitive positioning** - matching Ethereum/Solana tooling maturity while leveraging Cardano's cost advantages, enabling capture of multi-billion dollar gaming and ticketing (USD 39.8-85.35B) markets
+- **Developer attraction** - removing technical barriers that cause projects to choose competing chains, providing enterprise-grade tooling comparable to Web2 development standards
+- **Transaction growth** - dynamic NFT projects generate significantly more transactions than static collections through recurring metadata updates, creating sustainable on-chain activity
+- **Perception shift** - moving Cardano from "research blockchain" to "production platform" status through proven real-world applications
 
 Proteus fills critical infrastructure gap with unique value proposition: only CIP-68 specialized platform (no direct competition), dual interface serving both non-developers and technical teams, open architecture enabling ecosystem-wide integration, and adherence to Cardano native standards (CIP-68) for future-proofing. This transforms Cardano's technical superiority in dynamic NFTs into accessible tooling, enabling the next wave of NFT applications - gaming item upgrades, event ticketing systems, membership tier management, and evolving digital art.
 
@@ -343,7 +351,11 @@ HTlabs demonstrates deep Cardano expertise through multiple successful Catalyst 
 - **Free Native Minting Tool (CIP25):** Live at https://cardano-tool.vercel.app
 - **Complete Aiken Course:** Fund 11 project - https://projectcatalyst.io/funds/11/cardano-open-ecosystem/the-complete-aiken-course-cardano-from-zero-to-expert
 - **Study Guide for Marlowe:** Fund 10 project - https://projectcatalyst.io/funds/10/f10-startups-and-onboarding-for-students/study-guide-for-marlow
-- **Open Source CIP68 Generator:** Fund 12 project - https://projectcatalyst.io/funds/12/cardano-use-cases-concept/open-source-dynamic-assets-tokennft-generator-cip68 (Direct predecessor) | GitHub: https://github.com/htlabs-xyz/cip68generator
+- **Open Source CIP68 Generator:** Fund 12 project - https://projectcatalyst.io/funds/12/cardano-use-cases-concept/open-source-dynamic-assets-tokennft-generator-cip68 (Direct predecessor)
+  - GitHub Repository: https://github.com/htlabs-xyz/cip68generator
+  - Status: Core CIP-68 validators completed and tested on preprod testnet
+  - Prototype demonstrates: Basic mint/burn operations, reference NFT + user token architecture, metadata handling
+  - Proteus builds upon this foundation by adding: Production-grade features, automation engine, developer API, no-code dashboard, template library, and enterprise capabilities
 
 Additional projects include Cardano App Development Course, IoT Blockchain Templates, Dualtarget DeFi platform, Cardano Hackathons, and Vietnam NFT Exchange. Full portfolio: https://www.htlabs.xyz/projects
 
@@ -537,7 +549,7 @@ No gaps in development - milestones represent completion dates, not start dates.
 - Deploy pilot version on preprod testnet
 - Conduct open beta testing program (50-80 participants)
 - Run bug bounty program
-- Third-party security audit (professional audit firm)
+- Internal security audit by blockchain security experts
 - Performance testing and optimization
 - User acceptance testing (UAT)
 - Address feedback and vulnerabilities
@@ -546,16 +558,18 @@ No gaps in development - milestones represent completion dates, not start dates.
 - Pilot version deployed on preprod testnet with all features functional
 - Beta testing program has minimum 50 participants creating real NFT collections
 - Bug bounty program has minimum 10 participants with documented findings
-- Third-party security audit completed with published report (no critical vulnerabilities)
+- Internal security audit completed with published report (no critical vulnerabilities identified)
 - All UAT test cases pass successfully
 - User feedback collected and critical issues addressed
 - Performance benchmarks met: API <200ms response, >99% transaction success rate
+
+*Note: Internal audit conducted by experienced blockchain security experts. External third-party audit (estimated ₳15,000-30,000) may be pursued post-mainnet with platform revenue for additional validation.*
 
 **Evidence:**
 - Testnet pilot URL (publicly accessible)
 - Beta testing report with participant feedback and metrics
 - Bug bounty program report with findings and resolutions
-- Third-party security audit report (PDF)
+- Internal security audit report (PDF) with methodology and findings
 - UAT test case documentation and results
 - Performance benchmark report
 - GitHub pull requests addressing identified issues
@@ -606,7 +620,7 @@ No gaps in development - milestones represent completion dates, not start dates.
 
 ### Phung Tien Dung – Project Manager | Blockchain Developer
 
-**Role:** Leads blockchain integration, developing Hydra-powered gameplay mechanics and NFT smart contracts for rewards and assets, ensuring low-latency, cost-effective transactions.
+**Role:** Leads blockchain integration and smart contract development for CIP-68 dynamic NFT infrastructure, architecting reusable validators and ensuring secure, efficient on-chain operations for the Proteus platform.
 
 **Experience:** 5+ years in software engineering, 2+ years in blockchain; expert in dApp development (Next.js) and smart contract writing (Aiken, Haskell). Contributed to multiple Catalyst-funded projects.
 
@@ -621,7 +635,7 @@ No gaps in development - milestones represent completion dates, not start dates.
 
 ### Khanh Duy Nguyen – Blockchain Developer
 
-**Role:** Develops backend and frontend components, integrating the web lobby with UTXOS.dev wallet for seamless onboarding and ensuring smooth gameplay functionality.
+**Role:** Develops backend API and frontend dashboard components, implementing wallet integration for seamless user onboarding and ensuring smooth platform functionality across all NFT management features.
 
 **Experience:** Full-stack developer with expertise in building scalable web platforms.
 
@@ -655,7 +669,9 @@ No gaps in development - milestones represent completion dates, not start dates.
 
 **Skills:** Figma, user research, wireframing, prototyping, responsive design, design systems.
 
-**Contact:** TBD
+**Status:** Currently in final interview stage. Candidate with extensive Web3 product design experience at Vietnamese fintech companies. Will be confirmed before project kickoff (Milestone 1 start).
+
+**Contact:** To be provided upon confirmation
 
 ---
 
@@ -667,7 +683,9 @@ No gaps in development - milestones represent completion dates, not start dates.
 
 **Skills:** Jest, Pytest, API testing (Postman, curl), load testing, test automation, bug tracking.
 
-**Contact:** TBD
+**Status:** Currently recruiting from FPT Software QA department with preference for candidates experienced in blockchain testing. Will be confirmed before project kickoff (Milestone 1 start).
+
+**Contact:** To be provided upon confirmation
 
 ---
 
@@ -677,34 +695,23 @@ No gaps in development - milestones represent completion dates, not start dates.
 
 ### Budget Breakdown
 
-#### 1. Development Costs (60% - ₳72,000)
+#### 1. Team & Development Costs (60% - ₳72,000)
 
-**Smart Contract Development: ₳20,000**
-- Plutus validator development (mint, burn, update logic): ₳10,000
-- Property-based testing & formal verification: ₳4,000
-- Gas optimization & benchmarking: ₳2,500
-- Internal security review: ₳3,500
+**5-Person Development Team (8 months): ₳72,000**
+- Project Manager/Blockchain Developer: ₳14,400 (₳1,800/month × 8 months)
+- Blockchain Developer: ₳14,400 (₳1,800/month × 8 months)
+- Full-Stack Developer/DevOps: ₳14,400 (₳1,800/month × 8 months)
+- UI/UX Designer: ₳14,400 (₳1,800/month × 8 months)
+- QA Engineer: ₳14,400 (₳1,800/month × 8 months)
 
-**Backend Development: ₳24,000**
-- API development (REST endpoints, authentication): ₳8,000
-- Database design & optimization (PostgreSQL): ₳3,500
-- Off-chain worker service (metadata sync, automation): ₳6,500
-- Transaction builder & blockchain integration (Mesh SDK): ₳6,000
+*Note: Team compensation covers all development activities including smart contract development (Plutus/Aiken validators), backend API development, frontend dashboard, testing, and documentation. At ₳1,800/month per person ($810/month at 1₳=$0.45), this represents lean compensation demonstrating strong team co-investment in the Cardano ecosystem.*
 
-**Frontend Development: ₳16,000**
-- Dashboard UI/UX implementation (React/Next.js): ₳10,000
-- Rule configuration interface: ₳4,000
-- Analytics dashboard: ₳2,000
-
-**API Client Development: ₳8,000**
-- API documentation & examples: ₳3,500
-- Integration guides (multiple languages): ₳3,000
-- Interactive API playground: ₳1,500
-
-**QA & Testing: ₳4,000**
-- Load testing infrastructure: ₳1,200
-- User acceptance testing (beta program): ₳1,600
-- Bug fixes & performance tuning: ₳1,200
+**Development Deliverables Covered by Team:**
+- Smart Contract Development (CIP-68 validators, testing, optimization)
+- Backend Development (REST API, database, off-chain workers, transaction builder)
+- Frontend Development (Dashboard UI/UX, rule configuration, analytics)
+- API Documentation (OpenAPI specs, integration guides, code examples)
+- QA & Testing (Load testing, UAT, bug fixes, performance optimization)
 
 #### 2. Infrastructure Costs (15% - ₳18,000)
 
@@ -760,21 +767,6 @@ No gaps in development - milestones represent completion dates, not start dates.
 - Project Close-Out Report preparation: ₳1,200
 - Project Close-Out Video production: ₳1,200
 
-### Team Costs
-
-**Total: ₳72,000 (included in Development Costs)**
-
-5-person team × 8 months × ₳1,800/month per person = ₳72,000
-
-**Team Members:**
-- Project Manager/Blockchain Developer: ₳1,800/month (₳14,400 total)
-- Blockchain Developer: ₳1,800/month (₳14,400 total)
-- Full-Stack Developer/DevOps: ₳1,800/month (₳14,400 total)
-- UI/UX Designer: ₳1,800/month (₳14,400 total)
-- QA Engineer: ₳1,800/month (₳14,400 total)
-
-*Note: ₳1,800/month per person ($810/month) represents lean compensation demonstrating strong team co-investment in the Cardano ecosystem.*
-
 ### Milestone-Based Payment Schedule
 
 - **Milestone 1** (Month 1): ₳12,000 - Planning & Architecture Design
@@ -796,7 +788,7 @@ The value of the Proteus Dynamic NFT Platform project, budgeted at ₳120,000 ($
 
 **Increased transactions:** Dynamic NFT operations (minting, metadata updates, burns) generate recurring on-chain activity, enhancing ecosystem engagement beyond one-time static NFT mints.
 
-**Boosted NFT ecosystem:** Production-ready platform with templates and APIs inspires developers with accessible CIP-68 implementation model, strengthening Cardano's competitiveness in $3.3B GameFi and $85B ticketing markets.
+**Boosted NFT ecosystem:** Production-ready platform with templates and APIs inspires developers with accessible CIP-68 implementation model, strengthening Cardano's competitiveness in multi-billion dollar GameFi and ticketing (USD 39.8-85.35B) markets.
 
 **Enhanced NFT functionality:** Transparent, verifiable dynamic NFTs with updatable metadata streamline asset management without third-party reliance or custom smart contract development.
 
