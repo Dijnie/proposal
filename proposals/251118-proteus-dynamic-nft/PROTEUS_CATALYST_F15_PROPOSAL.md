@@ -24,9 +24,31 @@ Cardano lacks accessible tools for creating dynamic NFTs using CIP-68. Current p
 ## Solution Overview (200 chars)
 Proteus provides a no-code dashboard + developer API for minting, burning, and updating dynamic NFTs via CIP-68, enabling gaming, membership, ticketing projects to manage evolving assets easily.
 
+## Open Source Commitment
+
+**Will your project's outputs be fully open source?** No
+
+**Intellectual Property (IP) Status:**
+
+Specific components will be released as open source under the **MIT License**, while platform infrastructure remains proprietary to ensure sustainable business model.
+
+**Open Source Components:**
+- **Smart Contracts:** All Plutus/Aiken validators for CIP-68 minting, burning, and metadata updates (MIT License, published on GitHub)
+- **API Documentation:** Comprehensive API reference, integration guides, and technical specifications (publicly accessible)
+- **Code Examples:** Sample implementations and integration examples for multiple programming languages (JavaScript, Python, curl)
+
+**Proprietary Components:**
+- **Backend API:** REST API source code, transaction builder, metadata indexing engine (proprietary)
+- **Frontend Dashboard:** Web application source code and UI/UX implementation (proprietary)
+- **Templates:** Pre-built use case templates and automation rules (proprietary)
+
+**Public Repository:** Open source smart contracts and examples will be maintained in a publicly accessible GitHub repository with community contribution guidelines.
+
+**License Details:** MIT License (https://opensource.org/licenses/MIT) for smart contracts and examples - permissive license allowing commercial use, modification, and distribution.
+
 ## Supporting Documentation
-- GitHub Repository: [To be created after funding]
-- Technical Documentation: [To be developed during project]
+- GitHub Repository: [To be created after funding - will be public from day 1]
+- Technical Documentation: [To be developed during project - published on docs site]
 - Project Website: [To be launched during project]
 - Whitepaper: CIP-68 Dynamic NFT Implementation Architecture
 
