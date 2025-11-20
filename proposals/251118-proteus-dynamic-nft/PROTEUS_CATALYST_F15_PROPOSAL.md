@@ -13,7 +13,7 @@
 # PROPOSAL SUMMARY
 
 ## Budget Information
-**Requested Funding:** ₳120,000 (approx. $60,000 USD at 1 ADA = 0.5 USD)
+**Requested Funding:** ₳120,000 (approx. $54,000 USD at 1 ADA = 0.45 USD)
 
 ## Project Duration
 **8 months** (from funding approval)
@@ -750,7 +750,7 @@ Every role is either filled or has contingency (e.g., if primary auditor unavail
 
 ## BUDGET & COSTS (Detailed Breakdown)
 
-**Total Requested:** ₳120,000 (approx. $60,000 USD at 1 ADA = $0.50)
+**Total Requested:** ₳120,000 (approx. $54,000 USD at 1 ADA = $0.45)
 
 ### Development Costs (60% - ₳72,000)
 
@@ -896,7 +896,7 @@ Every line item mapped to deliverables. No marketing gimmicks, executive salarie
 
 ## VALUE FOR MONEY (Justification)
 
-The value of the Proteus Dynamic NFT Platform project, budgeted at ₳120,000 ($60,000 at 1₳ = $0.5), is demonstrated by these key benefits for Cardano:
+The value of the Proteus Dynamic NFT Platform project, budgeted at ₳120,000 ($54,000 at 1₳ = $0.45), is demonstrated by these key benefits for Cardano:
 
 **Increased user adoption:** No-code dashboard and intuitive interface draw non-technical creators (artists, event organizers, game developers) to Cardano, expanding the ecosystem's user base.
 
@@ -910,7 +910,7 @@ The value of the Proteus Dynamic NFT Platform project, budgeted at ₳120,000 ($
 
 **Cost Justification:**
 
-The 8-month project with a 5-person team (HTlabs) averages ₳1,800/month per person ($900/month). Covers salaries, AWS/Cloudflare/Blockfrost infrastructure (₳18,000), security audit (₳12,000), and documentation/marketing for efficiency.
+The 8-month project with a 5-person team (HTlabs) averages ₳1,800/month per person ($810/month). Covers salaries, AWS/Cloudflare/Blockfrost infrastructure (₳18,000), security audit (₳12,000), and documentation/marketing for efficiency.
 
 **Value Proposition:**
 
