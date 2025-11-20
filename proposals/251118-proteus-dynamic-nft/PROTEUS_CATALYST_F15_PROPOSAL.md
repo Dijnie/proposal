@@ -896,24 +896,25 @@ Every line item mapped to deliverables. No marketing gimmicks, executive salarie
 
 ## VALUE FOR MONEY (Justification)
 
-### Value for Cardano Ecosystem
+The value of the Proteus Dynamic NFT Platform project, budgeted at ₳120,000 ($60,000 at 1₳ = $0.5), is demonstrated by these key benefits for Cardano:
 
-**Increase transactions:** Creating CIP-68 NFT/tokens becomes simple using this no-code portal, removing technical barriers and driving higher on-chain activity.
+**Increased user adoption:** No-code dashboard and intuitive interface draw non-technical creators (artists, event organizers, game developers) to Cardano, expanding the ecosystem's user base.
 
-**Increase wallets:** Non-technical users (artists, event organizers, game developers) can now easily create dynamic NFT projects, expanding ecosystem participation.
+**Promotes CIP-68 innovation:** Showcases CIP-68's dynamic NFT capabilities, driving widespread adoption of updatable metadata standard across GameFi, ticketing, and membership applications.
 
-**Boosted liquidity:** More CIP-68 assets enable recurring-transaction use cases (gaming items, tickets, memberships), creating sustainable trading volume.
+**Increased transactions:** Dynamic NFT operations (minting, metadata updates, burns) generate recurring on-chain activity, enhancing ecosystem engagement beyond one-time static NFT mints.
 
-**Enhanced functionality:** NFTs/tokens update metadata directly on-chain without third-party services or custom development.
+**Boosted NFT ecosystem:** Production-ready platform with templates and APIs inspires developers with accessible CIP-68 implementation model, strengthening Cardano's competitiveness in $3.3B GameFi and $85B ticketing markets.
 
-### Budget Efficiency
+**Enhanced NFT functionality:** Transparent, verifiable dynamic NFTs with updatable metadata streamline asset management without third-party reliance or custom smart contract development.
 
-Project duration: 6 months with 7-person team ensuring quality and security.
+**Cost Justification:**
 
-**Team cost calculation:**
-₳72,000 (development) / (7 people × 6 months) = **₳1,714 per person/month** (~$700 USD at 0.41 rate)
+The 6-month project with a 7-person team (HTlabs) averages ₳1,714/month per person ($700/month). Covers salaries, AWS/Cloudflare/Blockfrost infrastructure (₳18,000), security audit (₳12,000), and documentation/marketing for efficiency.
 
-Excludes infrastructure (₳18,000), security audit (₳12,000), and operations (₳18,000), demonstrating lean team compensation focused on ecosystem contribution.
+**Value Proposition:**
+
+The project delivers a production-ready CIP-68 platform, open-source smart contracts, comprehensive documentation (user guides, API docs, video tutorials), and community engagement (beta testing, Discord support, workshops), driving Cardano NFT ecosystem growth and CIP-68 standard adoption. Monthly Catalyst reports ensuring compliance with Fund Rules.
 
 ---
 
