@@ -898,135 +898,24 @@ Every line item mapped to deliverables. No marketing gimmicks, executive salarie
 
 ### Value for Cardano Ecosystem
 
-The value of Proteus for the Cardano ecosystem can be demonstrated by highlighting the following key benefits:
+**Increase transactions:** Creating CIP-68 NFT/tokens becomes simple using this no-code portal, removing technical barriers and driving higher on-chain activity.
 
-**Increase the number of transactions on the platform:**
-Creating NFT/tokens according to CIP-68 becomes extremely simple using this portal. Non-technical users can mint, update, and manage dynamic NFTs through an intuitive dashboard, removing technical barriers that currently limit CIP-68 adoption. This accessibility drives significantly higher transaction volume as more creators actively use dynamic NFT features.
+**Increase wallets:** Non-technical users (artists, event organizers, game developers) can now easily create dynamic NFT projects, expanding ecosystem participation.
 
-**Increase the number of wallets:**
-There will be more creators joining Cardano because the tool is specifically designed for non-technical users. Artists, event organizers, game developers, and community managers who previously avoided Cardano due to complexity can now easily create dynamic NFT projects, expanding the wallet base and ecosystem participation.
+**Boosted liquidity:** More CIP-68 assets enable recurring-transaction use cases (gaming items, tickets, memberships), creating sustainable trading volume.
 
-**Boosted liquidity and trading:**
-More CIP-68 compliant assets are created, leading to increased demand for buying, selling, and trading. Dynamic NFTs enable use cases (gaming items, event tickets, membership tiers) that generate recurring transactions, unlike static NFTs that are minted once and rarely updated. This creates sustainable on-chain activity and trading volume.
-
-**Enhanced NFT/token functionality:**
-NFTs/tokens can now easily update metadata without needing third-party services or custom smart contract development. Creators maintain full control over their assets through Proteus platform, updating attributes, images, and properties directly on-chain following CIP-68 standard.
+**Enhanced functionality:** NFTs/tokens update metadata directly on-chain without third-party services or custom development.
 
 ### Budget Efficiency
 
-The project duration is 6 months with a team of 7 people ensuring quality and security of the application.
+Project duration: 6 months with 7-person team ensuring quality and security.
 
-**Cost per team member:**
-- Total budget: ₳120,000
-- Development costs (team compensation): ₳72,000
-- Team size: 7 people
-- Project duration: 6 months
+**Team cost calculation:**
+₳72,000 (development) / (7 people × 6 months) = **₳1,714 per person/month** (~$700 USD at 0.41 rate)
 
-**Calculation:**
-₳72,000 / (7 people × 6 months) = **₳1,714 per person/month** (~$700 USD/month at 0.41 exchange rate)
+Excludes infrastructure (₳18,000), security audit (₳12,000), and operations (₳18,000), demonstrating lean team compensation focused on ecosystem contribution.
 
-**Note:** This calculation excludes infrastructure costs (₳18,000 for cloud hosting, API services, development tools), security audit (₳12,000 for third-party professional audit), and operations (₳18,000 for marketing, documentation, project management). The extremely lean team compensation demonstrates focus on ecosystem contribution rather than profit maximization.
-
-### Justification of Costs
-
-**Labor Costs (₳90,000 / 60%):**
-
-**Market Comparison:**
-- Blockchain developer (Cardano): $80-150/hour (US/EU market)
-- Full-stack developer (Web3): $60-100/hour
-- Smart contract auditor: $150-300/hour
-
-**Our Rates:**
-- Senior developer (full-time, 6 months): ~$50K market value
-- We're requesting: ~₳36K ($18K) = **64% discount** (team co-funding)
-- Effective rate: ~$30/hour (well below market)
-
-**Why So Efficient:**
-- Team based in [cost-effective location]
-- Passion project (ecosystem contribution motivation)
-- Leveraging existing codebase (not starting from zero)
-- Remote-first (no office overhead)
-
-**Infrastructure (₳22,500 / 15%):**
-
-**Benchmark:**
-- AWS for similar app: $1,500-3,000/month
-- Our budget: $2,000/month (₳4,000/month × 6 months = ₳24,000)
-- **We're under-budgeting by using startup credits and optimization**
-
-**Justification:**
-- Blockchain indexing (Blockfrost): $500/month (necessary, can't self-host efficiently)
-- Database & servers: $800/month (right-sized, not over-provisioned)
-- IPFS pinning: $300/month (essential for metadata permanence)
-- Monitoring: $200/month (critical for uptime)
-
-**Security Audit (₳15,000 / 10%):**
-
-**Market Reality:**
-- Ethereum smart contract audit: $30K-100K
-- Cardano audit (smaller ecosystem): $15K-30K
-
-**Our Approach:**
-- ₳10,000 ($5,000) for professional audit
-- **Below market, but viable:**
-  - Focused scope (just smart contracts, not entire platform)
-  - Smaller audit firm (emerging Cardano auditors)
-  - OR community audit + bug bounty hybrid
-
-**Why Essential:**
-- Security is non-negotiable for fund-holding contracts
-- Audit builds trust (required for enterprise adoption)
-- One vulnerability could destroy ecosystem confidence
-
-**Operations (₳22,500 / 15%):**
-
-**Breakdown:**
-- Marketing/Community: ₳8,500 (11%) - **essential for adoption**
-  - Without users, platform has zero impact
-  - Educational content drives awareness
-  - Budget efficient (no paid ads, organic growth)
-
-- Documentation: ₳5,000 (7%) - **force multiplier**
-  - Good docs = 10x fewer support requests
-  - Enables self-service adoption
-  - Community contributions (lower cost)
-
-- Project Management: ₳6,000 (8%) - **ensures delivery**
-  - Legal compliance (Fund15 requirements)
-  - Financial accountability (transparency)
-  - Tools for coordination (remote team)
-
-- Close-Out: ₳3,000 (4%) - **Catalyst requirement**
-  - PCR/PCV mandatory deliverables
-  - Demonstrates impact for future funding
-
-**Overall Value Assessment:**
-
-**Cost Per Impact Unit:**
-
-| Metric | Target | Cost per Unit |
-|--------|--------|---------------|
-| Cost per active project | 150 | ₳800 ($400) |
-| Cost per NFT minted | 250,000 | ₳0.48 ($0.24) |
-| Cost per developer onboarded | 200 | ₳600 ($300) |
-| Cost per transaction enabled | 75,000 | ₳1.60 ($0.80) |
-
-**Comparison to Alternatives:**
-
-**Option A: Grant to 150 Projects Individually**
-- 150 projects × ₳800 each = ₳120,000
-- Result: Fragmented, inconsistent implementations, no interoperability
-- **Proteus is better:** Shared infrastructure, standards, network effects
-
-**Option B: Ethereum Migration**
-- Tools exist, but transaction costs 100x higher
-- Cardano loses projects, transaction fees, developers
-- **Proteus is better:** Keep Cardano competitive at 0.1% cost
-
-**Option C: Do Nothing**
-- Cardano remains "research blockchain" reputation
-- Gaming/ticketing markets captured by Solana/Polygon
-- **Proteus is better:** Levels playing field, unlocks markets
+---
 
 ### Long-Term Sustainability
 
