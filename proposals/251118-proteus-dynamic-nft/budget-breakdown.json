@@ -1,0 +1,556 @@
+{
+  "total_budget": {
+    "ada": 120000,
+    "usd": 54000,
+    "exchange_rate": 0.45,
+    "duration_months": 8
+  },
+  "summary": [
+    {
+      "category": "Development Costs",
+      "amount_ada": 72000,
+      "amount_usd": 32400,
+      "percentage": 60
+    },
+    {
+      "category": "Infrastructure Costs",
+      "amount_ada": 18000,
+      "amount_usd": 8100,
+      "percentage": 15
+    },
+    {
+      "category": "Security & Audit",
+      "amount_ada": 12000,
+      "amount_usd": 5400,
+      "percentage": 10
+    },
+    {
+      "category": "Operations & Community",
+      "amount_ada": 18000,
+      "amount_usd": 8100,
+      "percentage": 15
+    }
+  ],
+  "development_costs": {
+    "total": 72000,
+    "breakdown": {
+      "smart_contract_development": {
+        "total": 20000,
+        "items": [
+          {
+            "description": "Plutus validator development (mint, burn, update logic)",
+            "amount": 10000
+          },
+          {
+            "description": "Property-based testing & formal verification",
+            "amount": 4000
+          },
+          {
+            "description": "Gas optimization & benchmarking",
+            "amount": 2500
+          },
+          {
+            "description": "Internal security review",
+            "amount": 3500
+          }
+        ]
+      },
+      "backend_development": {
+        "total": 24000,
+        "items": [
+          {
+            "description": "API development (REST endpoints, authentication)",
+            "amount": 8000
+          },
+          {
+            "description": "Database design & optimization (PostgreSQL)",
+            "amount": 3500
+          },
+          {
+            "description": "Off-chain worker service (metadata sync, automation)",
+            "amount": 6500
+          },
+          {
+            "description": "Transaction builder & blockchain integration (Mesh SDK)",
+            "amount": 6000
+          }
+        ]
+      },
+      "frontend_development": {
+        "total": 16000,
+        "items": [
+          {
+            "description": "Dashboard UI/UX implementation (React/Next.js)",
+            "amount": 10000
+          },
+          {
+            "description": "Rule configuration interface",
+            "amount": 4000
+          },
+          {
+            "description": "Analytics dashboard",
+            "amount": 2000
+          }
+        ]
+      },
+      "api_client_development": {
+        "total": 8000,
+        "items": [
+          {
+            "description": "API documentation & examples",
+            "amount": 3500
+          },
+          {
+            "description": "Integration guides (multiple languages)",
+            "amount": 3000
+          },
+          {
+            "description": "Interactive API playground",
+            "amount": 1500
+          }
+        ]
+      },
+      "qa_testing": {
+        "total": 4000,
+        "items": [
+          {
+            "description": "Load testing infrastructure",
+            "amount": 1200
+          },
+          {
+            "description": "User acceptance testing (beta program)",
+            "amount": 1600
+          },
+          {
+            "description": "Bug fixes & performance tuning",
+            "amount": 1200
+          }
+        ]
+      }
+    }
+  },
+  "infrastructure_costs": {
+    "total": 18000,
+    "breakdown": {
+      "hosting_cloud_services": {
+        "total": 9600,
+        "duration_months": 8,
+        "monthly_cost": 1200,
+        "items": [
+          {
+            "description": "Cloud servers (AWS/GCP)",
+            "amount": 4800,
+            "monthly": 600
+          },
+          {
+            "description": "Database hosting (managed PostgreSQL)",
+            "amount": 2400,
+            "monthly": 300
+          },
+          {
+            "description": "CDN & storage (IPFS pinning, Arweave)",
+            "amount": 1600,
+            "monthly": 200
+          },
+          {
+            "description": "Monitoring & logging (Datadog, Sentry)",
+            "amount": 800,
+            "monthly": 100
+          }
+        ]
+      },
+      "blockchain_infrastructure": {
+        "total": 4800,
+        "items": [
+          {
+            "description": "API services (Blockfrost, Koios subscriptions)",
+            "amount": 2000
+          },
+          {
+            "description": "IPFS services (Pinata, NFT.storage)",
+            "amount": 2800
+          }
+        ]
+      },
+      "development_tools": {
+        "total": 3600,
+        "items": [
+          {
+            "description": "Software licenses (IDEs, design tools)",
+            "amount": 1200
+          },
+          {
+            "description": "Third-party APIs (oracles, services)",
+            "amount": 1600
+          },
+          {
+            "description": "Domain, SSL certificates, SaaS tools",
+            "amount": 800
+          }
+        ]
+      }
+    }
+  },
+  "security_audit": {
+    "total": 12000,
+    "breakdown": {
+      "internal_security_audit": {
+        "total": 8000,
+        "note": "Internal audit by blockchain security experts. External third-party audit (₳15,000-30,000) may be pursued post-mainnet with platform revenue",
+        "items": [
+          {
+            "description": "Smart contract security review (formal verification, property-based testing)",
+            "amount": 4000
+          },
+          {
+            "description": "API security analysis (penetration testing, vulnerability assessment)",
+            "amount": 2000
+          },
+          {
+            "description": "Infrastructure security review (DevOps, deployment security)",
+            "amount": 2000
+          }
+        ]
+      },
+      "security_tools_testing": {
+        "total": 4000,
+        "items": [
+          {
+            "description": "Penetration testing tools and automated security scanners",
+            "amount": 1200
+          },
+          {
+            "description": "Bug bounty program (community responsible disclosure)",
+            "amount": 2000
+          },
+          {
+            "description": "Security monitoring (WAF, DDoS protection, intrusion detection)",
+            "amount": 800
+          }
+        ]
+      }
+    }
+  },
+  "operations_community": {
+    "total": 18000,
+    "breakdown": {
+      "project_management": {
+        "total": 4800,
+        "items": [
+          {
+            "description": "Project coordination tools (Jira, Notion)",
+            "amount": 400
+          },
+          {
+            "description": "Legal & compliance consultation",
+            "amount": 2000
+          },
+          {
+            "description": "Accounting & financial reporting",
+            "amount": 1200
+          },
+          {
+            "description": "Contingency buffer (unforeseen expenses)",
+            "amount": 1200
+          }
+        ]
+      },
+      "marketing_community": {
+        "total": 6800,
+        "items": [
+          {
+            "description": "Website development (landing page, docs site)",
+            "amount": 2400
+          },
+          {
+            "description": "Educational content (video production, tutorials)",
+            "amount": 2000
+          },
+          {
+            "description": "Community engagement (Discord, events, AMAs)",
+            "amount": 1200
+          },
+          {
+            "description": "Launch marketing (announcements, PR)",
+            "amount": 1200
+          }
+        ]
+      },
+      "documentation_support": {
+        "total": 4000,
+        "items": [
+          {
+            "description": "Technical writing (user guides, API docs)",
+            "amount": 2400
+          },
+          {
+            "description": "Video tutorials production",
+            "amount": 1200
+          },
+          {
+            "description": "Support infrastructure (ticketing system)",
+            "amount": 400
+          }
+        ]
+      },
+      "closeout_deliverables": {
+        "total": 2400,
+        "items": [
+          {
+            "description": "Project Close-Out Report preparation",
+            "amount": 1200
+          },
+          {
+            "description": "Project Close-Out Video production",
+            "amount": 1200
+          }
+        ]
+      }
+    }
+  },
+  "team_costs": {
+    "total": 72000,
+    "team_size": 5,
+    "duration_months": 8,
+    "cost_per_person_monthly": 1800,
+    "cost_per_person_monthly_usd": 810,
+    "total_monthly": 9000,
+    "members": [
+      {
+        "role": "Project Manager / Blockchain Developer",
+        "monthly_cost": 1800,
+        "total_8_months": 14400,
+        "responsibilities": "Project leadership, smart contracts, blockchain integration"
+      },
+      {
+        "role": "Blockchain Developer",
+        "monthly_cost": 1800,
+        "total_8_months": 14400,
+        "responsibilities": "Backend, frontend, blockchain integration"
+      },
+      {
+        "role": "Full-Stack Developer / DevOps",
+        "monthly_cost": 1800,
+        "total_8_months": 14400,
+        "responsibilities": "Infrastructure, deployment, system operations"
+      },
+      {
+        "role": "UI/UX Designer",
+        "monthly_cost": 1800,
+        "total_8_months": 14400,
+        "responsibilities": "Dashboard design, user experience, design systems"
+      },
+      {
+        "role": "QA Engineer",
+        "monthly_cost": 1800,
+        "total_8_months": 14400,
+        "responsibilities": "Testing, quality assurance, validation"
+      }
+    ]
+  },
+  "milestones": [
+    {
+      "milestone": 1,
+      "title": "Project Planning & Architecture Design",
+      "delivery_month": 1,
+      "cost": 12000,
+      "cumulative": 12000,
+      "percentage_complete": 10,
+      "deliverables": [
+        "System architecture design document",
+        "UI/UX design mockups and user flow diagrams",
+        "Team structure and working schedule document",
+        "Technical specification document",
+        "Database schema and API structure documentation"
+      ]
+    },
+    {
+      "milestone": 2,
+      "title": "Smart Contract Development",
+      "delivery_month": 2,
+      "cost": 24000,
+      "cumulative": 36000,
+      "percentage_complete": 30,
+      "deliverables": [
+        "Smart contract specification design document",
+        "Testnet smart contract addresses (publicly verifiable)",
+        "GitHub repository with smart contract source code",
+        "Internal security audit report",
+        "Smart contract integration documentation"
+      ]
+    },
+    {
+      "milestone": 3,
+      "title": "Backend API Development",
+      "delivery_month": 4,
+      "cost": 24000,
+      "cumulative": 60000,
+      "percentage_complete": 50,
+      "deliverables": [
+        "Backend architecture and database schema documentation",
+        "GitHub repository with backend API source code",
+        "API documentation site with interactive playground",
+        "Code example repository with multiple language samples",
+        "Load test report showing performance metrics",
+        "Video demonstration of API usage"
+      ]
+    },
+    {
+      "milestone": 4,
+      "title": "Dashboard & User Interface",
+      "delivery_month": 6,
+      "cost": 30000,
+      "cumulative": 90000,
+      "percentage_complete": 70,
+      "deliverables": [
+        "Public URL: testnet.proteus.io (live demo environment)",
+        "GitHub release with complete dashboard source code (MIT License)",
+        "Video walkthrough showing non-developer creating NFT collection",
+        "Template showcase: All 10+ templates functional on testnet",
+        "Comprehensive user guide documentation",
+        "UI/UX design documentation"
+      ]
+    },
+    {
+      "milestone": 5,
+      "title": "Testing & Security Audit",
+      "delivery_month": 7,
+      "cost": 18000,
+      "cumulative": 108000,
+      "percentage_complete": 90,
+      "deliverables": [
+        "Testnet pilot URL (publicly accessible)",
+        "Beta testing report with participant feedback",
+        "Bug bounty program report with findings",
+        "Internal security audit report (PDF)",
+        "UAT test case documentation and results",
+        "Performance benchmark report",
+        "GitHub pull requests addressing identified issues"
+      ]
+    },
+    {
+      "milestone": 6,
+      "title": "Mainnet Launch & Project Close-Out",
+      "delivery_month": 8,
+      "cost": 12000,
+      "cumulative": 120000,
+      "percentage_complete": 100,
+      "deliverables": [
+        "Mainnet smart contract addresses (CardanoScan verified)",
+        "Production URL: proteus.io (publicly accessible)",
+        "Documentation hub: docs.proteus.io",
+        "Video tutorials covering all platform features",
+        "Community resource links (Discord, support portal)",
+        "Launch announcement links",
+        "Metrics dashboard URL: proteus.io/impact",
+        "GitHub release: v1.0.0 tagged",
+        "Final closeout report",
+        "Final closeout video"
+      ]
+    }
+  ],
+  "value_analysis": {
+    "cost_per_project_enabled": {
+      "projects_year_1": 150,
+      "cost_per_project_ada": 800,
+      "cost_per_project_usd": 360
+    },
+    "cost_per_month": {
+      "ada": 15000,
+      "usd": 6750
+    },
+    "cost_per_team_member_monthly": {
+      "ada": 3000,
+      "usd": 1350
+    },
+    "ecosystem_roi": {
+      "development_cost_savings_per_project_usd": 50000,
+      "total_savings_150_projects_usd": 7500000,
+      "catalyst_investment_usd": 54000,
+      "roi_multiplier": 138.89
+    }
+  },
+  "cost_comparison": [
+    {
+      "approach": "Custom Plutus Development",
+      "cost_usd": "100000+",
+      "timeline": "6-12 months",
+      "outcome": "Single project"
+    },
+    {
+      "approach": "Existing Tools (Limited)",
+      "cost_usd": "0-5000",
+      "timeline": "Weeks",
+      "outcome": "Limited functionality"
+    },
+    {
+      "approach": "Proteus (This Proposal)",
+      "cost_usd": "54000",
+      "timeline": "8 months",
+      "outcome": "Platform enabling 150+ projects"
+    }
+  ],
+  "budget_efficiency": {
+    "team_compensation_vs_market": {
+      "proteus_monthly_usd": 810,
+      "market_rate_monthly_usd": 13333,
+      "discount_percentage": 93.9,
+      "note": "Team accepts below-market compensation showing strong ecosystem commitment"
+    },
+    "infrastructure_percentage": 15,
+    "security_percentage": 10,
+    "open_source_percentage": 100,
+    "notes": [
+      "Team compensation 85% below market rate demonstrates co-investment",
+      "15% infrastructure allocation is industry-standard for cloud platforms",
+      "10% security allocation demonstrates proper security prioritization",
+      "100% of deliverables open source maximizes community value"
+    ]
+  },
+  "payment_schedule": [
+    {
+      "payment_number": 1,
+      "milestone": "Planning complete",
+      "amount": 12000,
+      "deliverables_required": "Architecture docs, UI/UX designs, technical specs"
+    },
+    {
+      "payment_number": 2,
+      "milestone": "Smart contracts deployed",
+      "amount": 24000,
+      "deliverables_required": "Testnet contracts, audit report, documentation"
+    },
+    {
+      "payment_number": 3,
+      "milestone": "API functional",
+      "amount": 24000,
+      "deliverables_required": "Working API, documentation, code examples"
+    },
+    {
+      "payment_number": 4,
+      "milestone": "Dashboard live",
+      "amount": 30000,
+      "deliverables_required": "Testnet dashboard, templates, user guides"
+    },
+    {
+      "payment_number": 5,
+      "milestone": "Testing complete",
+      "amount": 18000,
+      "deliverables_required": "Beta test report, security audit, bug fixes"
+    },
+    {
+      "payment_number": 6,
+      "milestone": "Mainnet launch",
+      "amount": 12000,
+      "deliverables_required": "Production deployment, metrics dashboard, close-out report"
+    }
+  ],
+  "metadata": {
+    "last_updated": "2025-11-20",
+    "exchange_rate_note": "1 ADA = $0.45 USD",
+    "currency": "ADA",
+    "project": "Proteus: Dynamic NFT Management Platform for Cardano",
+    "fund": "Fund 15",
+    "category": "Cardano Use Cases - Prototype & Launch"
+  }
+}
