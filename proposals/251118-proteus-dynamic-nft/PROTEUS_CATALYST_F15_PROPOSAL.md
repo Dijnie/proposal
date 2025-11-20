@@ -26,25 +26,13 @@ Proteus provides a no-code dashboard + developer API for minting, burning, and u
 
 ## Open Source Commitment
 
-**Will your project's outputs be fully open source?** No
+**Will your project's outputs be fully open source?**
 
-**Intellectual Property (IP) Status:**
+No
 
-Specific components will be released as open source under the **MIT License**, while platform infrastructure remains proprietary to ensure sustainable business model.
+**Please provide details on the intellectual property (IP) status of your project outputs, including whether they will be released as open source or retained under another licence.**
 
-**Open Source Components:**
-- **Smart Contracts:** All Plutus/Aiken validators for CIP-68 minting, burning, and metadata updates (MIT License, published on GitHub)
-- **API Documentation:** Comprehensive API reference, integration guides, and technical specifications (publicly accessible)
-- **Code Examples:** Sample implementations and integration examples for multiple programming languages (JavaScript, Python, curl)
-
-**Proprietary Components:**
-- **Backend API:** REST API source code, transaction builder, metadata indexing engine (proprietary)
-- **Frontend Dashboard:** Web application source code and UI/UX implementation (proprietary)
-- **Templates:** Pre-built use case templates and automation rules (proprietary)
-
-**Public Repository:** Open source smart contracts and examples will be maintained in a publicly accessible GitHub repository with community contribution guidelines.
-
-**License Details:** MIT License (https://opensource.org/licenses/MIT) for smart contracts and examples - permissive license allowing commercial use, modification, and distribution.
+Smart contracts (Plutus/Aiken validators for CIP-68 minting, burning, metadata updates), API documentation, and code examples will be released as open source under MIT License via public GitHub repository. Backend API source code, frontend dashboard, and templates library remain proprietary to ensure sustainable business model while providing community access to critical blockchain components.
 
 ## Supporting Documentation
 - GitHub Repository: [To be created after funding - will be public from day 1]
