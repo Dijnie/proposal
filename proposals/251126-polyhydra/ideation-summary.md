@@ -9,11 +9,19 @@
 
 ## Problem Statement (200 chars)
 
-Game-Fi on Cardano limited by L1 speed/cost. Hydra emerged but lacks community-scale products. Discord's 200M+ gamers have zero Cardano presence.
+Cardano GameFi lacks user traction. Discord has 200M+ gamers with zero Cardano presence. No bridge exists to onboard Web2 users into Cardano ecosystem.
 
 ## Solution Overview (200 chars)
 
-Polyhydra: Monopoly-style Discord Activity board game on Hydra. Turn-based play off-chain, on-chain settlement. Provably-fair dice, Web2 UX with Web3 transparency.
+Polyhydra: Fun board game as Discord Activity to attract Web2 gamers to Cardano. Simple gameplay, Hydra-powered, provably-fair. Gateway to Cardano GameFi.
+
+---
+
+## Two Primary Goals
+
+1. **🎯 Onboard Web2 Users to Cardano** - Discord is where 200M+ gamers are. We build a fun game there, let them discover Cardano naturally.
+
+2. **🚀 Boost Cardano GameFi Ecosystem** - Open-source patterns, provably-fair standard, real user data. One game to inspire many.
 
 ---
 

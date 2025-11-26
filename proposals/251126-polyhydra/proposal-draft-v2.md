@@ -22,13 +22,13 @@ Polyhydra: Monopoly-Style Board Game on Hydra for Discord
 
 ### Problem Statement (200 chars max)
 ```
-Game-Fi on Cardano limited by L1 speed/cost. Hydra emerged but lacks community-scale products. Discord's 200M+ gamers have zero Cardano presence.
+Cardano GameFi lacks user traction. Discord has 200M+ gamers with zero Cardano presence. No bridge exists to onboard Web2 users into Cardano ecosystem.
 ```
-(147 characters)
+(152 characters)
 
 ### Solution Overview (200 chars max)
 ```
-Polyhydra: Monopoly-style Discord Activity board game on Hydra. Turn-based play off-chain, on-chain settlement. Provably-fair dice, Web2 UX + Web3 trust.
+Polyhydra: Fun board game as Discord Activity to attract Web2 gamers to Cardano. Simple gameplay, Hydra-powered, provably-fair. Gateway to Cardano GameFi.
 ```
 (154 characters)
 
@@ -62,21 +62,19 @@ Polyhydra: Monopoly-style Discord Activity board game on Hydra. Turn-based play 
 
 **What makes Polyhydra innovative:**
 
-• **First Cardano Discord Activity** - Zero Cardano apps exist as Discord Activities despite 200M+ monthly active Discord gamers. We're first to market.
+• **Web2 User Acquisition Strategy** - Instead of building for crypto users, we build for Discord gamers (200M+) and let them discover Cardano through fun gameplay. Play first, wallet later.
 
-• **First Production Hydra Board Game** - While Hydra Doom (IOG demo) and Hydra Minecraft (Fund14) proved concepts, no production Hydra game exists for end users. We prove Hydra "in the field" with real match data.
+• **First Cardano Discord Activity** - Zero Cardano apps exist as Discord Activities. We're first to tap this massive user base where gamers already spend their time.
 
-• **Turn-Based Hydra Architecture** - Board games are the perfect use case for Hydra state channels: sequential state updates, deterministic outcomes, natural pauses between turns.
+• **GameFi Ecosystem Catalyst** - We create open-source patterns (Hydra gaming, provably-fair VRF) that other developers can use. One game inspires many.
 
-• **Provably-Fair Standard for Cardano** - We implement commit-reveal VRF with on-chain verification. Players can audit any dice roll post-game using public transcript data.
+• **Fun-First Design** - Most blockchain games feel like crypto apps. Polyhydra feels like a game that happens to be on blockchain. Low friction, high engagement.
 
-• **Dual Experience Innovation:**
-  - Web2 UX: Fast turns, no wallet per move, Discord-native
-  - Web3 Trust: On-chain transcript, provably-fair, verifiable history
+• **Provably-Fair Standard** - Commit-reveal VRF that any Cardano game can adopt. We open-source the solution to a common problem.
 
-**Differentiation from funded projects:**
-- Hydra Minecraft = tech demo with 30 players
-- Polyhydra = production board game targeting 300+ unique wallets
+**Differentiation:**
+- Other projects: Build for crypto users
+- Polyhydra: Build for gamers, convert to crypto users
 
 ### Prototype/MVP Description
 
@@ -128,24 +126,18 @@ Polyhydra: Monopoly-style Discord Activity board game on Hydra. Turn-based play 
 
 ### The Problem We're Solving
 
-Game-Fi on Cardano is limited because most interactions must occur on L1 (speed/cost), leading to products primarily revolving around minting/receiving NFTs or tokens. Hydra has emerged to resolve this performance bottleneck, yet it still lacks successful, community-scale products to demonstrate its value and drive Web2 users toward Cardano.
+**Cardano GameFi is struggling to attract users.** While the technology is solid, there's no fun, accessible game that brings Web2 users into the ecosystem.
 
-**Five Critical Gaps:**
+**Two Core Problems:**
 
-**1. Speed Limitation**
-Cardano L1 processes 20-30 TPS with 20-second block times. Turn-based games could work, but waiting 20+ seconds between turns destroys the flow. Players expect instant feedback.
+**1. No Web2 → Cardano Bridge**
+Discord hosts 200M+ monthly active gamers—the largest gaming community online. Yet zero Cardano applications exist as Discord Activities. This is a massive missed opportunity to onboard new users where they already spend time.
 
-**2. No Provably-Fair Standard**
-Cardano games use centralized random number generation. Players cannot verify game fairness. This erodes trust—critical for any dice-rolling or chance-based mechanics. No commit-reveal VRF standard exists.
-
-**3. Zero Discord Presence**
-Discord hosts 200M+ monthly active gamers. Zero Cardano applications exist as Discord Activities. Chess in the Park, Poker Night, and other turn-based games thrive on Discord—but none on Cardano.
-
-**4. Wallet UX Friction**
-Current Cardano games require wallet connections for every action. Installing extensions, signing transactions repeatedly—this creates massive drop-off. Board games should feel like board games, not crypto apps.
-
-**5. No Hydra Production Apps**
-Hydra Doom proved 807K TPS is possible. Hydra Minecraft is bringing it to gaming demos. But no production application exists that real users can play and that generates meaningful on-chain data.
+**2. Cardano GameFi Needs a Catalyst**
+Current Cardano games are either too complex (requiring wallet setup for every action) or not engaging enough. The ecosystem needs a simple, fun game that:
+- Attracts players first, blockchain second
+- Shows what Cardano can do (fast, cheap, fair)
+- Creates a template for other GameFi developers
 
 ### Our Solution: Polyhydra
 
@@ -232,43 +224,34 @@ We are building a Discord Activity board game in a "Monopoly" style that runs on
 
 ## [IMPACT] Community Impact (10,000 chars)
 
-### Direct Impact on Cardano Ecosystem
+### Two Primary Impacts
 
-**1. First Production Hydra Board Game**
-
-Hydra has been in development since 2020. IOG's Hydra Doom demonstrated technical capability (807K TPS peak). Fund14's Hydra Minecraft brings it to gaming demos. Polyhydra creates the first production board game real users can play.
-
-This proves Hydra "in the field" with real data from thousands of matches, reducing doubts about performance/cost.
-
-Impact measurement:
-- 100,000+ Hydra transactions
-- Public dashboard showing match data
-- Reference implementation for future developers
-
-**2. Opening the Door to New Users**
+**🎯 Impact 1: Onboard Web2 Users to Cardano**
 
 Discord has 200M+ monthly active gamers who have never interacted with Cardano. Polyhydra creates a zero-friction entry point:
-- No wallet extension installation required per turn
-- Free-to-play entry (wallet only for rewards)
-- Social context (play with friends in voice channels)
 
-Web2→Web3 Funnel tracking:
-- % of players connecting wallet for rewards
-- % receiving settlement NFTs
-- Geographic distribution of new users
+- **Play first, crypto later** - No wallet needed to play; only for rewards
+- **Where users already are** - Discord voice channels, with friends
+- **Natural discovery** - Discord Activities appear in server lists
+- **Social viral loop** - Friends invite friends to play together
 
-**3. Proving Hydra for Turn-Based Games**
+This is user acquisition through entertainment, not marketing.
 
-Turn-based board games are the perfect Hydra use case:
-- Sequential state updates (natural for state channels)
-- Deterministic outcomes (reproducible)
-- Natural pauses (no real-time streaming required)
+**Conversion Funnel:**
+```
+Discord User → Sees Activity → Plays Game → Enjoys → Connects Wallet → Gets Reward → Explores Cardano
+```
 
-We document this architecture for community reuse.
+**🎯 Impact 2: Boost Cardano GameFi Ecosystem**
 
-**4. Provably-Fair Gaming Standard**
+Polyhydra serves as a catalyst for GameFi development:
 
-We open-source our VRF implementation as a reference for all Cardano game developers. Currently, no standard exists. Our commit-reveal pattern can be adopted by any project.
+- **Proof that fun comes first** - Show other devs how to build engaging games
+- **Open-source patterns** - Hydra gaming architecture anyone can use
+- **Provably-fair standard** - Commit-reveal VRF for all Cardano games
+- **Real user data** - Metrics that prove Cardano gaming works
+
+We're not just building a game—we're building a template for Cardano GameFi.
 
 ### Quantitative Impact Metrics
 
@@ -353,19 +336,31 @@ Upgrade Roadmap:
 
 ### Team Capability
 
-[PLACEHOLDER - User to provide team details]
+**Team Credentials:**
+Our team has deep Cardano expertise with 7+ years ecosystem experience, multiple Catalyst-funded projects delivered, and proven technical capabilities:
 
-**Required Skills (confirmed):**
-- Hydra/Plutus development
-- TypeScript/Node.js
-- React game UI development
-- Discord SDK integration
-- DevOps/Docker
+- **Cardano Ambassador** (Tien) - Direct community connections
+- **Plutus Pioneer Program Graduates** (Tien, Hieu) - Smart contract expertise
+- **Catalyst Funded Proposers** - Track record of successful delivery
+- **Stake Pool Operators** (VILAI, HADA) - Production infrastructure experience
+- **5+ years software engineering** (all team members) - Professional development standards
+
+**Required Skills Coverage:**
+
+| Skill | Team Member | Evidence |
+|-------|-------------|----------|
+| Hydra/Plutus | Dung, Tien | Plutus Pioneer, Aiken/Haskell projects |
+| TypeScript/Node.js | Dung, Khanh, Quan | Multiple dApp builds |
+| React/Frontend | Khanh | Web platform specialization |
+| Discord SDK | Khanh | Frontend integration expertise |
+| DevOps/Docker | Quan | 5+ years FPT Software, AWS deployment |
+| Smart Contracts | Dung | Aiken/Haskell, Catalyst projects |
 
 **Team Structure:**
-- Lead Developer: [Name, LinkedIn] - Hydra integration, smart contracts
-- Game Developer: [Name, LinkedIn] - React UI, Discord SDK
-- Part-time Designer: [Name, LinkedIn] - UI/UX
+- **Project Lead**: Nguyen Anh Tien - Strategy, community, coordination
+- **Lead Blockchain Dev**: Phung Tien Dung - Hydra, smart contracts, VRF
+- **Frontend Dev**: Khanh Duy Nguyen - React, Discord Activity, wallet
+- **DevOps**: Le Anh Quan - Infrastructure, Hydra nodes, deployment
 
 ### Fund Management
 
@@ -480,25 +475,33 @@ Upgrade Roadmap:
 
 ## [RESOURCES] Team
 
-[PLACEHOLDER - User to provide]
+Our team combines deep Cardano expertise with proven track records in the ecosystem:
 
-**Lead Developer**
-- Name: [Your Name]
-- LinkedIn: [URL]
-- Role: Hydra integration, smart contracts, architecture
-- Experience: [Relevant experience]
+**📌 Nguyen Anh Tien – Project Manager | Blockchain Developer**
+- Role: Oversees project delivery, product strategy, and blockchain architecture. Leads community engagement and Hydra integration coordination.
+- Experience: 7+ years in Cardano/Crypto space since 2018. Founder of VILAI stake pool. Cardano Ambassador and Catalyst Funded Proposer. Graduate of Plutus Pioneer Program and Atala Prism Pioneer Program. Challenge Team member and Co-host for Eastern Town Hall.
+- Skills: Project management, product ownership, Cardano ecosystem expertise, community leadership, stake pool operation.
+- Contact: tienna@gmail.com | Telegram: https://t.me/Tiennguyenanh
 
-**Game Developer**
-- Name: [Name]
-- LinkedIn: [URL]
-- Role: React UI, Discord SDK integration, game logic
-- Experience: [Relevant experience]
+**📌 Phung Tien Dung – Fullstack Blockchain Developer**
+- Role: Leads blockchain integration and smart contract development. Architects Hydra state machine and provably-fair VRF implementation.
+- Experience: 5+ years in software engineering, 2+ years in blockchain; expert in dApp development (Next.js) and smart contract writing (Aiken, Haskell). Contributed to multiple Catalyst-funded projects.
+- Skills: Node.js, Python, C/C++, Haskell, Aiken; proficient in Cardano blockchain development.
+- Contact: tiendung0325@gmail.com | Telegram: https://t.me/dijnie | GitHub: https://github.com/dijnie
 
-**Designer (Part-time)**
-- Name: [Name]
-- LinkedIn: [URL]
-- Role: UI/UX design, visual assets
-- Experience: [Relevant experience]
+**📌 Khanh Duy Nguyen – Blockchain Developer**
+- Role: Develops game frontend (React/TypeScript) and Discord Activity integration. Implements wallet connectivity and game UI.
+- Experience: Full-stack developer with expertise in building scalable web platforms. Specialized in blockchain application development and user-facing interfaces.
+- Skills: Backend and frontend development, web platform integration, wallet connectivity, API design.
+- Contact: nguyenkhanh17112003@gmail.com | Telegram: https://t.me/khanhnguyen1711
+
+**📌 Le Anh Quan – Full-Stack Developer | System Operator**
+- Role: Manages infrastructure, DevOps pipelines, and Hydra node operations. Ensures platform reliability and secure deployment.
+- Experience: Software engineering expert with 5+ years of backend experience at FPT Software. Extensive production system management and cloud deployment.
+- Skills: Java, Node.js, Python; proficient in system operations, DevOps management, and AWS deployment.
+- Contact: GitHub: https://github.com/anhquan0 | LinkedIn: https://www.linkedin.com/in/lenaquan306/
+
+**Team Hub:** https://www.htlabs.xyz/members
 
 ---
 
@@ -508,7 +511,7 @@ Upgrade Roadmap:
 
 | Category | ADA | USD | % | Description |
 |----------|-----|-----|---|-------------|
-| Development | 42,000 | $17,640 | 60% | 2 developers × 5 months |
+| Development | 42,000 | $17,640 | 60% | 4 team members × 5 months (part-time allocation) |
 | Infrastructure | 8,000 | $3,360 | 11% | Servers, Hydra nodes, hosting |
 | Design/UX | 6,000 | $2,520 | 9% | UI design, board assets |
 | Testing | 5,000 | $2,100 | 7% | QA, security review |
@@ -518,15 +521,20 @@ Upgrade Roadmap:
 
 ### Development Cost Justification
 
-**Developer Rates:**
-- Lead Developer: $2,500/month (Hydra/TypeScript specialist)
-- Game Developer: $2,000/month (React/Discord)
-- Combined: $4,500/month × 5 months = $22,500
-- Actual budget: $17,640 (below market rate, founders contributing)
+**Team Allocation:**
+- Project Lead (Tien): 20% time - coordination, community
+- Lead Blockchain Dev (Dung): 60% time - Hydra, smart contracts
+- Frontend Dev (Khanh): 60% time - React, Discord Activity
+- DevOps (Quan): 30% time - infrastructure, deployment
+
+**Effective Rate:**
+- Total dev budget: $17,640 / 5 months = $3,528/month
+- Distributed across 4 members at varied commitment levels
+- Founders contributing additional unpaid hours
 
 **Comparable Market Rates:**
 - Blockchain developers: $4,000-8,000/month (US/EU)
-- Our rate: ~$1,750/month (cost-efficient, Vietnam/SEA based)
+- Our effective rate: ~$880/member/month (cost-efficient, Vietnam/SEA based, founder commitment)
 
 ### Infrastructure Costs
 
@@ -591,21 +599,25 @@ This is not one-off spend:
 
 ## SUMMARY
 
-**Polyhydra** brings Cardano gaming to where players are: Discord.
+**Polyhydra** = Fun game to bring Discord users to Cardano.
 
-We build the first production Hydra board game—a Monopoly-style turn-based game for 2-6 players with provably-fair dice and on-chain settlement. Web2 UX, Web3 trust.
+**Two Goals:**
+1. **Onboard Web2 users** - 200M+ Discord gamers, zero Cardano presence → we fix that
+2. **Boost Cardano GameFi** - Open-source patterns, provably-fair standard, real user data
 
-**Budget:** ₳70,000 | **Timeline:** 6 months | **Category:** Cardano Use Cases
+**What We Build:** Monopoly-style board game as Discord Activity. Simple, fun, social. Players first, blockchain second.
+
+**Budget:** ₳70,000 (~$29,400) | **Timeline:** 6 months | **Category:** Cardano Use Cases
 
 **Why fund us:**
-- First Cardano Discord Activity (200M+ potential users)
-- First production Hydra board game (proving scalability)
-- Turn-based = perfect Hydra use case
-- Provably-fair dice with public verification
-- Open-source (benefits entire ecosystem)
-- Lean budget (below market rates)
+- **User acquisition** - Discord is where gamers are (200M+)
+- **Fun first** - Game that people actually want to play
+- **Low friction** - No wallet needed until rewards
+- **GameFi catalyst** - Open-source patterns for ecosystem
+- **Proven team** - Cardano Ambassador, Plutus Pioneers, Catalyst track record
+- **Lean MVP** - $30K for production game with real users
 
 ---
 
-*Draft v2 - Updated with Monopoly-style board game focus*
-*Pending: Team details*
+*Draft v2 - Complete with team details*
+*Ready for final review before submission*

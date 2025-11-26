@@ -33,9 +33,10 @@
 - [ ] Each milestone has: Title, Outputs, Acceptance Criteria, Evidence, Cost
 
 ### Team Requirements
-- [ ] Lead Developer name and LinkedIn
-- [ ] Game Developer name and LinkedIn
-- [ ] Designer name and LinkedIn (if applicable)
+- [x] Project Lead: Nguyen Anh Tien (Telegram, Email)
+- [x] Lead Blockchain Dev: Phung Tien Dung (GitHub, Telegram)
+- [x] Frontend Dev: Khanh Duy Nguyen (Telegram)
+- [x] DevOps: Le Anh Quan (GitHub, LinkedIn)
 - [ ] All team members aware and consented
 - [ ] No undisclosed participation in other proposals
 
@@ -74,7 +75,7 @@
 
 | Item | Status | Owner |
 |------|--------|-------|
-| Add team member names/LinkedIn | ⏳ PENDING | User |
+| Add team member details | ✅ DONE | User |
 | Create GitHub repository | ⏳ PENDING | User |
 | Review and approve draft | ⏳ PENDING | User |
 | Final character count check | ⏳ PENDING | User |
