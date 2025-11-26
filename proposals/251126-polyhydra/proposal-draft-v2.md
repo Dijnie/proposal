@@ -313,7 +313,6 @@ Building on HTlabs' proven Cardano development track record, Polyhydra delivers 
 Our concept and preliminary research have already identified strong demand channels:
 
 * **Cardano2VN Network:** Access to **500+ Vietnamese Cardano community members** for immediate beta testing and feedback loops.
-* **Previous Tool Usage:** Our [cardano-tool.vercel.app](https://cardano-tool.vercel.app) (CIP25 minting) has served **200+ unique users**, proving our ability to build accessible, user-friendly interfaces for non-technical users.
 * **Gaming Community Reach:** Direct access to 3 active Discord gaming servers (totaling 2,000+ members) ready to pilot the Activity.
 * **Stake Pool Operators:** Strong relationships with VILAI and HADA stake pools, providing a direct connection to delegators interested in GameFi engagement.
 
