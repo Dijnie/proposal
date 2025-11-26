@@ -1,6 +1,6 @@
 # Polyhydra - Submission Checklist
 
-**Proposal:** Polyhydra: Hydra GameFi on Discord with Provably-Fair Play
+**Proposal:** Polyhydra: Monopoly-Style Board Game on Hydra for Discord
 **Category:** Cardano Use Cases: Prototype & Launch
 **Budget:** ₳70,000 | **Timeline:** 6 months
 
@@ -9,9 +9,9 @@
 ## Pre-Submission Requirements
 
 ### Character Limits Verification
-- [ ] Title: ≤60 characters (Current: 58 ✓)
-- [ ] Problem Statement: ≤200 characters (Current: 179 ✓)
-- [ ] Solution Overview: ≤200 characters (Current: 189 ✓)
+- [ ] Title: ≤60 characters (Current: 56 ✓)
+- [ ] Problem Statement: ≤200 characters (Current: 147 ✓)
+- [ ] Solution Overview: ≤200 characters (Current: 154 ✓)
 - [ ] Solution Detail: ≤10,000 characters
 - [ ] Impact: ≤10,000 characters
 - [ ] Capability: ≤10,000 characters
@@ -93,11 +93,14 @@
 
 ## Quick Reference
 
-**Proposal Title:** Polyhydra: Hydra GameFi on Discord with Provably-Fair Play
+**Proposal Title:** Polyhydra: Monopoly-Style Board Game on Hydra for Discord
+
+**Key Concept:** Monopoly-style turn-based board game on Hydra with provably-fair dice
 
 **Key Metrics to Remember:**
 - 300+ unique wallets
 - 100,000+ Hydra transactions
+- 5,000+ game transcripts (on-chain)
 - 1,000+ Discord installs
 - 6 months delivery
 

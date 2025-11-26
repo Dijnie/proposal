@@ -9,11 +9,26 @@
 
 ## Problem Statement (200 chars)
 
-Cardano lacks accessible, provably-fair GameFi with real-time state settlement. Existing games suffer slow transactions, centralized randomness, and no social distribution channels.
+Game-Fi on Cardano limited by L1 speed/cost. Hydra emerged but lacks community-scale products. Discord's 200M+ gamers have zero Cardano presence.
 
 ## Solution Overview (200 chars)
 
-Polyhydra: Hydra-powered GameFi platform with provably-fair VRF, on-chain state saves, Phaser3 web games, non-custodial UTXO.dev wallet, deployed on web and Discord Activities.
+Polyhydra: Monopoly-style Discord Activity board game on Hydra. Turn-based play off-chain, on-chain settlement. Provably-fair dice, Web2 UX with Web3 transparency.
+
+---
+
+## Game Concept: Monopoly-Style Board Game
+
+**Core Gameplay:**
+- 2-6 players in voice channel
+- Turn-by-turn: roll dice, buy/rent/sell properties, event cards
+- Intuitive UI with smooth animations
+- Game ends → Head closes → Match transcript recorded on L1
+
+**Why This Approach:**
+- **Fits turn-based nature** - Hydra perfect for sequential state updates
+- **Reduced friction via Discord** - Players already there; no wallet per turn
+- **Trust & Fairness** - PF dice + on-chain history = no cheating possible
 
 ---
 
@@ -25,32 +40,87 @@ The Cardano GameFi ecosystem faces critical gaps:
 2. **Fairness Trust Issues**: No standardized provably-fair randomness for Cardano games
 3. **Poor Distribution**: Games isolated from social platforms; Discord has 200M+ monthly gamers
 4. **Wallet UX Friction**: Complex wallet connections deter mainstream adoption
-5. **State Management**: No framework for saving game state on-chain affordably
+5. **No Hydra Production Apps**: Doom/Minecraft are demos, no community-scale products
 
 ---
 
 ## Proposed Solution
 
-**Polyhydra** is a next-generation GameFi platform combining:
+**Polyhydra** is a Monopoly-style Discord Activity board game combining:
 
 | Component | Technology | Purpose |
 |-----------|------------|---------|
-| L2 Scaling | Hydra Protocol | 1000+ TPS per head, instant finality |
-| Game Engine | Phaser 3 | Browser-based, Discord-compatible games |
-| Wallet | UTXO.dev (CIP-30) | Non-custodial, in-browser key management |
-| Randomness | VRF + Commit-Reveal | Provably-fair, on-chain verifiable |
-| Distribution | Discord Activities SDK | 200M+ gamer reach, social play |
-| State | Hydra Head Settlement | Game state saved on-chain at session end |
+| L2 Scaling | Hydra Protocol | 1000+ TPS, turn processing off-chain |
+| Frontend | React/TypeScript | Discord Activity iframe, board UI |
+| Orchestrator | Node.js | Game rules, PF engine, Hydra coordinator |
+| Wallet | UTXO.dev (CIP-30) | Non-custodial, only for rewards/NFTs |
+| Randomness | Commit-Reveal (HMAC/SHA256) | Provably-fair dice, verifiable from transcript |
+| Settlement | Hydra → L1 Fan-out | txID + state hash + metadata on-chain |
+
+---
+
+## Technical Architecture
+
+```
+┌─────────────────────────────────────────────────────────┐
+│              DISCORD ACTIVITY (iframe)                  │
+│  ┌─────────────────┐  ┌───────────────────────────┐    │
+│  │   React/TS UI   │  │   Embedded App SDK        │    │
+│  │   Board Game    │  │   (auth, voice, events)   │    │
+│  └────────┬────────┘  └─────────────┬─────────────┘    │
+└───────────│─────────────────────────│──────────────────┘
+            │ WebSocket/Events        │
+┌───────────┴─────────────────────────┴──────────────────┐
+│                    ORCHESTRATOR                         │
+│  ┌────────────────┐  ┌────────────────────────────┐    │
+│  │  Game Rules    │  │   Hydra Coordinator        │    │
+│  │  (buy/rent/    │  │   (open/close heads)       │    │
+│  │   sell/events) │  └─────────────┬──────────────┘    │
+│  └────────┬───────┘                │                    │
+│           │  Provably Fair Engine  │                    │
+│           │  commit(H) → reveal →  │                    │
+│           │  SHA256(server+client) │                    │
+└───────────┴────────────────────────┴───────────────────┘
+                        │
+┌───────────────────────┴────────────────────────────────┐
+│                    HYDRA HEAD                           │
+│  - Opens when table created                            │
+│  - State machine: positions, assets, balances          │
+│  - Turn-by-turn commits (instant, ~0 cost)             │
+│  - Closes at game end → fan-out to L1                  │
+└───────────────────────┬────────────────────────────────┘
+                        │ Settlement
+┌───────────────────────┴────────────────────────────────┐
+│                  CARDANO L1                             │
+│  - Match transcript (txID, state hash, metadata)       │
+│  - Leaderboard update                                  │
+│  - Reward distribution / NFT minting                   │
+└────────────────────────────────────────────────────────┘
+```
+
+**Reliability Features:**
+- Pause/resume support
+- Reconnect handling
+- Light snapshots for recovery
+- Auto-forfeit for disconnected players
 
 ---
 
 ## Unique Value Proposition
 
-1. **First Hydra-native GameFi on Discord** - No competitor combines these
-2. **Provably-Fair by Default** - VRF randomness verifiable on-chain
-3. **Zero-Download Gaming** - Web-based, works in Discord iframe
-4. **True Non-Custodial** - Users control keys via UTXO.dev
-5. **Social-First Distribution** - Leverage Discord's 200M+ monthly active gamers
+| Web2 Experience | Web3 Transparency |
+|-----------------|-------------------|
+| Fast turns (instant) | On-chain game transcript |
+| Low latency gameplay | Provably Fair dice/events |
+| No wallet per turn | Verifiable match history |
+| Discord-native UX | Settlement NFTs/rewards |
+
+**Key Differentiators:**
+1. **First Hydra Board Game** - Proving Hydra "in the field" with real user data
+2. **First Cardano Discord Activity** - Access to 200M+ Discord gamers
+3. **Dual Experience** - Fast like Web2, transparent like Web3
+4. **Provably Fair** - Commit-reveal dice, auditable post-game
+5. **Opening Door to New Users** - Web2→Web3 funnel via familiar game
 
 ---
 
@@ -68,14 +138,43 @@ The Cardano GameFi ecosystem faces critical gaps:
 
 ## Impact Metrics (MVP Scope)
 
-| Metric | Target (6 months) |
-|--------|-------------------|
-| Discord Activity Installs | 1,000+ |
-| Monthly Active Players | 500+ |
-| On-chain Game Sessions | 5,000+ |
-| Hydra Transactions | 100,000+ |
-| Unique Wallets Connected | 300+ |
-| Open Source Repos | 2+ (MIT license) |
+### On-Chain Measurable
+| Metric | Target (6 months) | Source |
+|--------|-------------------|--------|
+| Hydra Transactions | 100,000+ | Head activity logs |
+| Unique Wallets | 300+ | L1 addresses |
+| Game Transcripts | 5,000+ | Settlement txs |
+| Hydra Heads opened/closed | Track | Node metrics |
+| Median fee/game | <$0.10 | On-chain data |
+| Transcript NFTs | Track | L1 mints |
+
+### Off-Chain Measurable
+| Metric | Target | Source |
+|--------|--------|--------|
+| Discord Installs | 1,000+ | Developer Portal |
+| MAU/WAU/DAU | Track growth | Analytics |
+| Retention Rate | >20% D7 | Analytics |
+| Games/week | 500+ | Server logs |
+| Error rate | <1% | Monitoring |
+
+### Web2→Web3 Funnel
+| Metric | Target | Purpose |
+|--------|--------|---------|
+| % players connecting wallet | Track | Conversion |
+| % receiving rewards/NFTs | Track | Engagement |
+
+**All txIDs publicly listed for community self-verification.**
+
+---
+
+## Target Users & Beneficiaries
+
+| Segment | Benefit |
+|---------|---------|
+| **Discord Groups (2-6 players)** | Play together turn-by-turn, Web2-like smoothness with Web3 transparency, anti-cheating, on-chain record |
+| **Web3 Newcomers** | Access Cardano through familiar game; no wallet needed per turn, only for rewards/NFTs |
+| **Cardano Ecosystem** | Increased visibility, on-chain activity from Discord users |
+| **Hydra Developers** | Real production data, open-source patterns to reuse |
 
 ---
 
@@ -118,11 +217,29 @@ The Cardano GameFi ecosystem faces critical gaps:
 
 | Risk | Severity | Mitigation |
 |------|----------|------------|
-| Hydra complexity | HIGH | Use existing Hydra SDK, reference Hydra Doom |
-| Discord policy changes | MEDIUM | Build web fallback first |
-| UTXO.dev maturity | MEDIUM | Fallback to standard CIP-30 wallets |
-| Player acquisition | MEDIUM | Leverage Discord viral mechanics |
-| Token economics | MEDIUM | Start with NFT rewards, no token initially |
+| Discord policy changes | HIGH | Adhere to guidelines, prepare web fallback |
+| Hydra stability/multi-player sync | HIGH | Early stress-testing, autoscale, snapshots; resume process for abnormal closures |
+| L1 fee volatility/congestion | MEDIUM | Delayed settlement, batching outside peak hours |
+| Wallet onboarding | MEDIUM | Only require wallet for rewards/NFTs; concise instructions in Activity |
+| UTXO.dev maturity | MEDIUM | Fallback to standard CIP-30 wallets (Nami, Eternl) |
+
+---
+
+## Sustainability & Scalability
+
+### Post-Funding Sustainability
+| Revenue Stream | Description |
+|----------------|-------------|
+| Cosmetics/IAPs | In-Discord purchases (not pay-to-win) |
+| Pro Server Packages | Branding, custom tournaments for servers |
+| Partnerships | Cardano ecosystem sponsors for tournaments |
+
+### Upgrade Roadmap
+1. Extended maps/rules
+2. Tournament mode
+3. Team mode
+4. Real-time events
+5. Cross-server leaderboards
 
 ---
 

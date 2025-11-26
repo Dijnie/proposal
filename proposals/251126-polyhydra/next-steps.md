@@ -2,6 +2,7 @@
 
 **Date:** 2025-11-26
 **Decision:** MVP Scope - ₳70,000 / 6 months
+**Concept:** Monopoly-style Discord Activity Board Game on Hydra
 
 ---
 
@@ -10,13 +11,16 @@
 | Area | Status | Blocker |
 |------|--------|---------|
 | Technical Research | COMPLETE | None |
+| Turn-Based Hydra Research | COMPLETE | None |
+| Discord Activities Research | COMPLETE | None |
 | Competitive Analysis | COMPLETE | None |
 | Impact Metrics | COMPLETE | None |
 | Budget Finalization | COMPLETE | ₳70,000 |
 | Team Composition | PENDING | Need to define |
+| Game Design (rules) | PENDING | Simplified rules needed |
 | Technical Prototype | PENDING | Pre-proposal optional |
 
-**Overall Readiness: 80% - Ready for proposal drafting**
+**Overall Readiness: 85% - Ready for proposal drafting**
 
 ---
 
@@ -27,9 +31,20 @@
 | Action | Owner | Timeline |
 |--------|-------|----------|
 | Finalize team roster with LinkedIn/portfolios | Lead | 3-5 days |
+| Define simplified board game rules | Team | 3-5 days |
+| Decide game name (avoid "Monopoly" trademark) | Team | 2 days |
 | Contact UTXO.dev/graeLabs for partnership | Lead | 1 week |
-| Define first game concept (simple) | Team | 3-5 days |
 | Finalize budget breakdown by role | Lead | 2-3 days |
+
+### Game Design Decisions Needed
+
+| Decision | Options | Recommendation |
+|----------|---------|----------------|
+| Players | 2-6 | 2-4 for MVP, expand later |
+| Board size | 20/30/40 spaces | 24 spaces (simpler) |
+| Turn timeout | 30s/60s/120s | 60s default |
+| Property types | Simple/Complex | 4 color sets, no houses |
+| Win condition | Bankruptcy/Timer | 30-min timer + score |
 
 ### Priority 2: Technical Validation (Optional but Recommended)
 
