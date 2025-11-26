@@ -11,7 +11,7 @@ Each funding category has a minimum and maximum amount of funding a single propo
 Cardano Use Cases: Prototype & Launch
 . Minimum Funding Amount per proposal: $ADA 15,000
 . Maximum Funding Amount per proposal: $ADA 200,000
-1ADA=0.5USD
+1ADA=0.42USD
 
 ## [Time] Please specify how many months you expect your project to last
 You are expected to produce the deliverables specified in the proposal within the timeframe selected, with a minimum of 2 months and a maximum of 12 months.
