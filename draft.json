@@ -1,0 +1,104 @@
+{
+  "metadata": {
+    "type": "7808d2ba-d511-40af-84e8-c0d1625fdfdc",
+    "selfRef": {
+      "id": "019abdfb-ccc4-7d04-bcbf-60a5de8b99a7",
+      "version": "019abdfb-ccc4-7d04-bcbf-60a5de8b99a7",
+      "type": "draft"
+    },
+    "ref": null,
+    "refHash": null,
+    "template": {
+      "id": "0199802c-21b4-7982-ba3f-ec0cd0207b11",
+      "version": "0199802c-21b4-7982-ba3f-ec0cd0207b11",
+      "type": "signed"
+    },
+    "reply": null,
+    "section": null,
+    "brandId": null,
+    "campaignId": null,
+    "electionId": null,
+    "categoryId": {
+      "id": "0199802c-21b4-7dc8-8537-7eae5ea4c4d3",
+      "version": "0199802c-21b4-7dc8-8537-7eae5ea4c4d3",
+      "type": "signed"
+    },
+    "authors": null
+  },
+  "content": {
+    "$schema": "./0199802c-21b4-7982-ba3f-ec0cd0207b11.schema.json",
+    "setup": {
+      "title": {
+        "title": "Hydra C – A Lightweight SDK for Interacting with Hydra Heads"
+      },
+      "proposer": {
+        "applicant": "Vu Le Quang",
+        "type": "Entity (Not Incorporated)"
+      }
+    },
+    "summary": {
+      "time": { "duration": 8 },
+      "translation": { "isTranslated": false, "originalLanguage": "en" },
+      "problem": {
+        "statement": "Developers in IoT, gaming, and C-based apps struggle to leverage Cardano’s Layer-2 due to complex Hydra protocols, lack of lightweight SDK, and limited end-to-end examples for fast adoption."
+      },
+      "solution": {
+        "summary": "Hydra C SDK provides a lightweight, cross-platform C library with reliable networking, high-level APIs, state management, and transaction tools, enabling fast, secure Layer-2 Cardano apps."
+      },
+      "supportingLinks": {
+        "links": ["https://github.com/independenceee/hydra-c"]
+      },
+      "dependencies": {
+        "hasDependency": false,
+        "dependencyDetail": "No dependencies"
+      },
+      "open_source": {
+        "isOpenSource": true,
+        "openSourceInformation": "All outputs of the Hydra C project will be fully open source to support Cardano ecosystem growth.\n- Code & License: SDK, modules, examples, and demos on GitHub under MIT License, allowing free use, modification, and redistribution.\n- IP Status: No proprietary restrictions; fully open for community use and contribution.\n- Accessibility: Developers can access, study, and build upon the SDK for educational, experimental, or commercial purposes."
+      }
+    },
+    "theme": {
+      "theme": {
+        "grouped_tag": { "group": "Development & Tools", "tag": "Layer2" }
+      }
+    },
+    "campaign_category": {
+      "category_questions": {
+        "innovative_idea": "Hydra C is the first lightweight, cross-platform C SDK for interacting with Hydra Heads on Cardano, designed to bridge the gap between low-level Hydra protocol complexity and practical application development. Existing solutions are often language-specific, lack complete testing, or are difficult to integrate into C-based applications, IoT devices, and games. Hydra C addresses these limitations by providing:\n\n- Reliable networking: Robust WebSocket client with automatic reconnection, heartbeat, and exponential backoff.\n- Full protocol support: Message encoding/decoding with strict schema validation, event callbacks for all protocol events, and rollback handling.\n- Layer-2 tools: Transaction builder, UTxO query API, and automated transaction submission with retry logic.\n- Developer-friendly resources: Prebuilt cross-platform binaries, demos, end-to-end scripts, and comprehensive documentation.\n\nThis combination of features makes Hydra C a unique, ready-to-use toolkit that accelerates Layer-2 application development on Cardano, enabling developers in IoT, gaming, and C-based environments to adopt Hydra more efficiently than previously possible.",
+        "prototype_mvp": "The Hydra C prototype/MVP demonstrates the full Hydra Head lifecycle, including connecting, committing, building Layer-2 transactions, handling multiple transactions, performing fanouts, and closing the Head. Key highlights:\n\n- Modules and scripts: Includes SDK modules, demo scripts, and end-to-end examples to show real Layer-2 flows.\n- Public access: The repository will be hosted on GitHub, with prebuilt binaries for Linux, macOS, and Windows, along with sample projects and detailed guides.\n- Community involvement: Developers and contributors can test the SDK on Cardano testnet, experiment with transaction building, observe event callbacks, and simulate rollback scenarios. This provides direct hands-on feedback to improve robustness and usability.\n\nBy the end of the project, the MVP will be fully testable on-chain, demonstrating practical, deployable Layer-2 functionality and providing clear guidance for real-world application integration.",
+        "performance_metrics": "Hydra C’s success will be measured through concrete, realistic metrics tied to Cardano network activity:\n\n- Developer adoption: Estimated 100–500 active developers using the SDK for testing and integration within the first six months.\n- Transactions processed: Prototype expected to handle hundreds of Layer-2 test transactions per week on the Cardano testnet.\n- Protocol milestones: Metrics include successful commits, transaction submissions, fanouts, and Head closure events executed on testnet.\n- Impact assessment: Adoption and integration feedback will guide improvements, and the number of testnet deployments will serve as a proxy for real-world usability.\n\nThese measures are data-driven and credible, reflecting adoption potential and practical utility for Layer-2 solutions on Cardano, rather than inflated or speculative claims."
+      }
+    },
+    "details": {
+      "solution": {
+        "solution": "**Current Problem**\n\nCardano’s Hydra Heads represent a powerful Layer-2 solution, enabling high-throughput, low-latency transactions, but the practical adoption of Hydra remains limited due to fragmented, complex, and language-specific developer tools. Developers working in C-based environments, IoT devices, or game engines face multiple challenges:\n\n- Protocol complexity: Hydra protocol messages, including commit, fanout, snapshot, and rollback events, require precise handling to maintain state consistency. Mismanaging messages can lead to failed transactions or incorrect head states.\n- Lack of C tooling: Existing SDKs or libraries focus on higher-level languages such as Haskell or JavaScript, leaving C developers without suitable, ready-to-use tools for Layer-2 development.\n- Testing barriers: Developers lack example scripts, end-to-end demos, and integration testing frameworks for Hydra Heads, making experimentation slow and error-prone.\n- Limited accessibility: Educational resources and documentation are scattered, creating a steep learning curve for new developers interested in building real-world Layer-2 applications.\n\nAs a result, practical adoption of Hydra Heads for IoT solutions, C-based applications, and gaming projects remains low, and the barrier to entry is high for developers who want to explore Layer-2 on Cardano.\n\n**Solution**\n\nHydra C is a lightweight, fully open-source C SDK that addresses these challenges by providing a developer-friendly, reliable, and cross-platform API for interacting with Hydra Heads. Its design focuses on usability, correctness, and integration in pure C environments. Key features include:\n\n- Reliable network communication: A WebSocket client with automatic reconnection, heartbeat, and exponential backoff ensures continuous, stable connectivity with Hydra Heads.\n- Layer-2 transaction tools: Hydra C provides functions to build, commit, fanout, and finalize transactions, along with APIs for querying UTxOs and handling transient errors automatically.\n- State management and event handling: The SDK maintains Hydra Head lifecycle states, handles out-of-order or rollback messages, and provides a full event callback system for developers to respond to HeadIsOpen, TxValid, SnapshotConfirmed, HeadIsClosed, and RolledBack events.\n- Testing and example scripts: End-to-end demo scripts showcase a complete Hydra Head workflow, enabling developers to test connect → init → commit → open → multi-transaction → close → fanout   flows on Cardano.\n- Developer-focused resources: Detailed documentation, prebuilt binaries, and ready-to-run examples minimize onboarding friction, enabling rapid prototyping and experimentation.\n\nBy focusing on pure C environments, Hydra C allows integration into IoT devices, embedded systems, C-based applications, and game engines, without requiring additional frameworks or platforms. This makes the SDK lightweight, extensible, and highly adaptable for multiple use cases.\n\n**Reason for Building**\n\nThe Hydra C SDK is built to lower the barrier for Layer-2 development on Cardano, enabling developers to quickly and reliably integrate Hydra Heads into their applications. The key motivations are:\n\n- Accelerate Layer-2 adoption: By providing a reliable and fully tested C SDK, developers can experiment, prototype, and deploy Hydra-based applications faster, increasing real-world use of Cardano Layer-2.\n- Empower non-traditional blockchain developers: C developers, game developers, and IoT engineers gain access to practical tools for Hydra integration, which are otherwise unavailable in higher-level language SDKs.\n- Enable education and experimentation: Open-source demos, documentation, and example scripts allow students, researchers, and developers to study the protocol, test edge cases, and learn Layer-2 concepts safely.\n- Foster ecosystem growth: By releasing Hydra C as an open-source project, the community can contribute, extend, and adapt the SDK, promoting collaboration and innovation around Layer-2 applications on Cardano.\n\nOverall, Hydra C not only solves the technical barriers for working with Hydra Heads in C environments but also supports practical adoption, experimentation, and real-world applications, accelerating the growth and robustness of the Cardano ecosystem."
+      },
+      "impact": {
+        "impact": "**Positive Impact on the Cardano Community**\n\nThe Hydra C SDK will have a significant positive impact on the Cardano ecosystem by enabling practical Layer-2 adoption, education, and cross-domain experimentation. Key impacts include:\n\n- Accelerating Layer-2 adoption: By providing a lightweight, open-source C SDK for Hydra Heads, developers in IoT, gaming, and C-based applications can integrate Layer-2 functionality directly into their projects. This reduces technical barriers and accelerates the creation of real-world applications, increasing network activity on Hydra Heads and fostering broader usage of Cardano’s Layer-2.\n- Supporting education and developer onboarding: Comprehensive example scripts, end-to-end demos, and documentation allow students, researchers, and new developers to learn Hydra protocol and Layer-2 concepts efficiently. The SDK provides a practical learning environment, bridging the gap between theoretical research and real implementation.\n- Fostering community collaboration and innovation: Hydra C will be fully open-source, encouraging contributions, improvements, and adaptations from the Cardano developer community. Developers can study, extend, and integrate the SDK into new projects, promoting innovation across multiple sectors.\n\n**Measuring Impact**\n\nImpact will be measured using both quantitative and qualitative metrics:\n\nQuantitative metrics: \n\n- Number of developers who clone or fork the GitHub repository. \n- Number of demo script runs and successful Hydra Head workflows on testnet. \n- Number of transactions processed via SDK on testnet (commit, multi-tx, fanout).\n\nQualitative metrics: \n\n- Developer feedback via GitHub issues, discussions, and community forums. \n- Adoption of SDK in educational tutorials, workshops, or community projects. \n- Case studies demonstrating successful integration in IoT or gaming prototypes.\n\n\n\n**Sharing Outputs and Opportunities**\n\nAll project outputs will be hosted publicly on GitHub, including:\n\n- Hydra C SDK source code, modules, and libraries.\n- Demo scripts and end-to-end examples.\n- Documentation and tutorial guides.\n\nOutputs will be shared with the wider Cardano community via:\n\n- Community channels: Cardano developer forums, Discord, and GitHub discussions.\n- Tutorials and workshops: Enabling hands-on learning for students and developers.\n- Open-source contributions: Encouraging improvements, extensions, and integrations into other Cardano projects.\n\nBy providing practical, reliable, and open-source Layer-2 tools, Hydra C will empower the Cardano community to innovate faster, increase Layer-2 adoption, and grow the ecosystem across diverse domains including gaming, IoT, and embedded systems."
+      },
+      "feasibility": {
+        "feasibility": "**Team Skills and Expertise**\n\nOur team consists of highly skilled blockchain developers, Layer-2 protocol specialists, and C programming experts with a strong track record of building robust, maintainable, and open-source software.\n\n- Cardano and Hydra expertise: We have deep understanding of the Hydra protocol, including head lifecycle management, UTxO handling, transaction construction, and Layer-2 interactions. This ensures that Hydra C SDK is built following the best practices of Cardano development.\n- C programming and system-level development: Team members are experienced in networking, memory management, concurrency, and low-level protocol implementation, which are crucial for building a performant, lightweight SDK.\n- Open-source development experience: Our developers have contributed to multiple open-source blockchain projects, demonstrating the ability to produce reliable, reusable, and community-friendly code.\n- Educational and technical documentation: We emphasize producing high-quality documentation and example scripts, which ensures that developers can easily learn, test, and integrate Hydra C SDK into their projects.\n\n**Project Management and Delivery Capabilities**\n\n- Structured planning: Each module of Hydra C is mapped to clear milestones, including HydraWS, HydraJSON, HydraTxBuilder, event callbacks, state machine handling, and integration testing.\n- Timeline adherence: Our project timeline ensures completion of functional SDK modules, end-to-end demo scripts, and documentation within the proposed duration.\n- Risk management: Technical risks are mitigated through early prototyping, modular development, and iterative testing. Issues are tracked, and solutions are implemented systematically.\n- Communication and transparency: Progress reports, milestone updates, and deliverables are shared with stakeholders to ensure visibility and accountability at all stages.\n\n**Financial Management and Accountability**\n\n- Budget planning: Every ADA is carefully allocated to development, testing, documentation, and deployment to maximize efficiency and output.\n- Cost transparency: Complete audit records for expenditures allow verification and ensure accountability.\n- Milestone-based fund release: Funds are linked to tangible deliverables, ensuring that project progress aligns with funding usage.\n- Open-source verification: All code, demos, and documentation are publicly available, enabling the community to review progress, validate work, and provide constructive feedback.\n\n**Feasibility and Validation Strategy**\n\nTechnical feasibility: The project builds upon well-established Layer-2 concepts and C programming frameworks for Cardano, ensuring that all SDK components are implementable and testable.\n\nValidation methodology:\n\n- Unit and integration testing: Each module undergoes rigorous testing to ensure correct message handling, transaction construction, and state management.\n- End-to-end demo scripts: Full Hydra Head lifecycle is demonstrated on Cardano testnet, covering connect → commit → multi-tx → fanout → close.\n- Community feedback loops: Developers are encouraged to test, report issues, and suggest improvements, ensuring that Hydra C SDK meets practical use-case requirements.\n\nOpen-source model: By releasing all code and demos publicly, the SDK allows external verification and collaborative contributions, enhancing trust, reliability, and adoption."
+      }
+    },
+    "milestones": { "milestones": { "milestone_list": [] } },
+    "pitch": { "team": {}, "budget": {}, "value": {} },
+    "self_assessment": {
+      "self_assessment_checklist": {
+        "foundational_work": false,
+        "ecosystem_value": false,
+        "builder_credentials": false,
+        "catalyst_standing": false,
+        "problem_use_case": false,
+        "tangible_prototype": false,
+        "technical_approach": false,
+        "realistic_scope": false,
+        "community_engagement": false,
+        "budget_compliance": false
+      }
+    },
+    "agreements": {
+      "ongoing_projects": { "has_ongoing_projects": false, "projects": [] },
+      "consent_confirmation": { "terms_and_conditions": false }
+    }
+  }
+}
