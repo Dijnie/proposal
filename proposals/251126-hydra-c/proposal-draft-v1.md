@@ -1,7 +1,7 @@
 # Hydra C SDK - Fund15 Proposal Draft v1
 
 **Category:** Cardano Use Cases – Prototype & Launch
-**Budget:** ₳120,000 ADA (~$50,400 USD at 1 ADA = $0.42)
+**Budget:** ₳80,000 ADA (~$33,600 USD at 1 ADA = $0.42)
 **Duration:** 8 months
 
 ---
@@ -21,7 +21,7 @@
 ## SUMMARY
 
 ### Budget
-**₳120,000 ADA** (~$50,400 USD)
+**₳80,000 ADA** (~$33,600 USD)
 
 ### Duration
 **8 months**
@@ -357,7 +357,7 @@ Hydra C SDK provides a lightweight, open-source C library with developer-friendl
 
 ## MILESTONES
 
-**Budget:** ₳120,000 ADA
+**Budget:** ₳80,000 ADA
 **Duration:** 8 months
 **Required Milestones:** 4 (for grants 75K-150K ADA)
 
@@ -370,7 +370,7 @@ Hydra C SDK provides a lightweight, open-source C library with developer-friendl
 | **Acceptance Criteria** | 1. HydraWS connects to Hydra node and maintains stable connection. 2. HydraJSON correctly encodes/decodes all Hydra protocol messages. 3. All unit tests pass. 4. Documentation reviewed and complete. |
 | **Evidence** | 1. GitHub repository with tagged release v0.1.0. 2. Test coverage report. 3. Demo video showing connection to Hydra node. 4. Published API documentation. |
 | **Delivery Month** | Month 2 |
-| **Cost** | ₳30,000 ADA (25%) |
+| **Cost** | ₳20,000 ADA (25%) |
 
 ### Milestone 2: State Machine & Events
 
@@ -381,7 +381,7 @@ Hydra C SDK provides a lightweight, open-source C library with developer-friendl
 | **Acceptance Criteria** | 1. State machine correctly tracks Hydra Head lifecycle. 2. All event callbacks fire correctly (HeadIsOpen, TxValid, etc.). 3. Rollback events handled gracefully. 4. Integration tests pass on testnet. |
 | **Evidence** | 1. GitHub release v0.2.0. 2. Integration test results on testnet. 3. Demo video showing state transitions. 4. Event callback documentation. |
 | **Delivery Month** | Month 4 |
-| **Cost** | ₳30,000 ADA (25%) |
+| **Cost** | ₳20,000 ADA (25%) |
 
 ### Milestone 3: Transaction Builder & UTxO
 
@@ -392,7 +392,7 @@ Hydra C SDK provides a lightweight, open-source C library with developer-friendl
 | **Acceptance Criteria** | 1. Transactions build correctly for Hydra Heads. 2. UTxO queries return accurate data. 3. Retry logic handles transient failures. 4. Multi-tx demo executes successfully. |
 | **Evidence** | 1. GitHub release v0.3.0. 2. Testnet transaction logs (commit, tx, fanout). 3. Demo video showing multi-tx workflow. 4. Performance benchmarks. |
 | **Delivery Month** | Month 6 |
-| **Cost** | ₳30,000 ADA (25%) |
+| **Cost** | ₳20,000 ADA (25%) |
 
 ### Milestone 4: Final - Documentation, Demos & Closeout
 
@@ -403,7 +403,7 @@ Hydra C SDK provides a lightweight, open-source C library with developer-friendl
 | **Acceptance Criteria** | 1. Demo scripts execute full Hydra lifecycle. 2. Binaries work on all target platforms. 3. Documentation covers all APIs and workflows. 4. Close-out report approved. |
 | **Evidence** | 1. GitHub release v1.0.0. 2. Downloadable binaries on release page. 3. Published documentation site. 4. Close-out video on YouTube/Loom. |
 | **Delivery Month** | Month 8 |
-| **Cost** | ₳30,000 ADA (25%) |
+| **Cost** | ₳20,000 ADA (25%) |
 
 ---
 
@@ -447,31 +447,31 @@ Hydra C SDK provides a lightweight, open-source C library with developer-friendl
 
 ## BUDGET & COSTS
 
-**Total Request:** ₳120,000 ADA (~$50,400 USD at $0.42/ADA)
+**Total Request:** ₳80,000 ADA (~$33,600 USD at $0.42/ADA)
 
 ### Cost Breakdown
 
 | Category | ADA | USD | % | Description |
 |----------|-----|-----|---|-------------|
-| **Development** | ₳72,000 | $30,240 | 60% | Core SDK development (4 modules) |
-| **Testing & QA** | ₳18,000 | $7,560 | 15% | Unit tests, integration tests, testnet |
-| **Documentation** | ₳12,000 | $5,040 | 10% | API docs, tutorials, guides |
-| **Project Management** | ₳12,000 | $5,040 | 10% | Coordination, reporting, milestones |
-| **Contingency** | ₳6,000 | $2,520 | 5% | Unforeseen issues, scope adjustments |
-| **Total** | **₳120,000** | **$50,400** | **100%** | |
+| **Development** | ₳48,000 | $20,160 | 60% | Core SDK development (4 modules) |
+| **Testing & QA** | ₳12,000 | $5,040 | 15% | Unit tests, integration tests, testnet |
+| **Documentation** | ₳8,000 | $3,360 | 10% | API docs, tutorials, guides |
+| **Project Management** | ₳8,000 | $3,360 | 10% | Coordination, reporting, milestones |
+| **Contingency** | ₳4,000 | $1,680 | 5% | Unforeseen issues, scope adjustments |
+| **Total** | **₳80,000** | **$33,600** | **100%** | |
 
 ### Development Cost Detail
 
 | Module | Hours | Rate (USD) | Cost |
 |--------|-------|------------|------|
-| HydraWS | 200 | $25/hr | $5,000 |
-| HydraJSON | 150 | $25/hr | $3,750 |
-| HydraState | 250 | $25/hr | $6,250 |
-| HydraTxBuilder | 250 | $25/hr | $6,250 |
-| Event Callbacks | 100 | $25/hr | $2,500 |
-| Integration | 150 | $25/hr | $3,750 |
-| Demos & Examples | 100 | $25/hr | $2,500 |
-| **Total Dev** | **1,200 hrs** | | **$30,000** |
+| HydraWS | 130 | $25/hr | $3,250 |
+| HydraJSON | 100 | $25/hr | $2,500 |
+| HydraState | 170 | $25/hr | $4,250 |
+| HydraTxBuilder | 170 | $25/hr | $4,250 |
+| Event Callbacks | 70 | $25/hr | $1,750 |
+| Integration | 100 | $25/hr | $2,500 |
+| Demos & Examples | 60 | $25/hr | $1,500 |
+| **Total Dev** | **800 hrs** | | **$20,000** |
 
 ### Third-Party Costs
 - **Software:** None (all open-source libraries)
@@ -490,9 +490,9 @@ Hydra C SDK provides a lightweight, open-source C library with developer-friendl
 |---------|------|--------|-------|
 | Mesh Hydra Tools | F13 | ₳200,000 | TypeScript SDK |
 | Hydra Hexcore | F13 | ₳95,000 | Deployment tool |
-| **Hydra C SDK** | F15 | ₳120,000 | C SDK |
+| **Hydra C SDK** | F15 | ₳80,000 | C SDK |
 
-Hydra C requests **40% less** than Mesh Hydra Tools while delivering comparable scope in a different language ecosystem.
+Hydra C requests **60% less** than Mesh Hydra Tools and **16% less** than Hydra Hexcore while delivering comparable scope.
 
 **2. Developer Rate Justification:**
 - Rate: $25/hour
@@ -504,9 +504,9 @@ Hydra C requests **40% less** than Mesh Hydra Tools while delivering comparable 
 
 | Deliverable | Cost | Value |
 |-------------|------|-------|
-| 4 SDK modules | ₳72,000 | Complete Hydra interaction capability |
-| Test suite | ₳18,000 | Production-ready quality |
-| Documentation | ₳12,000 | Developer onboarding resources |
+| 4 SDK modules | ₳48,000 | Complete Hydra interaction capability |
+| Test suite | ₳12,000 | Production-ready quality |
+| Documentation | ₳8,000 | Developer onboarding resources |
 | Cross-platform binaries | Included | Linux, macOS, Windows support |
 | Demo scripts | Included | End-to-end learning tools |
 
@@ -523,7 +523,7 @@ Hydra C requests **40% less** than Mesh Hydra Tools while delivering comparable 
 
 ### Why This Budget is Appropriate
 
-1. **Right-sized for scope:** 4 modules + tests + docs in 8 months
+1. **Lean budget:** Maximum value at minimal cost
 2. **Competitive rates:** Below market average for blockchain specialists
 3. **Milestone accountability:** Funds released against deliverables
 4. **No waste:** No marketing/hardware/infrastructure costs
@@ -584,5 +584,5 @@ Hydra C requests **40% less** than Mesh Hydra Tools while delivering comparable 
 
 ---
 
-*Draft Version 1.0 - Created 2025-11-26*
-*Ready for user review and feedback*
+*Draft Version 1.1 - Updated 2025-11-26*
+*Budget: ₳80,000 ADA | Ready for submission*
