@@ -108,10 +108,10 @@ proposals/
 
 ## Scoring Optimization
 
-Each command optimizes for Fund15 scoring criteria:
-- **Impact** (35 points): Ecosystem benefit, measurable KPIs
-- **Feasibility** (35 points): Team capability, realistic timeline
-- **Value for Money** (30 points): Budget justification, ROI
+Each command optimizes for Fund15 scoring criteria (1-5 Stars per criterion):
+- **Impact** (4-5 Stars = HIGH): Ecosystem benefit, measurable evidence, realistic outcomes
+- **Feasibility** (4-5 Stars = HIGH): Team experience/capacity/skills, clear plan, risks addressed
+- **Value for Money** (4-5 Stars = HIGH): Budget justified, fund management capability, specific milestones
 
 ## Tips for Success
 

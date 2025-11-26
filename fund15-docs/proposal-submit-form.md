@@ -11,7 +11,7 @@ Each funding category has a minimum and maximum amount of funding a single propo
 Cardano Use Cases: Prototype & Launch
 . Minimum Funding Amount per proposal: $ADA 15,000
 . Maximum Funding Amount per proposal: $ADA 200,000
-1ADA=0.5USD
+1ADA=0.42USD
 
 ## [Time] Please specify how many months you expect your project to last
 You are expected to produce the deliverables specified in the proposal within the timeframe selected, with a minimum of 2 months and a maximum of 12 months.
@@ -66,6 +66,7 @@ Avoid inflated claims, keep it data-based and credible.
 # PROJECT & SOLUTION (IMPORTANT)
 
 ## [SOLUTION] Please describe your proposed solution (10000-character limit including spaces)
+**IMPORTANT** Ask and give suggestions to help me clarify the project solution
 How you write this section will depend on what type of proposal you are writing. You might want to include details on:
 How do you perceive the problem you are solving?
 What are your reasons for approaching it in the way that you have?
@@ -116,6 +117,7 @@ Important: Catalyst funding is not anonymous, and some level of ‘proof of life
 All Project Participants must disclose their role and scope of services across any submitted proposals, even if they are not in the lead or co-proposer role, such as an implementer, vendor, service provider, etc. Failure to disclose this information may lead to disqualification from the current grant round.
 
 ## [BUDGET & COSTS] Please provide a cost breakdown of the proposed work and resources
+**IMPORTANT** analyze your budget and costs carefully, in USD and be realistic.
 Make sure every element mentioned in your plan reflects its cost. It may be helpful to refer to your plan and timeline, list all the resources you will need at each stage, and what they cost.
 Here, provide a clear description of any third party product or service you will be using. This could be hardware, software licenses, professional services (legal, accounting, code auditing, etc) but does not need to include the use of contracted programmers and developers.
 The exact budget elements you include will depend on what type of work you are doing, and you might need to give less detail for a small, low-budget proposal. If the cost of the project will exceed the funding request, please provide information about alternative sources of funding.
