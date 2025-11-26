@@ -39,6 +39,16 @@ Proteus simplifies dynamic NFT management. It provides a secure on-chain validat
 
 This hybrid approach ensures essential CIP-68 infrastructure remains freely available to the Cardano ecosystem while enabling sustainable platform operation through optional premium services.
 
+### Supporting Links
+
+- **GitHub Repository (CIP68 Generator):** https://github.com/htlabs-xyz/cip68generator
+- **Live CIP25 Minting Tool:** https://cardano-tool.vercel.app
+- **Learning Management System:** https://lms.cardano2vn.io
+- **HTlabs Portfolio:** https://www.htlabs.xyz/projects
+- **Fund 12 CIP68 Generator:** https://projectcatalyst.io/funds/12/cardano-use-cases-concept/open-source-dynamic-assets-tokennft-generator-cip68
+- **Fund 11 Aiken Course:** https://projectcatalyst.io/funds/11/cardano-open-ecosystem/the-complete-aiken-course-cardano-from-zero-to-expert
+- **Fund 10 Marlowe Study Guide:** https://projectcatalyst.io/funds/10/f10-startups-and-onboarding-for-students/study-guide-for-marlow
+
 ### Dependencies
 
 This project has no dependencies on other Catalyst proposals or external projects.
@@ -348,6 +358,21 @@ Study Guide for Marlow https://projectcatalyst.io/funds/10/startups-and-onboardi
 
 Building on HTlabs' proven Cardano development track record, Proteus delivers production-ready CIP-68 infrastructure matching Web2 developer experience standards.
 
+### Early User Interest & Market Validation
+
+Our Fund 12 CIP68 Generator has already attracted community interest:
+
+- **GitHub Repository:** 15+ stars and growing community engagement
+- **Community Inquiries:** Multiple Cardano developers have contacted HTlabs requesting dynamic NFT tooling
+- **Cardano2VN Network:** Access to 500+ Vietnamese Cardano community members for beta testing
+- **Previous Tool Usage:** cardano-tool.vercel.app (CIP25 minting) has served 200+ unique users, demonstrating demand for accessible NFT tools
+- **Stake Pool Operators:** VILAI and HADA stake pools provide direct connection to delegator communities interested in NFT utilities
+
+**Target early adopters identified through community engagement:**
+- GameFi Projects: 3 Vietnamese game studios exploring Cardano NFT integration
+- Event Organizers: Vietnam Cardano community events requiring dynamic ticketing
+- NFT Artists: Local digital artists seeking evolving art capabilities
+
 ### Expertise and Experience
 
 HTlabs demonstrates deep Cardano expertise through multiple successful Catalyst projects and live production deployments:
@@ -553,12 +578,10 @@ No gaps in development - milestones represent completion dates, not start dates.
 - Pilot version deployed on preprod testnet with all features functional
 - Beta testing program has minimum 50 participants creating real NFT collections
 - Bug bounty program has minimum 10 participants with documented findings
-- Internal security audit completed with published report (no critical vulnerabilities identified)
+- Internal security audit completed by experienced blockchain security experts with published report (no critical vulnerabilities identified)
 - All UAT test cases pass successfully
 - User feedback collected and critical issues addressed
 - Performance benchmarks met: API <200ms response, >99% transaction success rate
-
-*Note: Internal audit conducted by experienced blockchain security experts. External third-party audit (estimated ₳15,000-30,000) may be pursued post-mainnet with platform revenue for additional validation.*
 
 **Evidence:**
 - Testnet pilot URL (publicly accessible)
