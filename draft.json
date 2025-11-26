@@ -38,7 +38,7 @@
     },
     "summary": {
       "time": { "duration": 8 },
-      "budget": { "amount": 80000 },
+      "budget": { "amount": 95700 },
       "translation": { "isTranslated": false, "originalLanguage": "en" },
       "problem": {
         "statement": "Developers in IoT, gaming, and C-based apps struggle to leverage Cardano's Layer-2 due to complex Hydra protocols, lack of lightweight SDK, and limited end-to-end examples for fast adoption."
@@ -85,36 +85,44 @@
       "milestones": {
         "milestone_list": [
           {
-            "title": "Core Infrastructure - HydraWS & HydraJSON",
-            "outputs": "1. HydraWS module: WebSocket client with reconnection, heartbeat, TLS support. 2. HydraJSON module: Protocol message encoding/decoding with validation. 3. Unit tests for both modules (≥80% coverage). 4. API documentation.",
-            "acceptance_criteria": "1. HydraWS connects to Hydra node and maintains stable connection. 2. HydraJSON correctly encodes/decodes all Hydra protocol messages. 3. All unit tests pass. 4. Documentation reviewed and complete.",
-            "evidence": "1. GitHub repository with tagged release v0.1.0. 2. Test coverage report. 3. Demo video showing connection to Hydra node. 4. Published API documentation.",
-            "delivery_month": 2,
-            "cost": 20000
+            "title": "Reliable WebSocket Connection & Hydra Protocol Message Handling",
+            "outputs": "1. HydraWS module: robust WebSocket client with automatic reconnection, exponential backoff, and built-in heartbeat (ping/pong). 2. HydraJSON module: full encode/decode + strict schema validation for all Hydra protocol messages. 3. Unified logging system and error code enumeration. 4. Unit test suite (CMocka) with ≥90% coverage. 5. Standalone demo.",
+            "acceptance_criteria": "1. HydraWS connects to Hydra node and maintains stable connection with auto-reconnect. 2. HydraJSON correctly encodes/decodes all protocol messages (Greeting, PeerConnected, HeadIsInitializing, Commit, NewTx, SnapshotConfirmed, RolledBack, HeadIsClosed). 3. All unit tests pass with ≥90% coverage. 4. Demo successfully connects to testnet Hydra node.",
+            "evidence": "1. GitHub repository with tagged release v0.1.0. 2. Test coverage report (≥90%). 3. Demo video showing connection to Hydra node. 4. Published API documentation.",
+            "delivery_month": 1,
+            "cost": 16500
           },
           {
-            "title": "State Machine & Event Callbacks",
-            "outputs": "1. HydraState module: Head lifecycle state machine. 2. Event callback system for all protocol events. 3. Rollback handling logic. 4. Integration tests with testnet.",
-            "acceptance_criteria": "1. State machine correctly tracks Hydra Head lifecycle. 2. All event callbacks fire correctly (HeadIsOpen, TxValid, etc.). 3. Rollback events handled gracefully. 4. Integration tests pass on testnet.",
-            "evidence": "1. GitHub release v0.2.0. 2. Integration test results on testnet. 3. Demo video showing state transitions. 4. Event callback documentation.",
-            "delivery_month": 4,
-            "cost": 20000
+            "title": "High-Level HydraClient API & Event Callback System",
+            "outputs": "1. HydraProvider opaque struct with complete public functions: new, connect, init, commit, new_tx, close, contest, fanout, abort. 2. Full event callback system (function pointers) for all protocol events. 3. Automatic retry logic for transient network/server errors. 4. Console application demonstrating complete Head lifecycle on testnet.",
+            "acceptance_criteria": "1. HydraProvider API covers all Hydra Head operations. 2. All event callbacks fire correctly (HeadIsOpen, SnapshotConfirmed, TxValid, HeadIsClosed, RolledBack). 3. Retry logic handles transient errors gracefully. 4. Console demo completes full Head lifecycle on testnet.",
+            "evidence": "1. GitHub release v0.2.0. 2. Integration test results on testnet. 3. Demo video showing full Head lifecycle. 4. Event callback documentation.",
+            "delivery_month": 3,
+            "cost": 22800
           },
           {
-            "title": "Transaction Builder & UTxO Query",
-            "outputs": "1. HydraTxBuilder module: L2 transaction construction. 2. UTxO query API. 3. Automated submission with retry logic. 4. Multi-transaction demo.",
-            "acceptance_criteria": "1. Transactions build correctly for Hydra Heads. 2. UTxO queries return accurate data. 3. Retry logic handles transient failures. 4. Multi-tx demo executes successfully.",
-            "evidence": "1. GitHub release v0.3.0. 2. Testnet transaction logs (commit, tx, fanout). 3. Demo video showing multi-tx workflow. 4. Performance benchmarks.",
-            "delivery_month": 6,
-            "cost": 20000
+            "title": "Robust State Machine & Out-of-Order / Rollback Message Handling",
+            "outputs": "1. Full Hydra state machine (Idle → Initializing → Open → Closing → Closed → Finalized). 2. Event processing pipeline handling delayed, reordered, duplicated, and rollback messages. 3. Comprehensive integration test suite simulating 50+ real-world network scenarios. 4. State transition diagram and documentation.",
+            "acceptance_criteria": "1. State machine correctly tracks all Hydra Head lifecycle states. 2. Pipeline handles out-of-order and rollback messages correctly. 3. All 50+ integration test scenarios pass. 4. State transition diagram complete and accurate.",
+            "evidence": "1. GitHub release v0.3.0. 2. Integration test results (50+ scenarios). 3. Demo video showing state transitions and rollback handling. 4. Published state machine documentation.",
+            "delivery_month": 5,
+            "cost": 21600
           },
           {
-            "title": "Documentation, End-to-End Demos & Project Closeout",
-            "outputs": "1. End-to-end demo scripts (connect→commit→tx→fanout). 2. Prebuilt binaries (Linux, macOS, Windows). 3. Comprehensive documentation and tutorials. 4. Project Close-out Report and Video.",
-            "acceptance_criteria": "1. Demo scripts execute full Hydra lifecycle. 2. Binaries work on all target platforms. 3. Documentation covers all APIs and workflows. 4. Close-out report approved.",
-            "evidence": "1. GitHub release v1.0.0. 2. Downloadable binaries on release page. 3. Published documentation site. 4. Close-out video on YouTube/Loom.",
+            "title": "Layer-2 Transaction Builder & UTxO Management",
+            "outputs": "1. HydraTxBuilder: construct valid Layer-2 transactions (inputs, outputs, metadata, fees) → CBOR hex output. 2. UTxO query API: fetch_utxos(), fetch_utxos_at_address(), get_head_utxos(). 3. Automatic transaction submission with retry on InvalidTx/ReqSnInvalid. 4. Signing abstraction layer (stub implementation). 5. Three end-to-end demo scripts: commit → multi-tx payment → successful fanout.",
+            "acceptance_criteria": "1. HydraTxBuilder produces valid CBOR transactions for Hydra Heads. 2. UTxO queries return accurate data. 3. Retry logic handles InvalidTx errors. 4. All three demo scripts execute successfully on testnet.",
+            "evidence": "1. GitHub release v0.4.0. 2. Testnet transaction logs (commit, multi-tx, fanout). 3. Demo video showing complete payment flow. 4. Performance benchmarks.",
+            "delivery_month": 7,
+            "cost": 20700
+          },
+          {
+            "title": "Cross-Platform Packaging, Documentation & v1.0.0 Release",
+            "outputs": "1. Cross-platform shared/static libraries: Linux (.so), macOS (.dylib), Windows (.dll + .lib). 2. Clean public headers in include/hydra. 3. Examples folder with 4 complete sample applications. 4. Comprehensive documentation: Quick Start, full API reference, Unreal Engine guide, troubleshooting. 5. GitHub Release v1.0.0 with prebuilt binaries. 6. Complete build & usage walkthrough video. 7. Project Close-out Report and Video.",
+            "acceptance_criteria": "1. Libraries build and run on all three platforms. 2. All 4 example applications compile and run successfully. 3. Documentation covers all APIs and workflows. 4. v1.0.0 release published with binaries. 5. Close-out report and video approved.",
+            "evidence": "1. GitHub release v1.0.0. 2. Downloadable binaries for Linux, macOS, Windows. 3. Published documentation site. 4. Walkthrough video on YouTube. 5. Close-out video on YouTube/Loom.",
             "delivery_month": 8,
-            "cost": 20000
+            "cost": 14100
           }
         ]
       }
@@ -124,10 +132,10 @@
         "members": "Lead Developer: Vu Le Quang\n- Role: Project Lead & Core Developer\n- GitHub: https://github.com/independenceee\n- Responsibilities: Architecture, core module development (HydraWS, HydraState)\n- Experience: Blockchain development, C systems programming, open-source contributions\n\nSkills Required (if recruiting):\n- C programming with networking experience\n- Familiarity with WebSocket protocols\n- Blockchain/Cardano knowledge preferred\n- Technical writing skills\n\nCommunity Engagement:\n- Active in Cardano developer Discord\n- Engaged with Hydra working group\n- Connected with cardano-c maintainers"
       },
       "budget": {
-        "breakdown": "Total Request: ₳80,000 ADA (~$33,600 USD at $0.42/ADA)\n\nCost Breakdown:\n- Development: ₳48,000 (60%) - Core SDK development (4 modules)\n- Testing & QA: ₳12,000 (15%) - Unit tests, integration tests, testnet\n- Documentation: ₳8,000 (10%) - API docs, tutorials, guides\n- Project Management: ₳8,000 (10%) - Coordination, reporting, milestones\n- Contingency: ₳4,000 (5%) - Unforeseen issues, scope adjustments\n\nDevelopment Cost Detail:\n- HydraWS: 130 hours × $25/hr = $3,250\n- HydraJSON: 100 hours × $25/hr = $2,500\n- HydraState: 170 hours × $25/hr = $4,250\n- HydraTxBuilder: 170 hours × $25/hr = $4,250\n- Event Callbacks: 70 hours × $25/hr = $1,750\n- Integration: 100 hours × $25/hr = $2,500\n- Demos & Examples: 60 hours × $25/hr = $1,500\n- Total Dev: 800 hours = $20,000\n\nThird-Party Costs:\n- Software: None (all open-source libraries)\n- Infrastructure: Testnet nodes (free via Cardano infrastructure)\n- Services: None required"
+        "breakdown": "Total Request: ₳95,700 ADA (~$40,194 USD at $0.42/ADA)\n\nMilestone Cost Breakdown:\n- MS1: ₳16,500 (17.24%) - WebSocket Connection & Protocol Handling\n- MS2: ₳22,800 (23.82%) - HydraClient API & Event Callbacks\n- MS3: ₳21,600 (22.57%) - State Machine & Rollback Handling\n- MS4: ₳20,700 (21.63%) - Transaction Builder & UTxO Management\n- MS5: ₳14,100 (14.73%) - Cross-Platform Packaging & v1.0.0 Release\n\nDevelopment Rate: ₳60/hour (~$25/hr at $0.42/ADA)\n\nMS1 Detail (Month 1):\n- HydraWS module: 55hrs = ₳3,300\n- HydraJSON module: 45hrs = ₳2,700\n- Logging system: 35hrs = ₳2,100\n- Unit tests (2 people): 40hrs × 2 = ₳4,800\n- Demo: 30hrs = ₳1,800\n- PM: 30hrs = ₳1,800\n\nMS2 Detail (Months 2-3):\n- HydraProvider (2 people): 80hrs × 2 = ₳9,600\n- Event callbacks: 80hrs = ₳4,800\n- Retry logic: 50hrs = ₳3,000\n- Console demo: 60hrs = ₳3,600\n- PM: 30hrs = ₳1,800\n\nMS3 Detail (Months 4-5):\n- State machine (2 people): 80hrs × 2 = ₳9,600\n- Event pipeline: 60hrs = ₳3,600\n- Integration tests: 50hrs = ₳3,000\n- Documentation: 60hrs = ₳3,600\n- PM: 30hrs = ₳1,800\n\nMS4 Detail (Months 6-7):\n- HydraTxBuilder (2 people): 75hrs × 2 = ₳9,000\n- UTxO query API: 45hrs = ₳2,700\n- Auto submit: 40hrs = ₳2,400\n- Signing layer: 35hrs = ₳2,100\n- Demo scripts: 50hrs = ₳3,000\n- PM: 25hrs = ₳1,500\n\nMS5 Detail (Month 8):\n- Cross-platform libs: 25hrs = ₳1,500\n- Public headers: 22hrs = ₳1,320\n- Examples: 35hrs = ₳2,100\n- Documentation: 45hrs = ₳2,700\n- GitHub Release: 28hrs = ₳1,680\n- Walkthrough video: 35hrs = ₳2,100\n- Close-out: 20hrs = ₳1,200\n- PM: 25hrs = ₳1,500\n\nThird-Party Costs: None (all open-source libraries, free testnet infrastructure)"
       },
       "value": {
-        "justification": "Cost Justification:\n\n1. Comparison to Similar Funded Projects:\n- Mesh Hydra Tools (F13): ₳200,000 - TypeScript SDK\n- Hydra Hexcore (F13): ₳95,000 - Deployment tool\n- Hydra C SDK (F15): ₳80,000 - C SDK\nHydra C requests 60% less than Mesh Hydra Tools and 16% less than Hydra Hexcore.\n\n2. Developer Rate Justification:\n- Rate: $25/hour\n- Vietnam average developer rate: $20-40/hour\n- Blockchain specialist premium justified by niche expertise\n- Rate is competitive and cost-effective\n\n3. Deliverables per ADA:\n- 4 SDK modules: ₳48,000 - Complete Hydra interaction capability\n- Test suite: ₳12,000 - Production-ready quality\n- Documentation: ₳8,000 - Developer onboarding resources\n- Cross-platform binaries: Included\n- Demo scripts: Included\n\n4. Ecosystem Value:\n- Opens new market: IoT, gaming, embedded systems\n- First mover: No competing C SDK exists\n- Reusable: MIT license enables commercial adoption\n- Educational: Lowers barrier for new developers\n\n5. Long-term ROI:\n- SDK maintenance continues post-funding (open-source)\n- Community can extend and improve\n- Enables derivative projects on Cardano\n\nWhy This Budget is Appropriate:\n- Lean budget: Maximum value at minimal cost\n- Competitive rates: Below market average for blockchain specialists\n- Milestone accountability: Funds released against deliverables\n- No waste: No marketing/hardware/infrastructure costs\n- Community leverage: Open-source multiplies impact"
+        "justification": "Cost Justification:\n\n1. Comparison to Similar Funded Projects:\n- Mesh Hydra Tools (F13): ₳200,000 - TypeScript SDK\n- Hydra Hexcore (F13): ₳95,000 - Deployment tool\n- Hydra C SDK (F15): ₳95,700 - C SDK\nHydra C requests 52% less than Mesh Hydra Tools for comparable scope.\n\n2. Developer Rate Justification:\n- Rate: ₳60/hour (~$25/hr at $0.42/ADA)\n- Vietnam average developer rate: $20-40/hour\n- Blockchain specialist premium justified by niche expertise\n- Rate is competitive and cost-effective\n\n3. Deliverables per Milestone:\n- MS1 (₳16,500): HydraWS + HydraJSON modules, 90% test coverage, demo\n- MS2 (₳22,800): HydraProvider API, event callbacks, retry logic, console demo\n- MS3 (₳21,600): State machine, rollback handling, 50+ integration tests\n- MS4 (₳20,700): TxBuilder, UTxO API, signing layer, 3 e2e demos\n- MS5 (₳14,100): Cross-platform binaries, docs, v1.0.0 release, close-out\n\n4. Ecosystem Value:\n- Opens new market: IoT, gaming, embedded systems\n- First mover: No competing C SDK exists\n- Reusable: MIT license enables commercial adoption\n- Educational: Lowers barrier for new developers\n\n5. Long-term ROI:\n- SDK maintenance continues post-funding (open-source)\n- Community can extend and improve\n- Enables derivative projects on Cardano\n\nWhy This Budget is Appropriate:\n- Lean budget: Maximum value at minimal cost\n- Competitive rates: Below market average for blockchain specialists\n- Milestone accountability: Funds released against 5 deliverable milestones\n- No waste: No marketing/hardware/infrastructure costs\n- Community leverage: Open-source multiplies impact"
       }
     },
     "self_assessment": {

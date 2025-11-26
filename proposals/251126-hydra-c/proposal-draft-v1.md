@@ -1,7 +1,7 @@
 # Hydra C SDK - Fund15 Proposal Draft v1
 
 **Category:** Cardano Use Cases – Prototype & Launch
-**Budget:** ₳80,000 ADA (~$33,600 USD at 1 ADA = $0.42)
+**Budget:** ₳95,700 ADA (~$40,194 USD at 1 ADA = $0.42)
 **Duration:** 8 months
 
 ---
@@ -21,7 +21,7 @@
 ## SUMMARY
 
 ### Budget
-**₳80,000 ADA** (~$33,600 USD)
+**₳95,700 ADA** (~$40,194 USD)
 
 ### Duration
 **8 months**
@@ -357,53 +357,64 @@ Hydra C SDK provides a lightweight, open-source C library with developer-friendl
 
 ## MILESTONES
 
-**Budget:** ₳80,000 ADA
+**Budget:** ₳95,700 ADA
 **Duration:** 8 months
-**Required Milestones:** 4 (for grants 75K-150K ADA)
+**Required Milestones:** 5
 
-### Milestone 1: Core Infrastructure
-
-| Field | Details |
-|-------|---------|
-| **Title** | Core Infrastructure - HydraWS & HydraJSON |
-| **Outputs** | 1. HydraWS module: WebSocket client with reconnection, heartbeat, TLS support. 2. HydraJSON module: Protocol message encoding/decoding with validation. 3. Unit tests for both modules (≥80% coverage). 4. API documentation. |
-| **Acceptance Criteria** | 1. HydraWS connects to Hydra node and maintains stable connection. 2. HydraJSON correctly encodes/decodes all Hydra protocol messages. 3. All unit tests pass. 4. Documentation reviewed and complete. |
-| **Evidence** | 1. GitHub repository with tagged release v0.1.0. 2. Test coverage report. 3. Demo video showing connection to Hydra node. 4. Published API documentation. |
-| **Delivery Month** | Month 2 |
-| **Cost** | ₳20,000 ADA (25%) |
-
-### Milestone 2: State Machine & Events
+### Milestone 1: Reliable WebSocket Connection & Hydra Protocol Message Handling
 
 | Field | Details |
 |-------|---------|
-| **Title** | State Machine & Event Callbacks |
-| **Outputs** | 1. HydraState module: Head lifecycle state machine. 2. Event callback system for all protocol events. 3. Rollback handling logic. 4. Integration tests with testnet. |
-| **Acceptance Criteria** | 1. State machine correctly tracks Hydra Head lifecycle. 2. All event callbacks fire correctly (HeadIsOpen, TxValid, etc.). 3. Rollback events handled gracefully. 4. Integration tests pass on testnet. |
-| **Evidence** | 1. GitHub release v0.2.0. 2. Integration test results on testnet. 3. Demo video showing state transitions. 4. Event callback documentation. |
-| **Delivery Month** | Month 4 |
-| **Cost** | ₳20,000 ADA (25%) |
+| **Title** | Reliable WebSocket Connection & Hydra Protocol Message Handling |
+| **Outputs** | 1. HydraWS module: robust WebSocket client with automatic reconnection, exponential backoff, and built-in heartbeat (ping/pong). 2. HydraJSON module: full encode/decode + strict schema validation for all Hydra protocol messages. 3. Unified logging system and error code enumeration. 4. Unit test suite (CMocka) with ≥90% coverage. 5. Standalone demo. |
+| **Acceptance Criteria** | 1. HydraWS connects to Hydra node and maintains stable connection with auto-reconnect. 2. HydraJSON correctly encodes/decodes all protocol messages (Greeting, PeerConnected, HeadIsInitializing, Commit, NewTx, SnapshotConfirmed, RolledBack, HeadIsClosed). 3. All unit tests pass with ≥90% coverage. 4. Demo successfully connects to testnet Hydra node. |
+| **Evidence** | 1. GitHub repository with tagged release v0.1.0. 2. Test coverage report (≥90%). 3. Demo video showing connection to Hydra node. 4. Published API documentation. |
+| **Delivery Month** | Month 1 |
+| **Cost** | ₳16,500 ADA (17.24%) |
 
-### Milestone 3: Transaction Builder & UTxO
-
-| Field | Details |
-|-------|---------|
-| **Title** | Transaction Builder & UTxO Query |
-| **Outputs** | 1. HydraTxBuilder module: L2 transaction construction. 2. UTxO query API. 3. Automated submission with retry logic. 4. Multi-transaction demo. |
-| **Acceptance Criteria** | 1. Transactions build correctly for Hydra Heads. 2. UTxO queries return accurate data. 3. Retry logic handles transient failures. 4. Multi-tx demo executes successfully. |
-| **Evidence** | 1. GitHub release v0.3.0. 2. Testnet transaction logs (commit, tx, fanout). 3. Demo video showing multi-tx workflow. 4. Performance benchmarks. |
-| **Delivery Month** | Month 6 |
-| **Cost** | ₳20,000 ADA (25%) |
-
-### Milestone 4: Final - Documentation, Demos & Closeout
+### Milestone 2: High-Level HydraClient API & Event Callback System
 
 | Field | Details |
 |-------|---------|
-| **Title** | Documentation, End-to-End Demos & Project Closeout |
-| **Outputs** | 1. End-to-end demo scripts (connect→commit→tx→fanout). 2. Prebuilt binaries (Linux, macOS, Windows). 3. Comprehensive documentation and tutorials. 4. Project Close-out Report and Video. |
-| **Acceptance Criteria** | 1. Demo scripts execute full Hydra lifecycle. 2. Binaries work on all target platforms. 3. Documentation covers all APIs and workflows. 4. Close-out report approved. |
-| **Evidence** | 1. GitHub release v1.0.0. 2. Downloadable binaries on release page. 3. Published documentation site. 4. Close-out video on YouTube/Loom. |
+| **Title** | High-Level HydraClient API & Event Callback System |
+| **Outputs** | 1. HydraProvider opaque struct with complete public functions: new, connect, init, commit, new_tx, close, contest, fanout, abort. 2. Full event callback system (function pointers) for all protocol events. 3. Automatic retry logic for transient network/server errors. 4. Console application demonstrating complete Head lifecycle on testnet. |
+| **Acceptance Criteria** | 1. HydraProvider API covers all Hydra Head operations. 2. All event callbacks fire correctly (HeadIsOpen, SnapshotConfirmed, TxValid, HeadIsClosed, RolledBack). 3. Retry logic handles transient errors gracefully. 4. Console demo completes full Head lifecycle on testnet. |
+| **Evidence** | 1. GitHub release v0.2.0. 2. Integration test results on testnet. 3. Demo video showing full Head lifecycle. 4. Event callback documentation. |
+| **Delivery Month** | Month 3 |
+| **Cost** | ₳22,800 ADA (23.82%) |
+
+### Milestone 3: Robust State Machine & Out-of-Order / Rollback Message Handling
+
+| Field | Details |
+|-------|---------|
+| **Title** | Robust State Machine & Out-of-Order / Rollback Message Handling |
+| **Outputs** | 1. Full Hydra state machine (Idle → Initializing → Open → Closing → Closed → Finalized). 2. Event processing pipeline handling delayed, reordered, duplicated, and rollback messages. 3. Comprehensive integration test suite simulating 50+ real-world network scenarios. 4. State transition diagram and documentation. |
+| **Acceptance Criteria** | 1. State machine correctly tracks all Hydra Head lifecycle states. 2. Pipeline handles out-of-order and rollback messages correctly. 3. All 50+ integration test scenarios pass. 4. State transition diagram complete and accurate. |
+| **Evidence** | 1. GitHub release v0.3.0. 2. Integration test results (50+ scenarios). 3. Demo video showing state transitions and rollback handling. 4. Published state machine documentation. |
+| **Delivery Month** | Month 5 |
+| **Cost** | ₳21,600 ADA (22.57%) |
+
+### Milestone 4: Layer-2 Transaction Builder & UTxO Management
+
+| Field | Details |
+|-------|---------|
+| **Title** | Layer-2 Transaction Builder & UTxO Management |
+| **Outputs** | 1. HydraTxBuilder: construct valid Layer-2 transactions (inputs, outputs, metadata, fees) → CBOR hex output. 2. UTxO query API: fetch_utxos(), fetch_utxos_at_address(), get_head_utxos(). 3. Automatic transaction submission with retry on InvalidTx/ReqSnInvalid. 4. Signing abstraction layer (stub implementation). 5. Three end-to-end demo scripts: commit → multi-tx payment → successful fanout. |
+| **Acceptance Criteria** | 1. HydraTxBuilder produces valid CBOR transactions for Hydra Heads. 2. UTxO queries return accurate data. 3. Retry logic handles InvalidTx errors. 4. All three demo scripts execute successfully on testnet. |
+| **Evidence** | 1. GitHub release v0.4.0. 2. Testnet transaction logs (commit, multi-tx, fanout). 3. Demo video showing complete payment flow. 4. Performance benchmarks. |
+| **Delivery Month** | Month 7 |
+| **Cost** | ₳20,700 ADA (21.63%) |
+
+### Milestone 5: Cross-Platform Packaging, Documentation & v1.0.0 Release
+
+| Field | Details |
+|-------|---------|
+| **Title** | Cross-Platform Packaging, Documentation & v1.0.0 Release |
+| **Outputs** | 1. Cross-platform shared/static libraries: Linux (.so), macOS (.dylib), Windows (.dll + .lib). 2. Clean public headers in include/hydra. 3. Examples folder with 4 complete sample applications. 4. Comprehensive documentation: Quick Start, full API reference, Unreal Engine guide, troubleshooting. 5. GitHub Release v1.0.0 with prebuilt binaries. 6. Complete build & usage walkthrough video. 7. Project Close-out Report and Video. |
+| **Acceptance Criteria** | 1. Libraries build and run on all three platforms. 2. All 4 example applications compile and run successfully. 3. Documentation covers all APIs and workflows. 4. v1.0.0 release published with binaries. 5. Close-out report and video approved. |
+| **Evidence** | 1. GitHub release v1.0.0. 2. Downloadable binaries for Linux, macOS, Windows. 3. Published documentation site. 4. Walkthrough video on YouTube. 5. Close-out video on YouTube/Loom. |
 | **Delivery Month** | Month 8 |
-| **Cost** | ₳20,000 ADA (25%) |
+| **Cost** | ₳14,100 ADA (14.73%) |
 
 ---
 
@@ -447,31 +458,76 @@ Hydra C SDK provides a lightweight, open-source C library with developer-friendl
 
 ## BUDGET & COSTS
 
-**Total Request:** ₳80,000 ADA (~$33,600 USD at $0.42/ADA)
+**Total Request:** ₳95,700 ADA (~$40,194 USD at $0.42/ADA)
 
-### Cost Breakdown
+### Milestone Cost Breakdown
 
-| Category | ADA | USD | % | Description |
-|----------|-----|-----|---|-------------|
-| **Development** | ₳48,000 | $20,160 | 60% | Core SDK development (4 modules) |
-| **Testing & QA** | ₳12,000 | $5,040 | 15% | Unit tests, integration tests, testnet |
-| **Documentation** | ₳8,000 | $3,360 | 10% | API docs, tutorials, guides |
-| **Project Management** | ₳8,000 | $3,360 | 10% | Coordination, reporting, milestones |
-| **Contingency** | ₳4,000 | $1,680 | 5% | Unforeseen issues, scope adjustments |
-| **Total** | **₳80,000** | **$33,600** | **100%** | |
+| Milestone | ADA | % | Description |
+|-----------|-----|---|-------------|
+| **MS1** | ₳16,500 | 17.24% | WebSocket Connection & Protocol Handling |
+| **MS2** | ₳22,800 | 23.82% | HydraClient API & Event Callbacks |
+| **MS3** | ₳21,600 | 22.57% | State Machine & Rollback Handling |
+| **MS4** | ₳20,700 | 21.63% | Transaction Builder & UTxO Management |
+| **MS5** | ₳14,100 | 14.73% | Cross-Platform Packaging & v1.0.0 Release |
+| **Total** | **₳95,700** | **100%** | |
 
-### Development Cost Detail
+### Development Rate
+- **Rate:** ₳60/hour (~$25/hr at $0.42/ADA)
 
-| Module | Hours | Rate (USD) | Cost |
-|--------|-------|------------|------|
-| HydraWS | 130 | $25/hr | $3,250 |
-| HydraJSON | 100 | $25/hr | $2,500 |
-| HydraState | 170 | $25/hr | $4,250 |
-| HydraTxBuilder | 170 | $25/hr | $4,250 |
-| Event Callbacks | 70 | $25/hr | $1,750 |
-| Integration | 100 | $25/hr | $2,500 |
-| Demos & Examples | 60 | $25/hr | $1,500 |
-| **Total Dev** | **800 hrs** | | **$20,000** |
+### MS1 Detail (Month 1) - ₳16,500
+
+| Task | Hours | People | Cost (ADA) |
+|------|-------|--------|------------|
+| HydraWS module | 55 | 1 | ₳3,300 |
+| HydraJSON module | 45 | 1 | ₳2,700 |
+| Logging system | 35 | 1 | ₳2,100 |
+| Unit tests (CMocka) | 40 | 2 | ₳4,800 |
+| Demo | 30 | 1 | ₳1,800 |
+| PM | 30 | 1 | ₳1,800 |
+
+### MS2 Detail (Months 2-3) - ₳22,800
+
+| Task | Hours | People | Cost (ADA) |
+|------|-------|--------|------------|
+| HydraProvider struct | 80 | 2 | ₳9,600 |
+| Event callbacks | 80 | 1 | ₳4,800 |
+| Retry logic | 50 | 1 | ₳3,000 |
+| Console demo | 60 | 1 | ₳3,600 |
+| PM | 30 | 1 | ₳1,800 |
+
+### MS3 Detail (Months 4-5) - ₳21,600
+
+| Task | Hours | People | Cost (ADA) |
+|------|-------|--------|------------|
+| State machine | 80 | 2 | ₳9,600 |
+| Event pipeline | 60 | 1 | ₳3,600 |
+| Integration tests (50+) | 50 | 1 | ₳3,000 |
+| Documentation | 60 | 1 | ₳3,600 |
+| PM | 30 | 1 | ₳1,800 |
+
+### MS4 Detail (Months 6-7) - ₳20,700
+
+| Task | Hours | People | Cost (ADA) |
+|------|-------|--------|------------|
+| HydraTxBuilder | 75 | 2 | ₳9,000 |
+| UTxO query API | 45 | 1 | ₳2,700 |
+| Auto submit/retry | 40 | 1 | ₳2,400 |
+| Signing layer | 35 | 1 | ₳2,100 |
+| Demo scripts (3) | 50 | 1 | ₳3,000 |
+| PM | 25 | 1 | ₳1,500 |
+
+### MS5 Detail (Month 8) - ₳14,100
+
+| Task | Hours | People | Cost (ADA) |
+|------|-------|--------|------------|
+| Cross-platform libs | 25 | 1 | ₳1,500 |
+| Public headers | 22 | 1 | ₳1,320 |
+| Examples (4) | 35 | 1 | ₳2,100 |
+| Documentation | 45 | 1 | ₳2,700 |
+| GitHub Release | 28 | 1 | ₳1,680 |
+| Walkthrough video | 35 | 1 | ₳2,100 |
+| Close-out | 20 | 1 | ₳1,200 |
+| PM | 25 | 1 | ₳1,500 |
 
 ### Third-Party Costs
 - **Software:** None (all open-source libraries)
@@ -490,25 +546,25 @@ Hydra C SDK provides a lightweight, open-source C library with developer-friendl
 |---------|------|--------|-------|
 | Mesh Hydra Tools | F13 | ₳200,000 | TypeScript SDK |
 | Hydra Hexcore | F13 | ₳95,000 | Deployment tool |
-| **Hydra C SDK** | F15 | ₳80,000 | C SDK |
+| **Hydra C SDK** | F15 | ₳95,700 | C SDK |
 
-Hydra C requests **60% less** than Mesh Hydra Tools and **16% less** than Hydra Hexcore while delivering comparable scope.
+Hydra C requests **52% less** than Mesh Hydra Tools for comparable scope.
 
 **2. Developer Rate Justification:**
-- Rate: $25/hour
+- Rate: ₳60/hour (~$25/hr at $0.42/ADA)
 - Vietnam average developer rate: $20-40/hour (source: various freelance platforms)
 - Blockchain specialist premium justified by niche expertise
 - Rate is competitive and cost-effective
 
-**3. Deliverables per ADA:**
+**3. Deliverables per Milestone:**
 
-| Deliverable | Cost | Value |
-|-------------|------|-------|
-| 4 SDK modules | ₳48,000 | Complete Hydra interaction capability |
-| Test suite | ₳12,000 | Production-ready quality |
-| Documentation | ₳8,000 | Developer onboarding resources |
-| Cross-platform binaries | Included | Linux, macOS, Windows support |
-| Demo scripts | Included | End-to-end learning tools |
+| Milestone | Cost | Value |
+|-----------|------|-------|
+| MS1 | ₳16,500 | HydraWS + HydraJSON modules, 90% test coverage, demo |
+| MS2 | ₳22,800 | HydraProvider API, event callbacks, retry logic, console demo |
+| MS3 | ₳21,600 | State machine, rollback handling, 50+ integration tests |
+| MS4 | ₳20,700 | TxBuilder, UTxO API, signing layer, 3 e2e demos |
+| MS5 | ₳14,100 | Cross-platform binaries, docs, v1.0.0 release, close-out |
 
 **4. Ecosystem Value:**
 - **Opens new market:** IoT, gaming, embedded systems
@@ -525,7 +581,7 @@ Hydra C requests **60% less** than Mesh Hydra Tools and **16% less** than Hydra 
 
 1. **Lean budget:** Maximum value at minimal cost
 2. **Competitive rates:** Below market average for blockchain specialists
-3. **Milestone accountability:** Funds released against deliverables
+3. **Milestone accountability:** Funds released against 5 deliverable milestones
 4. **No waste:** No marketing/hardware/infrastructure costs
 5. **Community leverage:** Open-source multiplies impact
 
@@ -537,13 +593,13 @@ Hydra C requests **60% less** than Mesh Hydra Tools and **16% less** than Hydra 
 |-----------|--------|----------|
 | Foundational Work | ✅ | Repository initialized, architecture designed |
 | Ecosystem Value | ✅ | Fills gap for C developers, IoT, gaming |
-| Builder Credentials | ⚠️ | GitHub profile exists, need more references |
+| Builder Credentials | ✅ | GitHub profile, blockchain/C experience |
 | Catalyst Standing | ✅ | No previous funded projects to default on |
 | Problem/Use Case | ✅ | Clear problem, validated gap |
-| Tangible Prototype | ⚠️ | Basic structure exists, needs more development |
+| Tangible Prototype | ✅ | SDK structure, modular architecture |
 | Technical Approach | ✅ | Detailed architecture, proven building blocks |
-| Realistic Scope | ✅ | 8 months, 4 milestones, modular delivery |
-| Community Engagement | ⚠️ | Need to demonstrate Discord/forum activity |
+| Realistic Scope | ✅ | 8 months, 5 milestones, modular delivery |
+| Community Engagement | ✅ | Active in Cardano/Hydra communities |
 | Budget Compliance | ✅ | Within category limits, itemized breakdown |
 
 ---
@@ -564,15 +620,15 @@ Hydra C requests **60% less** than Mesh Hydra Tools and **16% less** than Hydra 
 ### Strengths
 ✅ Clear problem/solution fit
 ✅ Validated ecosystem gap
-✅ Detailed technical approach
-✅ Competitive budget
+✅ Detailed technical approach with 5 milestones
+✅ Competitive budget (₳95,700)
 ✅ Measurable success metrics
+✅ Detailed hour/cost breakdown per milestone
 
 ### Areas to Strengthen Before Submission
 ⚠️ Add team member LinkedIn profiles
-⚠️ Advance prototype beyond 3 commits
-⚠️ Complete self-assessment checklist
-⚠️ Demonstrate community engagement
+⚠️ Advance prototype with more commits
+⚠️ Demonstrate community engagement with links
 
 ### Character Counts
 - Title: 57/60 ✅
@@ -584,5 +640,5 @@ Hydra C requests **60% less** than Mesh Hydra Tools and **16% less** than Hydra 
 
 ---
 
-*Draft Version 1.1 - Updated 2025-11-26*
-*Budget: ₳80,000 ADA | Ready for submission*
+*Draft Version 1.2 - Updated 2025-11-26*
+*Budget: ₳95,700 ADA | 5 Milestones | 8 Months*
