@@ -128,4 +128,3 @@ It is the project team’s responsibility to properly manage the funds provided.
 Use the response to provide the context about the costs you listed previously, particularly if they are high.
 It may be helpful to include some brief information on how you have decided on the costs of the project. 
 For instance, can you justify with supporting evidence that costs are proportional to the average wage in your country, or typical freelance rates in your industry? Is there anything else that helps to support how the project represents value for money?
-
