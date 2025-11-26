@@ -1,0 +1,169 @@
+{
+    "metadata": {
+        "type": "7808d2ba-d511-40af-84e8-c0d1625fdfdc",
+        "selfRef": {
+            "id": "019abdfb-ccc4-7d04-bcbf-60a5de8b99a7",
+            "version": "019abdfb-ccc4-7d04-bcbf-60a5de8b99a7",
+            "type": "draft"
+        },
+        "ref": null,
+        "refHash": null,
+        "template": {
+            "id": "0199802c-21b4-7982-ba3f-ec0cd0207b11",
+            "version": "0199802c-21b4-7982-ba3f-ec0cd0207b11",
+            "type": "signed"
+        },
+        "reply": null,
+        "section": null,
+        "brandId": null,
+        "campaignId": null,
+        "electionId": null,
+        "categoryId": {
+            "id": "0199802c-21b4-7dc8-8537-7eae5ea4c4d3",
+            "version": "0199802c-21b4-7dc8-8537-7eae5ea4c4d3",
+            "type": "signed"
+        },
+        "authors": null
+    },
+    "content": {
+        "$schema": "./0199802c-21b4-7982-ba3f-ec0cd0207b11.schema.json",
+        "setup": {
+            "title": {
+                "title": "Hydra C – A Lightweight SDK for Interacting with Hydra Heads"
+            },
+            "proposer": {
+                "applicant": "Vu Le Quang",
+                "type": "Entity (Not Incorporated)"
+            }
+        },
+        "summary": {
+            "time": {
+                "duration": 8
+            },
+            "budget": {
+                "amount": 80000
+            },
+            "translation": {
+                "isTranslated": false,
+                "originalLanguage": "en"
+            },
+            "problem": {
+                "statement": "Developers in IoT, gaming, and C-based apps struggle to leverage Cardano's Layer-2 due to complex Hydra protocols, lack of lightweight SDK, and limited end-to-end examples for fast adoption."
+            },
+            "solution": {
+                "summary": "Hydra C SDK provides a lightweight, cross-platform C library with reliable networking, high-level APIs, state management, and transaction tools, enabling fast, secure Layer-2 Cardano apps."
+            },
+            "supportingLinks": {
+                "links": [
+                    "https://github.com/independenceee/hydra-c"
+                ]
+            },
+            "dependencies": {
+                "hasDependency": false,
+                "dependencyDetail": "No dependencies. All third-party libraries used are open-source with permissive licenses: libwebsockets (MIT/LGPL), cJSON (MIT), OpenSSL (Apache 2.0)."
+            },
+            "open_source": {
+                "isOpenSource": true,
+                "openSourceInformation": "All outputs of the Hydra C project will be fully open source to support Cardano ecosystem growth.\n- Code & License: SDK, modules, examples, and demos on GitHub under MIT License, allowing free use, modification, and redistribution.\n- IP Status: No proprietary restrictions; fully open for community use and contribution.\n- Accessibility: Developers can access, study, and build upon the SDK for educational, experimental, or commercial purposes."
+            }
+        },
+        "theme": {
+            "theme": {
+                "grouped_tag": {
+                    "group": "Development & Tools",
+                    "tag": "Layer2"
+                }
+            }
+        },
+        "campaign_category": {
+            "category_questions": {
+                "innovative_idea": "Hydra C is the first lightweight, cross-platform C SDK for interacting with Hydra Heads on Cardano, designed to bridge the gap between low-level Hydra protocol complexity and practical application development.\n\nGap in Market:\n- Current Hydra SDKs: Haskell (core), TypeScript (Mesh.js, @hydrawallet)\n- No C library exists for Hydra protocol interaction\n- C developers, IoT, and gaming have no viable option\n\nTechnical Innovation:\n- Reliable networking: WebSocket client with auto-reconnection, heartbeat, exponential backoff\n- Full protocol support: Message encoding/decoding with schema validation, event callbacks, rollback handling\n- Layer-2 tools: Transaction builder, UTxO query API, automated retry logic\n- Developer resources: Prebuilt cross-platform binaries, demos, end-to-end scripts\n\nDifferentiation from Funded Projects:\n- Mesh Hydra Tools (Fund13, ₳200K): TypeScript only, browser-focused\n- Hydra Hexcore (Fund13, ₳95K): Deployment tool, not SDK\n- Hydra C: Pure C, IoT-optimized, embeddable",
+                "prototype_mvp": "The Hydra C MVP demonstrates the complete Hydra Head lifecycle:\n\nCore Modules:\n1. HydraWS - WebSocket connectivity with reconnection/heartbeat\n2. HydraJSON - Protocol message encoding/decoding\n3. HydraState - Head lifecycle state machine\n4. HydraTxBuilder - L2 transaction construction\n5. Event Callbacks - Async event handling\n\nAccess Points:\n- GitHub: https://github.com/independenceee/hydra-c\n- Prebuilt binaries: Linux, macOS, Windows\n- Demo scripts: Full connect→commit→tx→fanout flow\n\nCommunity Testing:\n- Testable on Cardano testnet\n- Transaction building experiments\n- Event callback observation\n- Rollback scenario simulation\n\nBy project end, the MVP will be fully testable on-chain, demonstrating practical, deployable Layer-2 functionality.",
+                "performance_metrics": "Hydra C success metrics (6 months post-launch):\n\nQuantitative Metrics:\n- GitHub stars: 50+ (GitHub API tracking)\n- Repository forks: 20+ (GitHub API tracking)\n- Active developers: 50-100 (clone/fork analytics)\n- Testnet transactions: 500+/month (on-chain monitoring via cardanoscan)\n- Demo completions: 200+ (tutorial analytics)\n\nOn-Chain Metrics:\n- Successful Hydra Head commits via SDK\n- Layer-2 transactions processed\n- Fanout events completed\n- Head lifecycle completions\n\nValidation Approach:\n- GitHub Insights for adoption tracking\n- Testnet transaction monitoring\n- Community feedback via GitHub issues/discussions"
+            }
+        },
+        "details": {
+            "solution": {
+                "solution": "**Current Problem**\n\nCardano's Hydra Heads enable high-throughput, low-latency Layer-2 transactions, but practical adoption remains limited due to fragmented, language-specific developer tools.\n\nChallenges for C Developers:\n\n1. Protocol Complexity\n- Hydra messages (commit, fanout, snapshot, rollback) require precise handling\n- Mismanaging messages leads to failed transactions or incorrect head states\n- No abstraction layer simplifies this for C environments\n\n2. Lack of C Tooling\n- Existing SDKs focus on Haskell and TypeScript\n- No ready-to-use C library for Hydra Heads\n- IoT and embedded developers have no viable option\n\n3. Testing Barriers\n- No example scripts for Hydra Head workflows\n- No integration testing frameworks in C\n- Experimentation is slow and error-prone\n\n4. Limited Educational Resources\n- Documentation scattered across multiple sources\n- Steep learning curve for new developers\n- No end-to-end examples showing complete workflows\n\nResult: IoT solutions, C-based applications, and gaming projects cannot leverage Cardano's Layer-2 capabilities.\n\n**Solution**\n\nHydra C SDK provides a lightweight, open-source C library with developer-friendly APIs for Hydra Head interaction.\n\nArchitecture (layered design):\n- Application Layer → HydraClient (High-level API)\n- State Layer → HydraState (State Machine)\n- Protocol Layer → HydraJSON (encode/decode)\n- Network Layer → HydraWS (websocket/tls)\n\nKey Features:\n\n1. Reliable Network Communication\n- WebSocket client with automatic reconnection\n- Heartbeat mechanism for connection health\n- Exponential backoff for transient failures\n- TLS support via OpenSSL/mbedTLS\n\n2. Layer-2 Transaction Tools\n- Transaction builder for Hydra Heads\n- UTxO query API\n- Automated transaction submission with retry\n- Commit, fanout, and finalization functions\n\n3. State Management\n- Hydra Head lifecycle state machine\n- Out-of-order message handling\n- Rollback event processing\n- Full event callback system\n\n4. Developer Resources\n- End-to-end demo scripts\n- Prebuilt cross-platform binaries\n- Comprehensive documentation\n- Ready-to-run examples\n\nTarget Users:\n- IoT developers building blockchain-connected devices\n- Game developers needing fast L2 transactions\n- C/C++ developers working on embedded systems\n- Researchers studying Layer-2 protocols\n\nWhy C?\n- Lightweight footprint for resource-constrained devices\n- Cross-platform compatibility (Linux, macOS, Windows)\n- Easy binding to other languages (Python, Rust, Go)\n- Direct integration with game engines and IoT frameworks\n\n**Reason for Building**\n\n1. Accelerate Layer-2 Adoption - Lower barrier for Hydra development, enable rapid prototyping, increase real-world Cardano L2 usage\n\n2. Empower Non-Traditional Developers - Bring Hydra to IoT engineers, game developers, embedded systems\n\n3. Enable Education - Practical learning environment, bridge theory and implementation\n\n4. Foster Ecosystem Growth - Open-source for community contribution, MIT license for maximum flexibility"
+            },
+            "impact": {
+                "impact": "**Positive Impact on Cardano**\n\n1. Accelerating Layer-2 Adoption\n- Opens Hydra to new developer segments (IoT, gaming, embedded)\n- Reduces technical barriers for L2 integration\n- Increases network activity on Hydra Heads\n\n2. Supporting Education & Onboarding\n- Demo scripts provide hands-on learning\n- Documentation bridges theory and practice\n- Lowers learning curve for new developers\n\n3. Fostering Innovation\n- Open-source enables community contributions\n- MIT license allows commercial use\n- Cross-sector innovation (gaming, IoT, DeFi)\n\n**Measuring Impact**\n\nQuantitative Metrics:\n- GitHub stars: 50+ (GitHub API)\n- Repository forks: 20+ (GitHub API)\n- Unique clones: 100+ (GitHub Insights)\n- Testnet transactions: 500+/month (Cardanoscan)\n- Demo completions: 200+ (Analytics)\n- GitHub issues: Active engagement\n\nQualitative Metrics:\n- Developer feedback via GitHub discussions\n- Community adoption in tutorials/workshops\n- Integration case studies (IoT, gaming)\n- Educational use in courses/research\n\n**Sharing Outputs**\n\nPublic Outputs:\n- Source code on GitHub (MIT license)\n- Prebuilt binaries (Linux, macOS, Windows)\n- Documentation and API reference\n- Demo scripts and examples\n- Tutorial guides\n\nCommunity Sharing:\n- Cardano developer forums\n- Hydra Discord channel\n- GitHub discussions\n- Technical blog posts\n- Workshop materials"
+            },
+            "feasibility": {
+                "feasibility": "**Team Skills and Expertise**\n\nLead Developer: Vu Le Quang\n- Role: Project Lead, Core Developer\n- GitHub: https://github.com/independenceee\n- Experience: Blockchain development, C systems programming\n- Responsibilities: Architecture, HydraWS, HydraState modules\n\nTechnical Expertise:\n- Cardano & Hydra: Deep understanding of Hydra protocol, UTxO model, L2 interactions\n- C Programming: Networking, memory management, concurrency, low-level protocols\n- Open Source: Contributions to blockchain projects, community-friendly code\n- Documentation: Technical writing, API documentation, tutorial creation\n\n**Project Management and Delivery**\n\n- Structured Planning: Modules mapped to milestones\n- Timeline Adherence: 8-month delivery with buffer\n- Risk Management: Early prototyping, modular development, iterative testing\n- Communication: Progress reports, milestone updates, stakeholder visibility\n\n**Financial Management**\n\n- Budget Planning: Allocated to development, testing, documentation\n- Cost Transparency: Audit records for all expenditures\n- Milestone-Based Release: Funds tied to deliverables\n- Open Verification: Public code allows community review\n\n**Feasibility Validation**\n\nTechnical Feasibility:\n- Building blocks exist: libwebsockets, cJSON, OpenSSL\n- Architecture proven in similar blockchain SDKs\n- 8-month timeline realistic for scope\n\nValidation Methodology:\n- Unit testing per module (≥80% coverage)\n- Integration testing on Cardano testnet\n- End-to-end demo scripts\n- Community feedback loops\n\n**Risk Assessment**\n\n1. Protocol Changes - Mitigation: Version pinning, abstraction layers\n2. Technical Complexity - Mitigation: Modular development, iterative testing\n3. Timeline Slippage - Mitigation: Buffer built into milestones, early prototyping\n4. Adoption Risk - Mitigation: Community engagement, clear documentation"
+            }
+        },
+        "milestones": {
+            "milestones": {
+                "milestone_list": [
+                    {
+                        "title": "Core Infrastructure - HydraWS & HydraJSON",
+                        "outputs": "1. HydraWS module: WebSocket client with reconnection, heartbeat, TLS support. 2. HydraJSON module: Protocol message encoding/decoding with validation. 3. Unit tests for both modules (≥80% coverage). 4. API documentation.",
+                        "acceptance_criteria": "1. HydraWS connects to Hydra node and maintains stable connection. 2. HydraJSON correctly encodes/decodes all Hydra protocol messages. 3. All unit tests pass. 4. Documentation reviewed and complete.",
+                        "evidence": "1. GitHub repository with tagged release v0.1.0. 2. Test coverage report. 3. Demo video showing connection to Hydra node. 4. Published API documentation.",
+                        "delivery_month": 2,
+                        "cost": 20000
+                    },
+                    {
+                        "title": "State Machine & Event Callbacks",
+                        "outputs": "1. HydraState module: Head lifecycle state machine. 2. Event callback system for all protocol events. 3. Rollback handling logic. 4. Integration tests with testnet.",
+                        "acceptance_criteria": "1. State machine correctly tracks Hydra Head lifecycle. 2. All event callbacks fire correctly (HeadIsOpen, TxValid, etc.). 3. Rollback events handled gracefully. 4. Integration tests pass on testnet.",
+                        "evidence": "1. GitHub release v0.2.0. 2. Integration test results on testnet. 3. Demo video showing state transitions. 4. Event callback documentation.",
+                        "delivery_month": 4,
+                        "cost": 20000
+                    },
+                    {
+                        "title": "Transaction Builder & UTxO Query",
+                        "outputs": "1. HydraTxBuilder module: L2 transaction construction. 2. UTxO query API. 3. Automated submission with retry logic. 4. Multi-transaction demo.",
+                        "acceptance_criteria": "1. Transactions build correctly for Hydra Heads. 2. UTxO queries return accurate data. 3. Retry logic handles transient failures. 4. Multi-tx demo executes successfully.",
+                        "evidence": "1. GitHub release v0.3.0. 2. Testnet transaction logs (commit, tx, fanout). 3. Demo video showing multi-tx workflow. 4. Performance benchmarks.",
+                        "delivery_month": 6,
+                        "cost": 20000
+                    },
+                    {
+                        "title": "Documentation, End-to-End Demos & Project Closeout",
+                        "outputs": "1. End-to-end demo scripts (connect→commit→tx→fanout). 2. Prebuilt binaries (Linux, macOS, Windows). 3. Comprehensive documentation and tutorials. 4. Project Close-out Report and Video.",
+                        "acceptance_criteria": "1. Demo scripts execute full Hydra lifecycle. 2. Binaries work on all target platforms. 3. Documentation covers all APIs and workflows. 4. Close-out report approved.",
+                        "evidence": "1. GitHub release v1.0.0. 2. Downloadable binaries on release page. 3. Published documentation site. 4. Close-out video on YouTube/Loom.",
+                        "delivery_month": 8,
+                        "cost": 20000
+                    }
+                ]
+            }
+        },
+        "pitch": {
+            "team": {
+                "members": "Lead Developer: Vu Le Quang\n- Role: Project Lead & Core Developer\n- GitHub: https://github.com/independenceee\n- Responsibilities: Architecture, core module development (HydraWS, HydraState)\n- Experience: Blockchain development, C systems programming, open-source contributions\n\nSkills Required (if recruiting):\n- C programming with networking experience\n- Familiarity with WebSocket protocols\n- Blockchain/Cardano knowledge preferred\n- Technical writing skills\n\nCommunity Engagement:\n- Active in Cardano developer Discord\n- Engaged with Hydra working group\n- Connected with cardano-c maintainers"
+            },
+            "budget": {
+                "breakdown": "Total Request: ₳80,000 ADA (~$33,600 USD at $0.42/ADA)\n\nCost Breakdown:\n- Development: ₳48,000 (60%) - Core SDK development (4 modules)\n- Testing & QA: ₳12,000 (15%) - Unit tests, integration tests, testnet\n- Documentation: ₳8,000 (10%) - API docs, tutorials, guides\n- Project Management: ₳8,000 (10%) - Coordination, reporting, milestones\n- Contingency: ₳4,000 (5%) - Unforeseen issues, scope adjustments\n\nDevelopment Cost Detail:\n- HydraWS: 130 hours × $25/hr = $3,250\n- HydraJSON: 100 hours × $25/hr = $2,500\n- HydraState: 170 hours × $25/hr = $4,250\n- HydraTxBuilder: 170 hours × $25/hr = $4,250\n- Event Callbacks: 70 hours × $25/hr = $1,750\n- Integration: 100 hours × $25/hr = $2,500\n- Demos & Examples: 60 hours × $25/hr = $1,500\n- Total Dev: 800 hours = $20,000\n\nThird-Party Costs:\n- Software: None (all open-source libraries)\n- Infrastructure: Testnet nodes (free via Cardano infrastructure)\n- Services: None required"
+            },
+            "value": {
+                "justification": "Cost Justification:\n\n1. Comparison to Similar Funded Projects:\n- Mesh Hydra Tools (F13): ₳200,000 - TypeScript SDK\n- Hydra Hexcore (F13): ₳95,000 - Deployment tool\n- Hydra C SDK (F15): ₳80,000 - C SDK\nHydra C requests 60% less than Mesh Hydra Tools and 16% less than Hydra Hexcore.\n\n2. Developer Rate Justification:\n- Rate: $25/hour\n- Vietnam average developer rate: $20-40/hour\n- Blockchain specialist premium justified by niche expertise\n- Rate is competitive and cost-effective\n\n3. Deliverables per ADA:\n- 4 SDK modules: ₳48,000 - Complete Hydra interaction capability\n- Test suite: ₳12,000 - Production-ready quality\n- Documentation: ₳8,000 - Developer onboarding resources\n- Cross-platform binaries: Included\n- Demo scripts: Included\n\n4. Ecosystem Value:\n- Opens new market: IoT, gaming, embedded systems\n- First mover: No competing C SDK exists\n- Reusable: MIT license enables commercial adoption\n- Educational: Lowers barrier for new developers\n\n5. Long-term ROI:\n- SDK maintenance continues post-funding (open-source)\n- Community can extend and improve\n- Enables derivative projects on Cardano\n\nWhy This Budget is Appropriate:\n- Lean budget: Maximum value at minimal cost\n- Competitive rates: Below market average for blockchain specialists\n- Milestone accountability: Funds released against deliverables\n- No waste: No marketing/hardware/infrastructure costs\n- Community leverage: Open-source multiplies impact"
+            }
+        },
+        "self_assessment": {
+            "self_assessment_checklist": {
+                "foundational_work": true,
+                "ecosystem_value": true,
+                "builder_credentials": true,
+                "catalyst_standing": true,
+                "problem_use_case": true,
+                "tangible_prototype": true,
+                "technical_approach": true,
+                "realistic_scope": true,
+                "community_engagement": true,
+                "budget_compliance": true
+            }
+        },
+        "agreements": {
+            "ongoing_projects": {
+                "has_ongoing_projects": false,
+                "projects": []
+            },
+            "consent_confirmation": {
+                "terms_and_conditions": true
+            }
+        }
+    }
+}
