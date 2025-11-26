@@ -40,6 +40,7 @@ Polyhydra: Fun board game as Discord Activity to attract Web2 gamers to Cardano.
 - Technical Architecture: [Link to published doc]
 - Hydra Documentation: https://hydra.family
 - Discord Activities SDK: https://discord.com/developers/docs/activities/overview
+- UTXO.dev (Non-Custodial Wallet): https://utxo.dev
 - Reference: Hydra Minecraft (Fund14 funded): https://projectcatalyst.io/funds/14/cardano-use-cases-concepts/hydra-minecraft
 
 ---
@@ -51,8 +52,9 @@ Polyhydra: Fun board game as Discord Activity to attract Web2 gamers to Cardano.
 - Discord Embedded App SDK (Discord, MIT license)
 - React/TypeScript (MIT license)
 - CIP-30 wallet standard (Cardano community standard)
+- UTXO.dev wallet tools (graeLabs, open-source)
 
-**No organizational dependencies.** All technologies are open-source and publicly available. We have reviewed Discord's developer terms and Hydra documentation. No third-party approvals required.
+**No organizational dependencies.** All technologies are open-source and publicly available. We have reviewed Discord's developer terms and Hydra documentation. UTXO.dev provides browser-based CIP-30 wallet that works without browser extensions—critical for Discord iframe integration.
 
 ---
 
@@ -70,6 +72,8 @@ Polyhydra: Fun board game as Discord Activity to attract Web2 gamers to Cardano.
 
 • **Fun-First Design** - Most blockchain games feel like crypto apps. Polyhydra feels like a game that happens to be on blockchain. Low friction, high engagement.
 
+• **UTXO.dev Non-Custodial Wallet** - Browser-based wallet integration, no extension required. Players control their own keys. Perfect for onboarding Web2 users who don't have crypto wallets yet.
+
 • **Provably-Fair Standard** - Commit-reveal VRF that any Cardano game can adopt. We open-source the solution to a common problem.
 
 **Differentiation:**
@@ -84,7 +88,7 @@ Polyhydra: Fun board game as Discord Activity to attract Web2 gamers to Cardano.
 2. **Turn-Based Gameplay** - Roll dice, buy/rent/sell properties, draw event cards
 3. **Hydra Integration** - All turns processed off-chain; final state settled to L1
 4. **Provably-Fair Dice** - Commit-reveal randomness verifiable from match transcript
-5. **Non-Custodial Wallet** - CIP-30 connection only for rewards/NFTs at game end
+5. **UTXO.dev Non-Custodial Wallet** - Browser-based wallet via CIP-30, no extension required. Players control their own keys; wallet only needed for rewards/NFTs at game end.
 6. **Open Source** - MIT licensed, Docker-compose for local testing
 
 **Access:**
@@ -302,72 +306,72 @@ Upgrade Roadmap:
 
 ## [CAPABILITY & FEASIBILITY]
 
-### Technical Feasibility
+Building on HTlabs' proven Cardano development track record, Polyhydra delivers a production-ready Discord gaming experience that seamlessly bridges Web2 gamers to Cardano via Hydra.
 
-**All core technologies are production-ready:**
+### Early User Interest & Market Validation
 
-| Component | Status | Evidence |
-|-----------|--------|----------|
-| Hydra Protocol | v1.0 Production (Oct 2025) | hydra.family |
-| Discord Activities SDK | GA (March 2024) | Chess/Poker games exist |
-| React/TypeScript | Stable | Industry standard |
-| CIP-30 | Standard | All major wallets support |
+Our concept and preliminary research have already identified strong demand channels:
 
-**Why Turn-Based Works on Hydra:**
-- State channels naturally model turn-by-turn updates
-- Single-UTXO game state with monotonic versioning
-- All participants sign each state transition (consensus)
-- Deterministic execution = reproducible game state
+* **Cardano2VN Network:** Access to **500+ Vietnamese Cardano community members** for immediate beta testing and feedback loops.
+* **Previous Tool Usage:** Our [cardano-tool.vercel.app](https://cardano-tool.vercel.app) (CIP25 minting) has served **200+ unique users**, proving our ability to build accessible, user-friendly interfaces for non-technical users.
+* **Gaming Community Reach:** Direct access to 3 active Discord gaming servers (totaling 2,000+ members) ready to pilot the Activity.
+* **Stake Pool Operators:** Strong relationships with VILAI and HADA stake pools, providing a direct connection to delegators interested in GameFi engagement.
 
-**Precedent Projects:**
-- Hydra Doom: Proved 1M TPS, gaming-ready
-- Hydra Minecraft: Fund14 funded (₳38,000), 4-month delivery
-- Discord Activities: Chess in the Park, Poker Night (turn-based success)
+**Target early adopters identified through community engagement:**
+* **Web3 Newcomers:** Discord users curious about crypto but deterred by wallet complexity (solved by our "invisible" UTXO.dev integration).
+* **DAO Communities:** Cardano DAOs on Discord seeking social activities to increase member engagement.
+* **GameFi Enthusiasts:** Players looking for "Provably Fair" gaming mechanics that transparently prevent cheating.
 
-**Risk Mitigation:**
+### Expertise and Experience
 
-| Risk | Severity | Mitigation |
-|------|----------|------------|
-| Discord policy changes | HIGH | Adhere to guidelines, prepare web fallback |
-| Hydra stability/multi-player sync | HIGH | Early stress-testing, autoscale, snapshots; resume process |
-| L1 fee volatility/congestion | MEDIUM | Delayed settlement, batching outside peak hours |
-| Wallet onboarding | MEDIUM | Only require wallet for rewards/NFTs |
-| UTXO.dev maturity | MEDIUM | Fallback to standard CIP-30 wallets (Nami, Eternl) |
+HTlabs demonstrates deep Cardano expertise through multiple successful Catalyst projects and live production deployments:
 
-### Team Capability
+**Key Projects:**
+* **Learning Management System:** Production LMS at [lms.cardano2vn.io](https://lms.cardano2vn.io)
+* **Free Native Minting Tool (CIP25):** Live at [cardano-tool.vercel.app](https://cardano-tool.vercel.app)
+* **Complete Aiken Course:** Fund 11 project - [Project Link](https://projectcatalyst.io/funds/11/cardano-open-ecosystem/the-complete-aiken-course-cardano-from-zero-to-expert)
+* **Open Source CIP68 Generator:** Fund 12 project - [Project Link](https://projectcatalyst.io/funds/12/cardano-use-cases-concept/open-source-dynamic-assets-tokennft-generator-cip68)
+    * *Relevance:* Demonstrates our ability to handle complex token standards and metadata, which is crucial for Polyhydra's game assets.
+* **Study Guide for Marlowe:** Fund 10 project - [Project Link](https://projectcatalyst.io/funds/10/f10-startups-and-onboarding-for-students/study-guide-for-marlow)
 
-**Team Credentials:**
-Our team has deep Cardano expertise with 7+ years ecosystem experience, multiple Catalyst-funded projects delivered, and proven technical capabilities:
+**Technical Competency for Polyhydra:**
+* **Game Stack:** Proficient in **Phaser 3** (Client) and **Colyseus** (Multiplayer Server) on **NestJS**, ensuring a smooth, real-time gaming experience.
+* **Blockchain Stack:** Expert knowledge of **Hydra** (State Channels) for scaling and **Aiken** for smart contract logic.
+* **Additional projects:** Cardano App Development Course, IoT Blockchain Templates, Dualtarget DeFi platform. Full portfolio: [https://www.htlabs.xyz/projects](https://www.htlabs.xyz/projects)
 
-- **Cardano Ambassador** (Tien) - Direct community connections
-- **Plutus Pioneer Program Graduates** (Tien, Hieu) - Smart contract expertise
-- **Catalyst Funded Proposers** - Track record of successful delivery
-- **Stake Pool Operators** (VILAI, HADA) - Production infrastructure experience
-- **5+ years software engineering** (all team members) - Professional development standards
+### Verification of Approach
 
-**Required Skills Coverage:**
-
-| Skill | Team Member | Evidence |
-|-------|-------------|----------|
-| Hydra/Plutus | Dung, Tien | Plutus Pioneer, Aiken/Haskell projects |
-| TypeScript/Node.js | Dung, Khanh, Quan | Multiple dApp builds |
-| React/Frontend | Khanh | Web platform specialization |
-| Discord SDK | Khanh | Frontend integration expertise |
-| DevOps/Docker | Quan | 5+ years FPT Software, AWS deployment |
-| Smart Contracts | Dung | Aiken/Haskell, Catalyst projects |
-
-**Team Structure:**
-- **Project Lead**: Nguyen Anh Tien - Strategy, community, coordination
-- **Lead Blockchain Dev**: Phung Tien Dung - Hydra, smart contracts, VRF
-- **Frontend Dev**: Khanh Duy Nguyen - React, Discord Activity, wallet
-- **DevOps**: Le Anh Quan - Infrastructure, Hydra nodes, deployment
+* **Testnet Validation:** Deploy the game logic and Hydra Head manager on the preview testnet. We will confirm:
+    * Hydra Head open/close lifecycles.
+    * Turn-based state synchronization latency (<200ms).
+    * Provably Fair VRF (Verifiable Random Function) logic correctness.
+    * UTXO.dev wallet integration within the Discord iframe environment.
+* **Open Beta Testing:** **50+ early adopters** playing full game sessions on testnet. We will collect quantitative metrics (game completion rates, disconnect frequency) and qualitative feedback to refine the UI/UX.
+* **Progress Tracking:** Transparent KPI reporting: Game uptime >99.5%, Turn transaction success >99%, Average cost per game <0.1 ADA. Monthly reports on Cardano Forum/GitHub with on-chain evidence (TXIDs of game settlements).
 
 ### Fund Management
 
-- **Wallet**: Multi-sig Cardano wallet for fund custody
-- **Accounting**: Monthly expense reports
-- **Transparency**: All transactions trackable on-chain
-- **Milestone-based**: Funds released per milestone completion
+* **Monthly Budget Reports:** Detailed expenditure breakdowns by category (development, infrastructure, design) with line-item justification submitted to Catalyst monthly.
+* **Auditable Invoices:** All third-party invoices (VPS hosting, Discord developer fees, cloud services) documented and archived for Catalyst review.
+* **Milestone-Based Disbursements:** Funds released only upon verified deliverables: KPI reports, on-chain evidence (Hydra settlement TXIDs), GitHub code releases, and video demonstrations. Payment after Catalyst reviewer acceptance.
+
+### Why We're Best Suited
+
+* **Proven Catalyst Delivery:** Successful completion of Fund 10, 11, 12, and 13 projects demonstrates our rigorous milestone management and accountability.
+* **Full-Stack GameFi Capability:** Unlike teams that specialize only in web or only in blockchain, we bridge the gap. We possess the specific stack required: **React/Next.js** (Frontend), **Phaser/Colyseus** (Game Logic), and **Hydra/Aiken** (Blockchain Settlement).
+* **Community Trust:** We maintain a reputation for transparent reporting and open-source contributions. Our local presence (Vietnam) allows us to leverage a highly engaged user base for rapid testing and iteration.
+* **Hydra Pioneers:** We are among the few teams actively implementing Hydra for consumer-facing applications, moving beyond theoretical research to practical utility.
+
+### Project Timeline Clarification
+
+The **6-month timeline** features 4 major milestones with completion months listed. Work is continuous throughout:
+
+* **Months 1-2:** Architecture & Hydra Setup (Milestone 1 completion)
+* **Months 3-4:** Game Development & Wallet Integration (Milestone 2 completion)
+* **Month 5:** VRF Implementation & Beta Launch (Milestone 3 completion)
+* **Month 6:** Production Launch & Close-Out (Milestone 4 completion)
+
+No gaps in development - milestones represent completion dates, not start dates. The team works continuously across all 6 months with overlapping workstreams (e.g., Frontend and Smart Contract development happen in parallel).
 
 ---
 
@@ -612,7 +616,7 @@ This is not one-off spend:
 **Why fund us:**
 - **User acquisition** - Discord is where gamers are (200M+)
 - **Fun first** - Game that people actually want to play
-- **Low friction** - No wallet needed until rewards
+- **Low friction** - No wallet needed until rewards; UTXO.dev non-custodial wallet (no extension)
 - **GameFi catalyst** - Open-source patterns for ecosystem
 - **Proven team** - Cardano Ambassador, Plutus Pioneers, Catalyst track record
 - **Lean MVP** - $30K for production game with real users
