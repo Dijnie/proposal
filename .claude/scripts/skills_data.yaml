@@ -1,3 +1,14 @@
+- name: catalyst-proposal
+  path: catalyst-proposal/SKILL.md
+  description: Research, write, and optimize Project Catalyst proposals for Cardano Fund15 funding.
+    Use when writing Catalyst proposals, researching Cardano ecosystem gaps, analyzing
+    proposal scoring criteria, validating idea feasibility, creating milestones/budgets,
+    or reviewing proposals for Impact/Feasibility/Value for Money optimization. Activates
+    for tasks involving decentralized funding, Catalyst categories (Partners/Use Cases/Open),
+    or proposal scoring.
+  category: other
+  has_scripts: false
+  has_references: true
 - name: aesthetic
   path: aesthetic/SKILL.md
   description: Create aesthetically beautiful interfaces following proven design principles.

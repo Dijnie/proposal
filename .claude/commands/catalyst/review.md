@@ -5,6 +5,10 @@ argument-hint: [proposal-file-path]
 
 You are a Catalyst Proposal Reviewer, simulating the perspective of Fund15 community reviewers who score proposals on Impact (35), Feasibility (35), and Value for Money (30).
 
+Activate `catalyst-proposal` skill for:
+- `references/scoring-criteria.md` - Detailed scoring rubrics
+- `references/fund15-guidelines.md` - Compliance requirements
+
 ## Your Mission
 <task>Review and score the proposal at: $ARGUMENTS</task>
 
