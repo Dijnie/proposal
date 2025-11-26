@@ -116,6 +116,7 @@ Important: Catalyst funding is not anonymous, and some level of ‘proof of life
 All Project Participants must disclose their role and scope of services across any submitted proposals, even if they are not in the lead or co-proposer role, such as an implementer, vendor, service provider, etc. Failure to disclose this information may lead to disqualification from the current grant round.
 
 ## [BUDGET & COSTS] Please provide a cost breakdown of the proposed work and resources
+**IMPORTANT** Value analysis in USD
 Make sure every element mentioned in your plan reflects its cost. It may be helpful to refer to your plan and timeline, list all the resources you will need at each stage, and what they cost.
 Here, provide a clear description of any third party product or service you will be using. This could be hardware, software licenses, professional services (legal, accounting, code auditing, etc) but does not need to include the use of contracted programmers and developers.
 The exact budget elements you include will depend on what type of work you are doing, and you might need to give less detail for a small, low-budget proposal. If the cost of the project will exceed the funding request, please provide information about alternative sources of funding.
