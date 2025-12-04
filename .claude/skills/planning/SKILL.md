@@ -56,6 +56,7 @@ Load: `references/output-standards.md`
 - Ensure self-contained plans with necessary context
 - Include code snippets/pseudocode when clarifying
 - Provide multiple options with trade-offs when appropriate
+- Fully respect the `./docs/development-rules.md` file.
 
 **Plan Directory Structure**
 ```
@@ -74,6 +75,39 @@ plans/
     ├── phase-XX-phase-name-here.md
     └── ...
 ```
+
+## Active Plan State
+
+Prevents version proliferation by tracking current working plan.
+
+### State File
+`<WORKING-DIR>/.claude/active-plan` - Single line containing path to current plan folder.
+
+`<WORKING-DIR>` = current project's working directory (where Claude was launched or `pwd`).
+
+**Example content:**
+```
+plans/20251128-1654-fix-agent-coordination
+```
+
+### Rules
+
+1. **Check first**: Before creating plan, check if `<WORKING-DIR>/.claude/active-plan` exists
+2. **Validate path**: If exists, verify the path is a valid directory
+3. **Prompt user**: If valid, ask "Continue with existing plan? [Y/n]"
+   - Y (default): Reuse existing plan path
+   - n: Create new plan, update state file
+4. **Set on create**: When creating new plan, write path to `<WORKING-DIR>/.claude/active-plan`
+5. **Reset**: User can delete file manually (`rm .claude/active-plan`) to start fresh
+
+### Report Output Location
+
+All agents writing reports MUST:
+1. Read `<WORKING-DIR>/.claude/active-plan` to get current plan path
+2. Write reports to `{plan-path}/reports/`
+3. Use naming: `{agent}-{YYMMDD}-{slug}.md`
+
+**Fallback:** If no active-plan file exists, use `plans/reports/`
 
 ## Quality Standards
 

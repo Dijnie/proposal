@@ -9,6 +9,7 @@ Claude Code hooks automate notifications and actions at specific points in your 
 | Hook | File | Type | Description |
 |------|------|------|-------------|
 | **Scout Block** | `scout-block.js` | Automated | Cross-platform hook blocking heavy directories (node_modules, .git, etc.) |
+| **Modularization** | `modularization-hook.js` | Automated | Non-blocking suggestions for files >200 LOC to encourage code modularization |
 | **Discord (Auto)** | `discord_notify.sh` | Automated | Auto-sends rich embeds on session/subagent completion |
 | **Discord (Manual)** | `send-discord.sh` | Manual | Sends custom messages to Discord channel |
 | **Telegram** | `telegram_notify.sh` | Automated | Auto-sends detailed notifications on session/subagent completion |
@@ -32,12 +33,26 @@ Automatically blocks Claude Code from accessing heavy directories to improve per
 
 **Configuration:** Already enabled in `.claude/settings.json`
 
-**Blocked Patterns:**
-- `node_modules/` - NPM dependencies
-- `__pycache__/` - Python cache
-- `.git/` - Git internal files
-- `dist/` - Distribution builds
-- `build/` - Build artifacts
+**Default Blocked Patterns** (configured in `.claude/.ckignore`):
+- `node_modules` - NPM dependencies
+- `__pycache__` - Python cache
+- `.git` - Git internal files
+- `dist` - Distribution builds
+- `build` - Build artifacts
+
+**Customization:**
+Edit `.claude/.ckignore` to customize blocked patterns:
+```bash
+# Lines starting with # are comments
+# One pattern per line
+node_modules
+__pycache__
+.git
+dist
+build
+vendor
+.cache
+```
 
 **Testing:**
 ```bash
@@ -46,10 +61,48 @@ bash tests/test-scout-block.sh
 
 # Windows PowerShell
 pwsh tests/test-scout-block.ps1
+
+# Test .ckignore functionality
+node .claude/hooks/tests/test-ckignore.js
 ```
 
 **Requirements:**
 - Node.js >=18.0.0 (already required by project)
+
+### Modularization Hook (Automated)
+Automatically analyzes files after Write/Edit operations and suggests modularization for large files.
+
+**Configuration:** Already enabled in `.claude/settings.json`
+
+**Behavior:**
+- Triggers on Write/Edit tool usage
+- Analyzes file line count (LOC)
+- Suggests modularization if >200 LOC
+- **Non-blocking**: Claude continues main task automatically
+- Provides context-aware guidance using `additionalContext`
+
+**Testing:**
+```bash
+# Create test file with 205 lines
+for i in {1..205}; do echo "console.log('Line $i');"; done > /tmp/test-large.js
+
+# Test hook (should output modularization suggestion)
+echo '{"tool_input":{"file_path":"/tmp/test-large.js"}}' | node .claude/hooks/modularization-hook.js
+
+# Test with small file (should be silent)
+echo "console.log('test');" > /tmp/test-small.js
+echo '{"tool_input":{"file_path":"/tmp/test-small.js"}}' | node .claude/hooks/modularization-hook.js
+```
+
+**Requirements:**
+- Node.js >=18.0.0 (already required by project)
+
+**How It Works:**
+1. Hook receives file path from Write/Edit tool
+2. Counts lines in modified file
+3. If >200 LOC, injects suggestion into Claude's context
+4. Claude receives guidance but continues without blocking
+5. Exit code 0 ensures non-blocking behavior
 
 ### Discord Hook (Automated)
 Automatic notifications on Claude Code session events with rich embeds.
@@ -120,6 +173,22 @@ echo '{"hookType":"Stop","projectDir":"'$(pwd)'","sessionId":"test","toolsUsed":
 | **File Tracking** | Yes | No | Yes |
 
 ## Scripts
+
+### modularization-hook.js
+PostToolUse hook for automated code modularization suggestions.
+
+**Triggers:**
+- `Write` - File creation
+- `Edit` - File modification
+
+**Required:** None (standalone Node.js script)
+
+**Features:**
+- LOC (Lines of Code) analysis
+- Non-blocking execution (exit code 0)
+- Context injection via `additionalContext`
+- Kebab-case naming guidance
+- Automatic continuation after suggestion
 
 ### discord_notify.sh
 Automated Discord notification hook for Claude Code events with rich embeds.
